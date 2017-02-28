@@ -9,6 +9,7 @@ import contactList from '../contacts';
 export class ContactListComponent implements OnInit {
   contacts: Object[];
   newContact: Object = {};
+  contactSearch: string="";
 
   constructor() { }
 
@@ -19,6 +20,14 @@ export class ContactListComponent implements OnInit {
   addContact(){
     console.log("Add contact has been called");
     // add contact to contacts list
+    this.contacts.push(this.newContact);
     // clear inputs
+    this.newContact={};
+    console.log(this.contacts);
   }
+  searchContact(){
+    console.log ("searching for "+this.contactSearch);
+      // this.contacts.find(this.contactSearch);
+  }
+
 }
