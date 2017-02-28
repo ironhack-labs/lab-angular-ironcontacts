@@ -1,0 +1,21 @@
+.imageSmall {
+  width: 100px;
+}
+
+.form-group {
+  width: 200px;
+  margin: 25px;
+  display: inline;
+}
+
+.inputField {
+  padding-left: 60px;
+  height: 30px;
+  width: 200px;
+  margin: 10px;
+}
+
+.contactClass {
+  width: 500px;
+  float: left;
+}
