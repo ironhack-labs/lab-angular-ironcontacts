@@ -5,11 +5,15 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { ContactListComponent } from './contact-list/contact-list.component';
+import { SearchComponent } from './search/search.component';
+import { FilterpipePipe } from './filterpipe.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ContactListComponent
+    ContactListComponent,
+    SearchComponent,
+    FilterpipePipe
   ],
   imports: [
     BrowserModule,
