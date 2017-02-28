@@ -18,7 +18,23 @@ export class ContactListComponent implements OnInit {
 
   addContact(){
     console.log("Add contact has been called");
-    // add contact to contacts list
-    // clear inputs
+    this.contacts.push(this.newContact)
+    this.newContact = {};
+  }
+}
+
+
+export class CustomPipesComponent implements OnInit {
+
+  today = new Date();
+  stuff: Array<Object> = [];
+  pattern: string;
+
+  constructor() {}
+
+  ngOnInit() {}
+
+  addItem(item) {
+    this.stuff.push({name: item});
   }
 }

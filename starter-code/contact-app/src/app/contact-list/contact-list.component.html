@@ -1,27 +1,54 @@
-<div>
-  <label for="contact-name"></label>
-  <input type="text" [(ngModel)]="newContact.name">
-</div>
-<div>
-  <label for="contact-email"></label>
-  <input type="text" [(ngModel)]="newContact.email">
-</div>
-<div>
-  <label for="contact-phone"></label>
-  <input type="text" [(ngModel)]="newContact.phoneNumber">
-</div>
-<div>
-  <label for="contact-image"></label>
-  <input type="text" [(ngModel)]="newContact.image">
+<div class="container-fluid" style="margin: 40px;">
+
+  <div class="row form-inline" style="margin-bottom:30px;">
+    <div class="form-group">
+      <label for="contact-name"></label>
+      <input placeholder="Name" type="text" [(ngModel)]="newContact.name">
+    </div>
+    <div class="form-group">
+      <label for="contact-email"></label>
+      <input placeholder="Email" type="text" [(ngModel)]="newContact.email">
+    </div>
+    <div class="form-group">
+      <label for="contact-phone"></label>
+      <input placeholder="Phone" type="text" [(ngModel)]="newContact.phoneNumber">
+    </div>
+    <div class="form-group">
+      <label for="contact-image"></label>
+      <input placeholder="Image URL" type="text" [(ngModel)]="newContact.image">
+    </div>
+
+    <button class="btn btn-success" (click)="addContact()">Submit New Contact</button>
+
+    <div class="form-group" style="float:right">
+      <label for="things_name"> Search thing: </label>
+      <input id="things_name" placeholder="Search" type="text" [(ngModel)]="pattern">
+    </div>
+
+  </div>
+
+  <hr>
+
+
+<div class="row">
+  <div *ngFor="let contact of contacts | filter:'name':pattern">
+    <div class="col-sm-4" style="margin-bottom:30px;">
+      <div class="col-md-6">
+        <h4>{{contact.name}}</h4>
+        <h4>{{contact.email}}</h4>
+        <h4>{{contact.phoneNumber}}</h4>
+      </div>
+      <div class="col-md-6">
+        <img class="img-responsive img-thumbnail" style="width:200px; height:auto;" src="{{contact.image}}" alt="image"/>
+      </div>
+    </div>
+
+  </div>
 </div>
 
-<button (click)="addContact">Submit New Contact</button>
 
-<ul>
-  <li ngFor="let contact of contacts">
-    <span><!-- contact name --></span>
-    <span><!-- contact email --></span>
-    <span><!-- contact phoneNumber --></span>
-    <!-- contact image -->
-  </li>
-</ul>
+
+
+
+
+</div>
