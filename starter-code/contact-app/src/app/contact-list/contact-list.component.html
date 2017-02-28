@@ -1,27 +1,43 @@
-<div>
+  <div>
   <label for="contact-name"></label>
-  <input type="text" [(ngModel)]="newContact.name">
+  <input placeholder="name" type="text" [(ngModel)]="newContact.name">
 </div>
 <div>
   <label for="contact-email"></label>
-  <input type="text" [(ngModel)]="newContact.email">
+  <input placeholder="email" type="text" [(ngModel)]="newContact.email">
 </div>
 <div>
   <label for="contact-phone"></label>
-  <input type="text" [(ngModel)]="newContact.phoneNumber">
+  <input placeholder="phoneNumber" type="text" [(ngModel)]="newContact.phoneNumber">
 </div>
 <div>
   <label for="contact-image"></label>
-  <input type="text" [(ngModel)]="newContact.image">
+  <input placeholder="imageLink" type="text" [(ngModel)]="newContact.image">
 </div>
+<button (click)="addContact()">Submit New Contact</button>
 
-<button (click)="addContact">Submit New Contact</button>
+<div>
+      <label for="contacts_name"> Search contacts: </label>
+      <input id="contacts_name" placeholder="contact name"
+              type="text" [(ngModel)]="pattern">
+      <input id="contacts_email" placeholder="email"
+              type="text" [(ngModel)]="patterne">
+      <input id="contacts_phoneNumber" placeholder="phoneNumber"
+              type="text" [(ngModel)]="patternp">
+<div>
 
+      <h4> Contact</h4>
+          <ul>
+            <li *ngFor="let contact of contacts | filter:'name':pattern | filter:'email':patterne| filter:'phoneNumber':patternp; let i = index">
+              {{ i+1 }}) {{ contact.name }},{{ contact.email }},{{ contact.phoneNumber }}
+            </li>
+          </ul>
 <ul>
-  <li ngFor="let contact of contacts">
-    <span><!-- contact name --></span>
-    <span><!-- contact email --></span>
-    <span><!-- contact phoneNumber --></span>
-    <!-- contact image -->
+  <h4> Contact list </h4>
+  <li *ngFor="let contact of contacts">
+    <span>{{contact.name}}</span>
+    <span>{{contact.email}}</span>
+    <span>{{contact.phonenumber}}</span>
+    <img src="{{contact.image}}">
   </li>
 </ul>
