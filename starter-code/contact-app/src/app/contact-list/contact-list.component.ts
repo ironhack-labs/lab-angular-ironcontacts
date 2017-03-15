@@ -9,16 +9,16 @@ import contactList from '../contacts';
 export class ContactListComponent implements OnInit {
   contacts: Object[];
   newContact: Object = {};
-
+  pattern: string;
   constructor() { }
 
   ngOnInit() {
     this.contacts = contactList;
   }
 
+
   addContact(){
-    console.log("Add contact has been called");
-    // add contact to contacts list
-    // clear inputs
+    this.contacts.push(this.newContact);
+    this.newContact = {};
   }
 }
