@@ -7,7 +7,7 @@ import contactList from '../contacts';
   styleUrls: ['./contact-list.component.css']
 })
 export class ContactListComponent implements OnInit {
-  contacts: Object[];
+  contacts: Object = [];
   newContact: Object = {};
 
   constructor() { }

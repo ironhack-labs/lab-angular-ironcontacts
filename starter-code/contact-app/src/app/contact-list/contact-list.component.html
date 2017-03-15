@@ -18,10 +18,10 @@
 <button (click)="addContact">Submit New Contact</button>
 
 <ul>
-  <li ngFor="let contact of contacts">
-    <span><!-- contact name --></span>
-    <span><!-- contact email --></span>
-    <span><!-- contact phoneNumber --></span>
-    <!-- contact image -->
+  <li *ngFor="let contact of contacts">
+    <span>{{contact.name}}</span>
+    <span>{{contact.email}}</span>
+    <span>{{contact.phoneNumber}}</span>
+    <img [src]="contact.image">
   </li>
 </ul>
