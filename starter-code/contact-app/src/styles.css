@@ -1,1 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+  font-family: sans-serif;
+  text-align: center;
+  text-rendering: optimizeLegibility;
+}
+h1 {
+  text-transform: uppercase;
+}
+
+input:focus {
+  outline: none;
+}

@@ -1,27 +1,45 @@
-<div>
-  <label for="contact-name"></label>
-  <input type="text" [(ngModel)]="newContact.name">
-</div>
-<div>
-  <label for="contact-email"></label>
-  <input type="text" [(ngModel)]="newContact.email">
-</div>
-<div>
-  <label for="contact-phone"></label>
-  <input type="text" [(ngModel)]="newContact.phoneNumber">
-</div>
-<div>
-  <label for="contact-image"></label>
-  <input type="text" [(ngModel)]="newContact.image">
-</div>
+<section>
 
-<button (click)="addContact">Submit New Contact</button>
+
+<div class="container">
+
+  <div>
+    <label for="contact-name"></label>
+    <input type="text" [(ngModel)]="newContact.name" placeholder="name">
+  </div>
+  <div>
+    <label for="contact-email"></label>
+    <input type="text" [(ngModel)]="newContact.email" placeholder="email">
+  </div>
+  <div>
+    <label for="contact-phone"></label>
+    <input type="text" [(ngModel)]="newContact.phoneNumber" placeholder="phone">
+  </div>
+  <div>
+    <label for="contact-image"></label>
+    <input type="text" [(ngModel)]="newContact.image" placeholder="picture">
+  </div>
+
+  <button (click)="addContact()">Submit New Contact</button>
+  <br>
+  <br>
+  <input id="search" type="search" [(ngModel)]='pattern' placeholder="Search!">
+
+<hr style="border: 2px solid #3498db; width: 10%;margin: 60px auto;">
 
 <ul>
-  <li ngFor="let contact of contacts">
-    <span><!-- contact name --></span>
-    <span><!-- contact email --></span>
-    <span><!-- contact phoneNumber --></span>
-    <!-- contact image -->
+  <li *ngFor="let contact of contacts | filter: 'name':pattern; let i = index">
+
+    <span class="name">{{ contact.name}}</span>
+    <br>
+    <span>{{ contact.email }}</span>
+    <br>
+    <span class="number">{{ contact.phoneNumber}}</span>
+    <br>
+    <img [src]="contact.image" alt="">
   </li>
 </ul>
+
+</div>
+
+</section>
