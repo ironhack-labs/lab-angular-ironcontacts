@@ -15,13 +15,28 @@
   <input type="text" [(ngModel)]="newContact.image">
 </div>
 
-<button (click)="addContact">Submit New Contact</button>
+<button (click)="addContact(newContact)">Submit New Contact</button>
+
+<div>
+  <label>Search</label>
+  <input type="text" [(ngModel)]="searchResult">
+</div>
 
 <ul>
-  <li *ngFor="let contact of contacts">
-    <span>{{contact.name}}</span>
-    <span>{{contact.email}}</span>
-    <span>{{contact.phoneNumber}}</span>
-    <img [src]="contact.image">
-  </li>
+  <div>
+    <li *ngIf="searchResult !== undefined">
+      <span>{{(searchResult | search: contacts).name}}</span>
+      <span>{{(searchResult | search: contacts).email}}</span>
+      <span>{{(searchResult | search: contacts).phoneNumber}}</span>
+      <img [src]="(searchResult | search: contacts).image">
+    </li>
+  </div>
+  <div *ngIf="searchResult === '' || searchResult === undefined">
+    <li *ngFor="let contact of contacts">
+      <span>{{contact.name}}</span>
+      <span>{{contact.email}}</span>
+      <span>{{contact.phoneNumber}}</span>
+      <img [src]="contact.image">
+    </li>
+  </div>
 </ul>

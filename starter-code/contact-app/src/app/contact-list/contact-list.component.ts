@@ -1,24 +1,34 @@
 import { Component, OnInit } from '@angular/core';
 import contactList from '../contacts';
 
+interface Contact {
+  name: string,
+  email: string,
+  phoneNumber: string,
+  image: string
+}
+
 @Component({
   selector: 'app-contact-list',
   templateUrl: './contact-list.component.html',
   styleUrls: ['./contact-list.component.css']
 })
 export class ContactListComponent implements OnInit {
-  contacts: Object = [];
+  contacts: Array<any> = [];
   newContact: Object = {};
 
-  constructor() { }
+  constructor() {
 
+  }
   ngOnInit() {
-    this.contacts = contactList;
+    contactList.forEach((contact)=> {
+      this.contacts.push(contact);
+    });
+    console.log(this.contacts);
   }
 
-  addContact(){
+  addContact(n){
     console.log("Add contact has been called");
-    // add contact to contacts list
-    // clear inputs
+    this.contacts.push(n);
   }
 }
