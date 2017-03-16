@@ -1,0 +1,13 @@
+.pics{
+  /*max-height: 200px;*/
+  max-width: 90%;
+}
+
+.each-contact {
+  float: left;
+  width: 33%;
+}
+
+ul {
+  list-style: none;
+}
