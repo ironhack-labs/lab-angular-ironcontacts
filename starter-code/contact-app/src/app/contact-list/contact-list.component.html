@@ -15,13 +15,31 @@
   <input type="text" [(ngModel)]="newContact.image">
 </div>
 
-<button (click)="addContact">Submit New Contact</button>
+<button (click)="addContact()">Submit New Contact</button>
+
+<div>
+  <label for="search"></label>
+  <input type="text" name="search"[(ngModel)]="pattern1" placeholder="Search by name" >
+  <p>{{pattern}}</p>
+</div>
+<div>
+  <label for="search"></label>
+  <input type="text" name="search"[(ngModel)]="pattern2" placeholder="Search by email">
+  <p>{{pattern}}</p>
+</div>
+<div>
+  <label for="search"></label>
+  <input type="text" name="search"[(ngModel)]="pattern3" placeholder="Search by phoneNumber">
+  <p>{{pattern}}</p>
+</div>
+<!-- <button>Search contacts</button> -->
+
 
 <ul>
-  <li ngFor="let contact of contacts">
-    <span><!-- contact name --></span>
-    <span><!-- contact email --></span>
-    <span><!-- contact phoneNumber --></span>
-    <!-- contact image -->
+  <li *ngFor="let contact of (contacts | filter: 'name': pattern1 | filter: 'email': pattern2 | filter: 'phoneNumber': pattern3 )">
+    <span>{{contact.name}}</span>
+    <span>{{contact.email}}</span>
+    <span>{{contact.phoneNumber}}</span>
+    <img src="{{contact.image}}" alt="">
   </li>
 </ul>
