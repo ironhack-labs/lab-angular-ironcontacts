@@ -1,18 +1,44 @@
-<div>
-  <label for="contact-name"></label>
-  <input type="text" [(ngModel)]="newContact.name">
-</div>
-<div>
-  <label for="contact-email"></label>
-  <input type="text" [(ngModel)]="newContact.email">
-</div>
-<div>
-  <label for="contact-phone"></label>
-  <input type="text" [(ngModel)]="newContact.phoneNumber">
-</div>
-<div>
-  <label for="contact-image"></label>
-  <input type="text" [(ngModel)]="newContact.image">
-</div>
+<div id= "main">
+  <div>
+    <label for="contact-name">name</label>
+    <input type="text" [(ngModel)]="newContact.name">
+    <ul>
+    <li *ngFor= "let contact of contacts, let i = index">
+        {{i}} - {{contact.name}}
+     </li>
+  </ul>
+    </div>
+  <div>
+    <label for="contact-email">email</label>
+    <input type="text" [(ngModel)]="newContact.email">
+    <ul>
+    <li *ngFor= "let contact of contacts, let i = index">
+        {{i}} - {{contact.email}}
+     </li>
+  </ul>
+    </div>
+  <div>
+    <label for="contact-phone">phone</label>
+    <input type="text" [(ngModel)]="newContact.phoneNumber">
+    <ul>
+    <li *ngFor= "let contact of contacts, let i = index">
+        {{i}} - {{contact.phoneNumber}}
+     </li>
+  </ul>
+    </div>
+  <div>
+    <label for="contact-image">image</label>
+    <input type="text" [(ngModel)]="newContact.image">
+    <ul>
+    <li *ngFor= "let contact of contacts, let i = index">
+        {{i}} - {{contact.image}}
+     </li>
+  </ul>
+    </div>
+  </div>
+<br>
+<br>
 
-<button (click)="addContact">Submit New Contact</button>
+<div id=but>
+<button (click)="addContact(event)">Submit New Contact</button>
+</div>
