@@ -1,0 +1,21 @@
+.new-contact{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-flow: column;;
+}
+
+.contact-list{
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+}
+
+.contact-list li{
+  margin-right: 1rem;
+  list-style: none;
+}
+
+.contact-list li img{
+  max-width: 20vw;
+}
