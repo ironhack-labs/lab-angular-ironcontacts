@@ -1,0 +1,12 @@
+div, ul{
+  font-family: sans-serif;
+}
+ul{
+  padding: 40px;
+  margin-left: 20px;
+  display: inline-block;
+
+}
+li{
+  list-style-type: none;
+}
