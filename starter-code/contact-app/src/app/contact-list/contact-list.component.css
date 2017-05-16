@@ -1,0 +1,17 @@
+div{
+color: gray;
+}
+
+#main{
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+}
+
+#but{
+  display: flex;
+  margin-left: 40%;
+  /*align-items: center;*/
+}
