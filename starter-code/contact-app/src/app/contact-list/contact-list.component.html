@@ -1,18 +1,28 @@
 <div>
   <label for="contact-name"></label>
-  <input type="text" [(ngModel)]="newContact.name">
+  <input placeholder="name" type="text" [(ngModel)]="newContact.name">
 </div>
 <div>
   <label for="contact-email"></label>
-  <input type="text" [(ngModel)]="newContact.email">
+  <input placeholder="email" type="text" [(ngModel)]="newContact.email">
 </div>
 <div>
   <label for="contact-phone"></label>
-  <input type="text" [(ngModel)]="newContact.phoneNumber">
+  <input placeholder="phone" type="text" [(ngModel)]="newContact.phoneNumber">
 </div>
 <div>
   <label for="contact-image"></label>
-  <input type="text" [(ngModel)]="newContact.image">
+  <input placeholder="image" type="text" [(ngModel)]="newContact.image">
 </div>
+<!-- contact-list.component.html -->
+<button (click)="addContact(newContact)">Submit New Contact</button>
 
-<button (click)="addContact">Submit New Contact</button>
+
+<ul>
+  <!-- contact es el nombre qeu le doy a la variable
+  contacts es el nombre con el que he exportado la lista de contactos en el archivo contacts.js -->
+    <li class ="fondo" *ngFor="let contact of contacts, let i = index">
+        {{ i }} - {{ contact.name }}
+    </li>
+</ul>
+<!--No hace falta lincar los css lo hace angulas por nosostros  -->
