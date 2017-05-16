@@ -2,3 +2,11 @@
   {{title}}
 </h1>
 <app-contact-list></app-contact-list>
+
+<div class="contact-box" *ngFor="let contact of contacts; let i = index">
+  <ul><strong>{{contact.name}}</strong>
+    <li>{{contact.email}}</li>
+    <li>{{contact.phoneNumber}}</li>
+    <li><img src={{contact.image}} alt=""></li>
+  </ul>
+</div>
