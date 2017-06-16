@@ -1,0 +1,20 @@
+.grey-box {
+  margin: 20px auto;
+  padding: 10px 0;
+  background-color: #ddd;
+  border: 1px solid darkgrey;
+  border-radius: 3px;
+}
+
+.contact {
+  width: 300px;
+  display: inline-block;
+  border-radius: 3px;
+  border: 1px solid black;
+  margin: 10px;
+  padding: 5px;
+}
+
+img {
+  height: 100px;
+}
