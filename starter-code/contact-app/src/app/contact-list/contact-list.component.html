@@ -1,18 +1,58 @@
-<div>
-  <label for="contact-name"></label>
-  <input type="text" [(ngModel)]="newContact.name">
-</div>
-<div>
-  <label for="contact-email"></label>
-  <input type="text" [(ngModel)]="newContact.email">
-</div>
-<div>
-  <label for="contact-phone"></label>
-  <input type="text" [(ngModel)]="newContact.phoneNumber">
-</div>
-<div>
-  <label for="contact-image"></label>
-  <input type="text" [(ngModel)]="newContact.image">
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12 col-sm-offset-3 col-sm-6">
+            <div class="panel panel-default">
+                <div class="panel-heading c-list">
+                    <span class="title">Contacts</span>
+                    <ul class="pull-right c-controls">
+                        <li><a  data-target="#myModals" data-toggle="modal"  data-placement="top" title="Add Contact"><i class="glyphicon glyphicon-plus"></i></a></li>
+
+                        <li><a class="hide-search" data-command="toggle-search" data-toggle="tooltip" data-placement="top" title="Toggle Search"><i class="fa fa-ellipsis-v"></i></a></li>
+                    </ul>
+                </div>
+                <ul class="list-group" id="contact-list">
+                    <li class="list-group-item" *ngFor ="let contact of contacts">
+                        <div class="col-xs-12 col-sm-3">
+                            <img [src]="contact.image"  class="img-responsive img-circle" />
+                        </div>
+                        <div class="col-xs-12 col-sm-9">
+                            <span class="name">{{contact.name}}</span><br/>
+
+                            <span class=""> <span class="">5842 Hillcrest Rd</span><br/></span>
+
+                            <span class=""> <span class="">{{contact.phoneNumber}}</span><br/></span>
+
+                            <span class=""> <span class="">{{contact.email}}</span><br/></span>
+                        </div>
+                        <div class="clearfix"></div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+	</div>
 </div>
 
-<button (click)="addContact">Submit New Contact</button>
+<div id="myModals" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h3 id="myModalLabel">Add a Contact</h3>
+      </div>
+      <div class="modal-body">
+
+          <label>Name</label><input  #myName [(ngModel)]="newContact.name" class="form-control required" placeholder="Your name" data-placement="top" data-trigger="manual" data-content="Must be at least 3 characters long, and must only contain letters." type="text">
+          <label>Image</label><input  #myEmail [(ngModel)]="newContact.email" class="form-control required" placeholder="Link to an Image" data-placement="top" data-trigger="manual" data-content="Must be at least 3 characters long, and must only contain letters." type="text">
+          <label>E-Mail</label><input  #myPhone [(ngModel)]="newContact.phoneNumber" class="form-control email" placeholder="email@you.com (so that we can contact you)" data-placement="top" data-trigger="manual" data-content="Must be a valid e-mail address (user@gmail.com)" type="text">
+          <label>Phone</label><input  #myImg [(ngModel)]="newContact.image" class="form-control phone" placeholder="999-999-9999" data-placement="top" data-trigger="manual" data-content="Must be a valid phone number (999-999-9999)" type="text">
+
+          <button (click)="addContact(myName.value,myEmail.value,myPhone.value,myImg.value)" class="btn btn-success pull-right">Send It!</button>
+      </div>
+      <div class="modal-footer">
+        <button class="btn" data-dismiss="modal" aria-hidden="true">Cancel</button>
+      </div>
+    </div>
+  </div>
+</div>
