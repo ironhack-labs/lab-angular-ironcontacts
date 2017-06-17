@@ -1,4 +1,9 @@
 <h1>
   {{title}}
 </h1>
+<div *ngFor="let contact of contacts">
+  <p>{{ contact.name }}</p>
+  
+</div>
+
 <app-contact-list></app-contact-list>
