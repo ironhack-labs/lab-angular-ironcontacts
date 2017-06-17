@@ -5,10 +5,11 @@
       <p>
           {{contact.name}}
         <br/>
+          {{contact.email}}
+        <br/>
           {{contact.phoneNumber}}
         <br/>
           {{contact.email}}
-        <br/>
       </p>
       </li>
  </ul>
@@ -17,19 +18,19 @@
 
 <div>
   <label for="contact-name">Name: </label>
-  <input type="text" [(ngModel)]="newContact.name">
+  <input type="text" #name [(ngModel)]="newContact.name">
 </div>
 <div>
   <label for="contact-email">Email: </label>
-  <input type="text" [(ngModel)]="newContact.email">
+  <input type="text" #email [(ngModel)]="newContact.email">
 </div>
 <div>
   <label for="contact-phone">Phone: </label>
-  <input type="text" [(ngModel)]="newContact.phoneNumber">
+  <input type="text" #phone [(ngModel)]="newContact.phoneNumber">
 </div>
 <div>
   <label for="contact-image">Image: </label>
-  <input type="text" [(ngModel)]="newContact.image">
+  <input type="text" #image [(ngModel)]="newContact.image">
 </div>
 
-<button (click)="addContact">Submit New Contact</button>
+<button (click)="addContact(name.value,email.value,phone.value,img.value)">Submit New Contact</button>
