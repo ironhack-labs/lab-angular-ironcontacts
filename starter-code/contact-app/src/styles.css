@@ -1,1 +1,29 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+  margin:0;
+  font-family: 'Avenir';
+  letter-spacing: 2px;
+  font-family:300;
+  overflow-x:hidden;
+}
+
+.col {
+  float:left;
+  overflow: hidden;
+  word-wrap: normal;
+}
+
+.col-1-2 {
+  width:50%;
+}
+
+.col-1-4 {
+  width:25%;
+}
+
+@media screen and (max-width:768px) {
+  .col {
+    float:none;
+    width:100%;
+  }
+}
