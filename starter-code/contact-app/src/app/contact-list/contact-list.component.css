@@ -1,0 +1,36 @@
+
+
+img {
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  margin-top: 5%;
+  border: 2px solid grey;
+  box-shadow: 10px 10px 18px -8px rgba(0,0,0,0.75);
+}
+.info-wrapper, button {
+  display: inline-block;
+  clear: both;
+  background-color: lightgrey;
+  border-radius: 4px;
+  margin: 10px 10px;
+  padding-left: 2%;
+  width: 28%;
+  box-shadow: 10px 10px 18px -8px rgba(0,0,0,0.75);
+}
+.info-container{
+  font-size: .8em;
+  width: 65%;
+  float: left;
+}
+
+button {
+  margin-bottom: 80px;
+  width: 15%;
+  padding-left: 0;
+
+}
+
+button:hover {
+  background-color: darkgrey;
+}
