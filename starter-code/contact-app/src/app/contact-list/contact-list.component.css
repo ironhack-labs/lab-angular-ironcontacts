@@ -1,0 +1,26 @@
+.contacts-list > li {
+  display: inline-block;
+  list-style-type: none;
+  margin: 20px;
+  background: rgb(23, 155, 219);
+  color: white;
+  padding-left: 20px;
+}
+
+.contacts-list > li > img {
+  width: 250px;
+  height: 250px;
+}
+
+.add-contact {
+  margin-left: 60px;
+  /*width: 30%;*/
+  background: rgb(23, 155, 219);
+  float: left;
+  font-size: 18px;
+}
+.add-contact > div > input {
+  /*padding-left: 10px;/*/
+  border: 2px solid white;
+  margin: 5px;
+}
