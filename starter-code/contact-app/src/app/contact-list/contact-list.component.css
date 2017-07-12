@@ -1,0 +1,42 @@
+
+.formsection {
+  width: 100%;
+  position: relative;
+}
+
+.formdiv {
+  text-align: center;
+  font-family: 'Avenir';
+  color: gray;
+}
+
+button {
+  background-color: lightgray;
+  color: gray;
+  font-family: 'Avenir';
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+
+.contactdisplay {
+  width: 30%;
+  display: inline-block;
+  margin: 10px;
+  background-color: lightgray;
+  border-radius: 40px;
+  color: gray;
+  font-family: 'Avenir';
+  font-size: 12px;
+}
+
+
+
+li {
+  list-style: none;
+}
+
+img {
+  border-radius: 40px;
+  max-width: 100%;
+}
