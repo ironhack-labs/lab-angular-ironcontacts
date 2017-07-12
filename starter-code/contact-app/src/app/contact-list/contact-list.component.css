@@ -1,0 +1,12 @@
+img {
+  width: 30%;
+  max-width: 200px;
+}
+
+*{
+  text-align: center;
+}
+ul{
+  padding: none;
+  list-style-type: none;
+}
