@@ -3,6 +3,7 @@
 
   <div class="contactcard">
     <h3 class="contact"> Add a New Contact </h3>
+
     <form>
       <div class="form-group">
         <label for="contact-name">Contact Name:</label>
@@ -29,17 +30,16 @@
   </div>
 <!-- Iteration #1 -->
 
-  <div class="row">
-    <div class="col-sm-6 col-md-4">
-      <div class="thumbnail" *ngFor="let contact of contacts">
-        <img src="{{contact.image}}" alt="">
-        <div class="caption">
-          <h3> {{contact.name}}</h3>
-          <p> {{contact.email}}</p>
-          <p> {{contact.phoneNumber}}</p>
-        </div>
-      </div>
+<div class="row">
+  <h1>Contact List</h1>
+   <div class="col-md-4" *ngFor="let contact of contacts">
+    <img src="{{contact.image}}" class="img-thumbnail" alt="">
+    <div class="caption">
+      <h3> {{contact.name}}</h3>
+      <p> {{contact.email}}</p>
+      <p> {{contact.phoneNumber}}</p>
     </div>
   </div>
+</div>
 
 </div>
