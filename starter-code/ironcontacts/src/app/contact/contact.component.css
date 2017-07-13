@@ -1,0 +1,13 @@
+.text {
+  font-size: 18px;
+  font-family: sans-serif;
+}
+
+.btn {
+  border-radius: 2px;
+  width: 10%;
+}
+
+.input-style {
+  width: 20%;
+}
