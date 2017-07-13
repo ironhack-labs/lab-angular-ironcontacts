@@ -30,7 +30,7 @@ In the Pull request name, add your name and last names separated by a dash "-"
 
 ## Instructions
 
-### Iteration 1 | Display Contacts
+### Iteration 1 | Display Contacts 👍🏽
 
 It looks like our developer left behind some code for displaying a list of all of our contacts.
 

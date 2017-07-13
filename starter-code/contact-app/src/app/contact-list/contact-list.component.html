@@ -1,18 +1,60 @@
-<div>
-  <label for="contact-name"></label>
-  <input type="text" [(ngModel)]="newContact.name">
-</div>
-<div>
-  <label for="contact-email"></label>
-  <input type="text" [(ngModel)]="newContact.email">
-</div>
-<div>
-  <label for="contact-phone"></label>
-  <input type="text" [(ngModel)]="newContact.phoneNumber">
-</div>
-<div>
-  <label for="contact-image"></label>
-  <input type="text" [(ngModel)]="newContact.image">
-</div>
+<div class="ui divider"></div>
 
-<button (click)="addContact">Submit New Contact</button>
+<!-- DISPLAY CONTACTS -->
+<div class="grid">
+  <ul class="ui cards">
+    <li *ngFor="let contact of contacts" class="ui card">
+            <div class="ui black ribbon label grabber">
+              <i class="id card outline icon"></i>
+              {{contact.name}}
+            </div>
+            <img src='{{contact.image}}' class='ui image'>
+            <div class="ui label fill">
+              {{contact.email}}
+              <br>
+              <br>
+              {{contact.phoneNumber}}
+            </div>
+    </li>
+  </ul>
+</div>
+<!-- DISPLAY CONTACTS -->
+
+<div class="ui divider"></div>
+
+<!-- NEW CONTACT FORM -->
+<div class="ui raised segment form smallify">
+
+    <div>
+      <label class="ui label half-flat yellow" for="contact-name"> Name: </label>
+      <input class="top-left-edged" type="text" [(ngModel)]="newContact.name">
+    </div>
+
+    <br />
+
+    <div>
+      <label class="ui label half-flat yellow" for="contact-email"> eMail: </label>
+      <input class="top-left-edged" type="text" [(ngModel)]="newContact.email" [value]='inputValue'>
+    </div>
+
+    <br />
+
+    <div>
+      <label class="ui label half-flat yellow" for="contact-phone"> Phone: </label>
+      <input class="top-left-edged" type="text" [(ngModel)]="newContact.phoneNumber" [value]='inputValue'>
+    </div>
+
+    <br />
+
+    <div>
+      <label class="ui label half-flat yellow" for="contact-image"> Image: </label>
+      <input class="top-left-edged" type="text" [(ngModel)]="newContact.image" [value]='inputValue'>
+    </div>
+
+    <br />
+    <button class="ui button blue" (click)="addContact()">Submit New Contact</button>
+
+</div>
+<!-- NEW CONTACT FORM -->
+
+<div class="ui divider"></div>

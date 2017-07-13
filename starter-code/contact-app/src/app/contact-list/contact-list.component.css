@@ -1,0 +1,31 @@
+.smallify {
+width: 60vw;
+margin: 5% auto;
+}
+
+.grid {
+  display: flex;
+  flex-direction: row;
+}
+
+.grabber {
+  margin-left:25px !important;
+  width: 293px !important;
+}
+
+.fill {
+  display: flex;
+  overflow: hidden;
+  margin: 0 !important;
+}
+
+
+.half-flat {
+ border-bottom-left-radius:0px !important;
+ border-bottom-right-radius:0px !important;
+}
+
+.top-left-edged {
+  border-top-left-radius: 0px !important;
+  border-color: #fbbd08 !important;
+}
