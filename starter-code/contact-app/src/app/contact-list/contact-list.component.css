@@ -1,0 +1,12 @@
+.div{
+    border: 1px solid black;
+    width: 220px;
+    height: 200px;
+    text-align: center;
+    float: left;
+    background-color: rgba(245, 229, 138, 1); 
+    color: black;
+    margin: 10px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
