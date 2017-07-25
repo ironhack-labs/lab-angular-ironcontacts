@@ -1,0 +1,53 @@
+.centerForm {
+  text-align: center;
+  color: #000;
+}
+
+.contactsForm {
+  background-color: #557F75;
+  text-align: center;
+  display: inline-block;
+  margin: 20px auto;
+  border: 1px solid #2B403B;
+  box-shadow: 3px 3px 3px black;
+}
+
+.contactsDiv {
+  margin: 5px;
+  background-color: #557F75;
+  border: 1px solid #2B403B;
+  width: 32%;
+  height: 300px;
+  float: left;
+  box-shadow: 3px 3px 3px black;
+  color: #000;
+}
+
+#contactsName {
+
+}
+
+#contactsEmail {
+  display: inline;
+}
+
+#contactsNumber {
+  display: inline;
+}
+
+#contactsImage {
+  width: 150px;
+}
+
+
+.formButton {
+  margin-top: 10px;
+  background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
