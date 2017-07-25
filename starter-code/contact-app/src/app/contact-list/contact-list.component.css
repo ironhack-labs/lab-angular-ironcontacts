@@ -1,0 +1,12 @@
+img{
+  width:20%;
+  height:20%;
+}
+.contacts-container{
+  text-align: center;
+  float:left;
+  margin:auto;
+}
+li{
+  display: inline-block;
+}

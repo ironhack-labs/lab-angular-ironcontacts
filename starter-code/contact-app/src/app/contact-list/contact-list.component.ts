@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import contactList from '../contacts';
+import {NgModule} from '@angular/core';
 
 @Component({
   selector: 'app-contact-list',
@@ -19,6 +20,8 @@ export class ContactListComponent implements OnInit {
   addContact(){
     console.log("Add contact has been called");
     // add contact to contacts list
+    this.contacts.push(this.newContact);
     // clear inputs
+    // this.newContact = {}; //or clear entire form here by resetting newContact
   }
 }
