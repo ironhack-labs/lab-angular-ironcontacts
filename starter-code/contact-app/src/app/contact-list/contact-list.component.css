@@ -1,0 +1,42 @@
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.contact-form input {
+    margin: 5px;
+}
+
+button {
+    border-radius: 2px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 14px;
+    background: #3498db;
+    padding: 10px 10px 10px 10px;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+button:hover {
+    background: #3cb0fd;
+    text-decoration: none;
+}
+
+.contact-list {
+    border: 1px solid rgba(0, 0, 0, 0.13);
+    box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.13);
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-list ul>li {
+    list-style: none;
+    flex-basis: 300px;
+}
+
+.contact-list img {
+    width: 150px;
+}
