@@ -27,6 +27,6 @@
       <p>{{contact.email}}</p>
       <p>{{contact.phoneNumber}}</p>
     </div>
-    <img class="profilePicture" src="{{contact.image}}" alt="Profile picture of {{contact.name}}">
+    <img class="profilePicture" [src]="contact.image" alt="Profile picture of {{contact.name}}">
   </article>
 </section>
