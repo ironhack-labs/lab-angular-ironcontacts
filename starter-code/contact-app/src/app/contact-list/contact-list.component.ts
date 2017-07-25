@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import contactList from '../contacts';
+import contacts from '../contacts';
 
 @Component({
   selector: 'app-contact-list',
@@ -7,7 +8,7 @@ import contactList from '../contacts';
   styleUrls: ['./contact-list.component.css']
 })
 export class ContactListComponent implements OnInit {
-  contacts: Object[];
+  contacts: Object[] = contacts;
   newContact: Object = {};
 
   constructor() { }
@@ -17,7 +18,7 @@ export class ContactListComponent implements OnInit {
   }
 
   addContact(){
-    console.log("Add contact has been called");
+    console.log("Add contact has been called right now");
     // add contact to contacts list
     // clear inputs
   }
