@@ -1,0 +1,30 @@
+body{
+  background-color: #C2F9BB;
+  
+}
+h1{
+  color:#CC3363;
+}
+h4{
+color:#CC3363;
+  }
+#email{
+  color:#62C370;
+}
+#phone{
+  color:#9AD1D4;
+}
+.button {
+    background-color:#20063B;
+    border: none;
+    color: white;
+    margin-left: 15px;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+}
+.info{
+  margin-left: 15px;
+}
