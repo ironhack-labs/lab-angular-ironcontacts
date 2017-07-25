@@ -16,3 +16,15 @@
 </div>
 
 <button (click)="addContact">Submit New Contact</button>
+
+
+<h2>These are my contacts</h2>
+
+<div *ngFor="let orangeJuice of contacts">
+  <ul>
+    <li>{{orangeJuice.name}}</li>
+    <li>{{orangeJuice.email}}</li>
+    <li>{{orangeJuice.phoneNumber}}</li>
+    <li>{{orangeJuice.image}}</li>
+  </ul>
+</div>
