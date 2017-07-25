@@ -10,10 +10,12 @@ export class ContactListComponent implements OnInit {
   contacts: Object[];
   newContact: Object = {};
 
-  constructor() { }
+  constructor() {
+   this.contacts = contactList;
+  }
 
   ngOnInit() {
-    this.contacts = contactList;
+    // this.contacts = contactList;
   }
 
   addContact(){

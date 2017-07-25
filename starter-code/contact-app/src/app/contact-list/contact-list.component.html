@@ -1,3 +1,14 @@
+<ul>
+    <li *ngFor="let contact of contacts">
+        <p> {{ contact.name }} </p>
+        <p> {{ contact.email }} </p>
+        <p> {{ contact.phoneNumber }} </p>
+        <img src="{{ contact.image }}" height="150px">
+    </li>
+</ul>
+
+
+
 <div>
   <label for="contact-name"></label>
   <input type="text" [(ngModel)]="newContact.name">
