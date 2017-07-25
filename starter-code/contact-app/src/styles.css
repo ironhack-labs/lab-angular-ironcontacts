@@ -1,1 +1,40 @@
-/* You can add global styles to this file, and also import other style files */
+
+body {
+    background-color:#FFEEAD;
+    font-family: sans-serif;
+}
+
+
+#label {
+    width: px;
+}
+
+#btn {
+    background-color: #FD5936;
+    border-radius: 5px;
+    margin-left: 6em;
+
+}
+#input {
+    border-radius: 5px;
+    left: 0;
+}
+#main-div{
+    width: 500px;
+}
+#tel {
+    margin-left: 22px;
+    border-radius: 5px
+}
+#url {
+    margin-left: 18px;
+    border-radius: 5px
+}
+.img {
+    position: relative;
+    width: 10em;
+    align-self: right;
+    margin-left: 20em;
+    margin-top: -10em;
+    border-radius: 5px;
+}
