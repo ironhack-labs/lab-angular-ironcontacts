@@ -1,27 +1,32 @@
-<section>
-  <article *ngFor = "let contact of contacts">
-    <h2>{{contact.name}}</h2>
-    <p>{{contact.email}}</p>
-    <p>{{contact.phoneNumber}}</p>
-    <img src="{{contact.image}}" alt="Profile picture of {{contact.name}}">
-  </article>
+<section class="newContact">
+  <h2>New Contact</h2>
+  <div>
+    <label for="contact-name"></label>
+    <input type="text" [(ngModel)]="newContact.name" placeholder="Name...">
+  </div>
+  <div>
+    <label for="contact-email"></label>
+    <input type="text" [(ngModel)]="newContact.email" placeholder="Email...">
+  </div>
+  <div>
+    <label for="contact-phone"></label>
+    <input type="text" [(ngModel)]="newContact.phoneNumber" placeholder="Phone...">
+  </div>
+  <div>
+    <label for="contact-image"></label>
+    <input type="text" [(ngModel)]="newContact.image" placeholder="Image url...">
+  </div>
+
+  <button class="buttonNewContact" (click)="addContact(newContact)">Submit New Contact</button>
 </section>
 
-<div>
-  <label for="contact-name"></label>
-  <input type="text" [(ngModel)]="newContact.name" placeholder="Name...">
-</div>
-<div>
-  <label for="contact-email"></label>
-  <input type="text" [(ngModel)]="newContact.email" placeholder="Email...">
-</div>
-<div>
-  <label for="contact-phone"></label>
-  <input type="text" [(ngModel)]="newContact.phoneNumber" placeholder="Phone...">
-</div>
-<div>
-  <label for="contact-image"></label>
-  <input type="text" [(ngModel)]="newContact.image" placeholder="Image url...">
-</div>
-
-<button (click)="addContact(newContact)">Submit New Contact</button>
+<section>
+  <article class="contactInfo" *ngFor = "let contact of contacts">
+    <div class="contactData">
+      <h2>{{contact.name}}</h2>
+      <p>{{contact.email}}</p>
+      <p>{{contact.phoneNumber}}</p>
+    </div>
+    <img class="profilePicture" src="{{contact.image}}" alt="Profile picture of {{contact.name}}">
+  </article>
+</section>

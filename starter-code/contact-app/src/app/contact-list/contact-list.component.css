@@ -1,0 +1,37 @@
+.profilePicture {
+  max-width: 300px;
+  width: 50%;
+  border-radius: 50%;
+}
+
+/*.clearfix:after {
+   content: ".";
+   visibility: hidden;
+   display: block;
+   height: 0;
+   clear: both;
+}*/
+
+.contactInfo {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 3rem;
+  padding: 2rem;
+  background-color: #3F51B5;
+  color: #FFFFFF;
+  border-radius: 15px;
+}
+
+.newContact {
+  color: #757575;
+}
+
+.newContact > div {
+  margin: 0.5rem;
+}
+
+.buttonNewContact {
+  color: #757575;
+  background-color: #FFC107;
+}
