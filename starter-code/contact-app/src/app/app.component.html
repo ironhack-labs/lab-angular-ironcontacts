@@ -2,3 +2,10 @@
   {{title}}
 </h1>
 <app-contact-list></app-contact-list>
+
+<div class="contact" *ngFor="let i of message">
+    <h3>{{ i.name }}</h3>
+    <p>{{i.email}}</p>
+    <p>{{i.phoneNumber}}</p>
+    <img src="{{i.image}}" height="300">
+</div>
