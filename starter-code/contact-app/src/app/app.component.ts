@@ -1,4 +1,7 @@
+import undefined from './contacts';
+import { ContactListComponent } from './contact-list/contact-list.component';
 import { Component } from '@angular/core';
+import {NgModule} from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +9,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app works!';
+  title = 'PP Iron Contacts';
+
 }

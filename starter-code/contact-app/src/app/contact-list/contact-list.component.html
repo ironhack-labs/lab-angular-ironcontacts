@@ -1,18 +1,28 @@
-<div>
-  <label for="contact-name"></label>
-  <input type="text" [(ngModel)]="newContact.name">
+<div class="contacts-container">
+  <ol>
+    <li *ngFor= "let contact of contacts">
+      <p>Name:{{contact.name}}</p>
+      <p>Email:{{contact.email}}</p>
+      <p>Phone Number:{{contact.phoneNumber}}</p>
+      <p><img src="{{contact.image}}"></p>
+    </li>
+  </ol>
+</div>
+<div class='new-contact'>
+  <label for="contact-name">Name:</label>
+  <input type="text" [(ngModel)]="newContact.name" #contactname>
 </div>
 <div>
-  <label for="contact-email"></label>
-  <input type="text" [(ngModel)]="newContact.email">
+  <label for="contact-email">Email:</label>
+  <input type="text" [(ngModel)]="newContact.email" #contactemail>
 </div>
 <div>
-  <label for="contact-phone"></label>
-  <input type="text" [(ngModel)]="newContact.phoneNumber">
+  <label for="contact-phone">Phone:</label>
+  <input type="text" [(ngModel)]="newContact.phoneNumber" #contactnumber>
 </div>
 <div>
-  <label for="contact-image"></label>
-  <input type="text" [(ngModel)]="newContact.image">
+  <label for="contact-image">Image:</label>
+  <input type="text" [(ngModel)]="newContact.image" #contactimage>
 </div>
 
-<button (click)="addContact">Submit New Contact</button>
+<button (click)="addContact(contactname.value,contactemail.value,contactnumber.value,contactimage.value);contactname.value=''">Submit New Contact</button>  <!---can clear form here individually-->
