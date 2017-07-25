@@ -16,3 +16,10 @@
 </div>
 
 <button (click)="addContact">Submit New Contact</button>
+ <h2> This is a list of contacts</h2>
+<ol *ngFor="let contact of contacts">
+    <li>{{contact.name}}</li>
+    <li>{{contact.email}}</li>
+    <li>{{contact.phoneNumber}}</li>
+    <li>{{contact.image}}</li>
+</ol> 
