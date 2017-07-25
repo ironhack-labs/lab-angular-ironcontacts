@@ -1,0 +1,22 @@
+#app-container{
+  width: 900px;
+  background-color: #cebada;
+  padding: 45px;
+  border-radius: 15px;
+  margin: 0 auto;
+}
+
+#contact-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+#contact-container > .card{
+  width: 200px;
+}
+
+#contact-container > div > img{
+  width: 180px;
+  min-height: 140px;
+}
