@@ -1,35 +1,44 @@
-<div>
-  <label for="contact-name"></label>
-  <input type="text" [(ngModel)]="newContact.name" #newContactName>
-</div>
-<div>
-  <label for="contact-email"></label>
-  <input type="text" [(ngModel)]="newContact.email" #newContactEmail>
-</div>
-<div>
-  <label for="contact-phone"></label>
-  <input type="text" [(ngModel)]="newContact.phoneNumber" #newContactPhoneNumber>
-</div>
-<div>
-  <label for="contact-image"></label>
-  <input type="text" [(ngModel)]="newContact.image" #newContactImage>
-</div>
 
-<button (click)="addContact(newContactName.value,
-                            newContactEmail.value,
-                            newContactPhoneNumber.value,
-                            newContactImage.value)">
-                            Submit New Contact
-                          </button>
+<div class="centerForm">
+  <div class="contactsForm">
+    <div>
+      <p>Name:</p>
+      <label for="contact-name"></label>
+      <input type="text" [(ngModel)]="newContact.name" #newContactName>
+    </div>
+    <div>
+      <p>Email:</p>
+      <label for="contact-email"></label>
+      <input type="email" [(ngModel)]="newContact.email" #newContactEmail>
+    </div>
+    <div>
+      <p>Phone Number:</p>
+      <label for="contact-phone"></label>
+      <input type="tel" [(ngModel)]="newContact.phoneNumber" #newContactPhoneNumber>
+    </div>
+    <div>
+      <p>Image URL:</p>
+      <label for="contact-image"></label>
+      <input type="url" [(ngModel)]="newContact.image" #newContactImage>
+    </div>
 
+    <button class="formButton" (click)="addContact(newContactName.value,
+                                newContactEmail.value,
+                                newContactPhoneNumber.value,
+                                newContactImage.value)">
+                                Submit New Contact
+                              </button>
+
+  </div>
+</div>
 
 <h2>These are my contacts</h2>
 
-<div *ngFor="let orangeJuice of contacts">
+<div class="contactsDiv" *ngFor="let orangeJuice of contacts">
   <ul>
-    <li>{{orangeJuice.name}}</li>
-    <li>{{orangeJuice.email}}</li>
-    <li>{{orangeJuice.phoneNumber}}</li>
-    <li>{{orangeJuice.image}}</li>
+    <h3 id="contactsName">{{orangeJuice.name}}</h3>
+    <p><img id="contactsImage" src="{{orangeJuice.image}}" alt=""></p>
+    <a id="contactsEmail" > Email: {{orangeJuice.email}}</a>
+    <p><a id="contactsNumber" >Phone Number: {{orangeJuice.phoneNumber}}</a></p>
   </ul>
 </div>
