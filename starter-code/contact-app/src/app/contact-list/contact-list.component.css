@@ -1,0 +1,17 @@
+.all-contacts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.contact-card {
+  text-align: center;
+  background-color: tomato;
+  padding: 20px;
+  width: 200px;
+  margin: 5px;
+}
+
+img {
+  width: 85%;
+}
