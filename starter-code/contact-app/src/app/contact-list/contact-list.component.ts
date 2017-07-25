@@ -9,7 +9,7 @@ import contactList from '../contacts';
 export class ContactListComponent implements OnInit {
   contacts: Object[];
   newContact: Object = {};
-
+  formClass: string = 'form';
 
   constructor() { }
 
