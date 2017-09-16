@@ -1,18 +1,43 @@
-<div>
-  <label for="contact-name"></label>
-  <input type="text" [(ngModel)]="newContact.name">
-</div>
-<div>
-  <label for="contact-email"></label>
-  <input type="text" [(ngModel)]="newContact.email">
-</div>
-<div>
-  <label for="contact-phone"></label>
-  <input type="text" [(ngModel)]="newContact.phoneNumber">
-</div>
-<div>
-  <label for="contact-image"></label>
-  <input type="text" [(ngModel)]="newContact.image">
-</div>
+<div class="container">
+  <div class="row">
+    <div class="card col col-4" *ngFor="let contact of contacts; let i = index">
+      <img [src]="contact.image" class="rounded w-100" alt="">
+      <div class="card-body">
+        <h4 class="card-title">{{ contact.name }}</h4>
+        <p class="card-text"><b>Email:</b>{{ contact.email }}</p>
+        <a href="tel:{{ contact.phoneNumber }}" class="btn btn-primary">{{ contact.phoneNumber }}</a>
+      </div>
+    </div>
+  </div>
 
-<button (click)="addContact">Submit New Contact</button>
+  <h2>Form: </h2>
+
+  <div class="row">
+    <div class="col-sm-6">
+      <div class="form-group">
+        <label for="contact-name">Name:</label>
+        <input type="text" class="form-control" [(ngModel)]="newContact.name" (keyup)="validateName($event)">
+        <small [ngClass]="nameValidation">{{ messageName }}</small>
+      </div>
+      <div class="form-group">
+        <label for="contact-email">Email:</label>
+        <input type="text" class="form-control" [(ngModel)]="newContact.email" (keyup)="validateEmail($event)">
+        <small [ngClass]="emailValidation">{{ messageEmail }}</small>
+      </div>
+    </div>
+    <div class="col-sm-6">
+      <div class="form-group">
+        <label for="contact-phone">Phone:</label>
+        <input type="text" class="form-control" [(ngModel)]="newContact.phoneNumber" (keyup)="validatePhone($event)">
+        <small [ngClass]="phoneValidation">{{ messagePhone }}</small>
+      </div>
+      <div class="form-group">
+        <label for="contact-image">Image Url</label>
+        <input type="text" class="form-control" [(ngModel)]="newContact.image" (keyup)="validateURL($event)">
+        <small [ngClass]="urlValidation">{{ messageUrl }}</small>
+      </div>
+    </div>
+  </div>
+
+  <button (click)="addContact()" class="btn btn-primary btn-lg">Submit New Contact</button>
+</div>
