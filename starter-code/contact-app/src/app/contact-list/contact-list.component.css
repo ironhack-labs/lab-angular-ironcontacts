@@ -1,0 +1,35 @@
+.contact-form {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.contact-form input {
+  margin-bottom: 10px;
+}
+
+.all-contacts {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contact {
+  background-color: #f1f1f1;
+  border-radius: 10px;
+  max-width: 600px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  text-align: left;
+  padding: 10px;
+  text-indent: 20px;
+}
+
+.contact img {
+  max-width: 150px;
+  display: block;
+  margin:  0 auto;
+}
+
+.contact p {
+  clear: both;
+  text-align: center;
+}
