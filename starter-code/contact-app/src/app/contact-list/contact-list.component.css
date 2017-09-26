@@ -1,0 +1,12 @@
+.contacts{
+  display: inline-block;
+  width: 400px;
+  margin-left: 40px;
+}
+
+.form{
+  text-align: center;
+}
+img{
+  height: 200px;
+}
