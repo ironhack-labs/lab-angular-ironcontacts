@@ -20,8 +20,12 @@
 <h1>Contact List:</h1>
 
 <div class="contact" *ngFor="let c of contacts">
-  <h3>{{c.name}}</h3>
-  <p>{{c.email}}</p>
-  <p>{{c.phoneNumber}}</p>
-  <img [src]="c.image">
+  <div class="text">
+    <h3>{{c.name}}</h3>
+    <p>{{c.email}}</p>
+    <p>{{c.phoneNumber}}</p>
+  </div>
+  <div class="image">
+    <img [src]="c.image">
+  </div>
 </div>
