@@ -1,0 +1,20 @@
+.contacts{
+  width: 70%;
+  margin: 0 auto;
+}
+.contact-list{
+  border: 1px black solid;
+  width: 400px;
+  margin: 20px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.contact-list img{
+  width: 200px;
+  height: 200px;
+}
+
+.info{
+  width: 46%;
+}
