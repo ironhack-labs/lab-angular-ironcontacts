@@ -1,4 +1,32 @@
-ul{
+ul {
   list-style: none;
   margin: 0 auto;
+}
+
+li {
+  display: inline-block;
+  margin: 15px;
+  text-align: center;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+}
+
+li img {
+  max-width: 300px;
+}
+
+li:hover{
+  background-color: #000;
+  color: #fff;
+  padding: 20px;
+  border: 3px solid #fff;
+}
+
+#form{
+  margin: 30px auto;
+  text-align: center;
+  border: 2px solid #ddd;
+  border-radius: 3px;
+  width: 300px;
+  padding: 50px;
 }

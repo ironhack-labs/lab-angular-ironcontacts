@@ -26,6 +26,8 @@ export class ContactListComponent implements OnInit {
       image: this.newContact.image
     }
     this.contacts.push(this.newContact);
+    //clear inputs
+    this.newContact = {};
   }
 }
 
