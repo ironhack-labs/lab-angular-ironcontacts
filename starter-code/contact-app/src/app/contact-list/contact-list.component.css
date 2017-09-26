@@ -1,0 +1,25 @@
+.contact {
+  font-family: Helvetica;
+  border: 1px solid blue;
+  width: 30%;
+  margin: 5px;
+  padding: 10px;
+  display: inline-block;
+}
+
+.contact img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.text {
+  float: left;
+}
+
+.image {
+  position: relative;
+  margin-top: 25px;
+  margin-left: 50px;
+  float: left;
+  width: 100px;
+}
