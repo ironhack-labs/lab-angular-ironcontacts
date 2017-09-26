@@ -20,6 +20,6 @@ export class ContactListComponent implements OnInit {
     console.log(newContact)
     this.contacts.push(newContact);
     this.newContact = {};
-    // clear inputs
+    
   }
 }

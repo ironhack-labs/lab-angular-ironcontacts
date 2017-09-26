@@ -1,0 +1,10 @@
+.form{
+  width: 40%;
+  margin: 10px;
+}
+
+button{
+  background-color: #5495df;
+  border: 1px #5495df solid;
+  border-radius: 10px;
+}
