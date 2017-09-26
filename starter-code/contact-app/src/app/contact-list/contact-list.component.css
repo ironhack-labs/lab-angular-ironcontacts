@@ -1,0 +1,31 @@
+.contact-form{
+margin: 0 auto;
+width: 300px;
+background-color: white;
+padding: 20px;
+border-radius: 10px;
+}
+
+.contact-form input{
+  float:right;
+}
+
+.contact-form h4{
+  text-align: center;
+}
+
+.contactCard{
+  background-color: white;
+  display: inline-block;
+  margin: 20px;
+  border: 2px solid white;
+  border-radius: 30px;
+  text-align: center;
+  width: 350px;
+  padding: 10px 10px 20px
+}
+
+.container{
+  width: 80%;
+  margin:0 10%;
+}
