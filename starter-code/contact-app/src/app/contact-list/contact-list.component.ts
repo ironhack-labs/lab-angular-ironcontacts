@@ -9,6 +9,8 @@ import contactList from '../contacts';
 export class ContactListComponent implements OnInit {
   contacts: Object[];
   newContact: Object = {};
+  contactList: any = contactList;
+
 
   constructor() { }
 
@@ -22,3 +24,5 @@ export class ContactListComponent implements OnInit {
     // clear inputs
   }
 }
+
+console.log(contactList)
