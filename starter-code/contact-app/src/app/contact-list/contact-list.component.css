@@ -1,0 +1,10 @@
+.image{
+  border: 10px solid red;
+}
+
+.list{
+  text-decoration: underline;
+  color: blue;
+  width:50%;
+  margin: 0 25%;
+}
