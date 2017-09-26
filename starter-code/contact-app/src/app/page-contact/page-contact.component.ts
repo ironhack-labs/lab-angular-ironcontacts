@@ -7,6 +7,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PageContactComponent implements OnInit {
 
+  visibleForm = false
+  buttonName ="Add Contact"
+
+  toggleForm() {
+    this.visibleForm = !this.visibleForm
+    if (this.buttonName === "Add Contact") {
+      this.buttonName = "Close Form"
+    } else {
+      this.buttonName = "Add Contact"
+    }
+  }
+
   constructor() { }
 
   ngOnInit() {

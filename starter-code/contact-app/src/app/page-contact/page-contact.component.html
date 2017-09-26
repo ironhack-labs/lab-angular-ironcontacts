@@ -1,3 +1,6 @@
 <h2>Contact Page</h2>
 
 <app-contact-list></app-contact-list>
+
+<button (click)="toggleForm()">{{buttonName}}</button>
+<app-add-contact *ngIf="visibleForm"></app-add-contact>
