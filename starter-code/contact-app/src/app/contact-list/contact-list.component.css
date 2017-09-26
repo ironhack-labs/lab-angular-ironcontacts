@@ -1,0 +1,12 @@
+.newContact {
+  border: 2px solid red;
+}
+
+img {
+  width: 300px;
+  height: 300px;
+}
+
+ul {
+  list-style: none
+}
