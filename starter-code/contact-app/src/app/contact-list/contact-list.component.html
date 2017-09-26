@@ -9,7 +9,7 @@
   <input type="text" [(ngModel)]="newContact.phoneNumber">
 
   <label for="contact-image">Image</label>
-  <input type="text" [(ngModel)]="newContact.image">
+  <input type="text" [(ngModel)]="newContact.image" placeholder="image link">
   <button (click)="addContact(newContact.name,newContact.email,newContact.phoneNumber,newContact.image)">Submit New Contact</button>
 </div>
 
@@ -20,7 +20,7 @@
     <li>{{user.name}}</li>
     <li>{{user.email}}</li>
     <li>{{user.phoneNumber}}</li>
-    <li>{{user.image}}</li>
+    <li><img src="{{user.image}}" alt=""></li>
 
   </ul>
 
