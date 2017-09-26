@@ -1,4 +1,4 @@
-<div>
+<div *ngFor= "let newContact of contacts">
   <label for="contact-name"></label>
   <input type="text" [(ngModel)]="newContact.name">
 </div>
