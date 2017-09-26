@@ -1,0 +1,7 @@
+.contact-card {
+  display: inline-block;
+  float: left;
+  width: 33%;
+  text-align: center;
+  margin-top: 20px;
+}
