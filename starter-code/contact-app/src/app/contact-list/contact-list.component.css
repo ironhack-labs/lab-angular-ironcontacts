@@ -1,5 +1,29 @@
 .newContact {
-  border: 2px solid red;
+  border: 2px solid black;
+  background-color: white;
+  text-align: center;
+  height: 300px;
+  width: 35%;
+  margin: 0 auto;
+}
+
+.newForm {
+  position: relative;
+  top: 20px;
+  width: 200px;
+  left: 35%;
+}
+
+.contact {
+  border: 2px solid black;
+  width: 400px;
+  text-align: center;
+  margin: 10px;
+  display: inline-block;
+}
+
+.contact li {
+  margin-top: 15px;
 }
 
 img {
