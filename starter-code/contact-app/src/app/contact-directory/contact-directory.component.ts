@@ -1,12 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import contactList from '../contacts';
 
+
 @Component({
-  selector: 'app-contact-list',
-  templateUrl: './contact-list.component.html',
-  styleUrls: ['./contact-list.component.css']
+  selector: 'app-contact-directory',
+  templateUrl: './contact-directory.component.html',
+  styleUrls: ['./contact-directory.component.css'],
 })
-export class ContactListComponent implements OnInit {
+export class ContactDirectoryComponent implements OnInit {
   contacts: Object[];
   newContact: Object = {};
   constructor() {
@@ -27,4 +28,7 @@ addContact(name, email, phoneNumber, image:string){
 contactList.push(newContact);
 
 }
+
+
+
 }
