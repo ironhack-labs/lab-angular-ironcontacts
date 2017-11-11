@@ -24,15 +24,14 @@ li:last-child {
 }
 
 li img {
-  text-decoration: none;
-  color: #000;
+
+
   display: block;
   width: 200px;
-
-  -webkit-transition: font-size 0.3s ease, background-color 0.3s ease;
+}
 
 
 li img:hover {
-  font-size: 30px;
-  background: #f6f6f6;
+  width: 400px;
+  -webkit-transition: width 1s ease;
 }
