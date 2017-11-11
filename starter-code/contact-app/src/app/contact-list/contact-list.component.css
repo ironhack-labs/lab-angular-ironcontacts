@@ -1,0 +1,33 @@
+* {margin: 0; padding: 0;}
+
+div {
+  margin: 20px;
+}
+
+ul {
+  list-style-type: none;
+  width: 500px;
+}
+
+.Cname{
+  font: bold 20px/1.5 Helvetica, Verdana, sans-serif;
+}
+
+img {
+width: 200px;
+height: auto;
+}
+
+img:hover {
+  width: 400px;
+  -webkit-transition: width 1s ease;
+}
+
+li p {
+  font: 200 12px/1.5 Georgia, Times New Roman, serif;
+}
+
+li {
+  padding: 10px;
+  overflow: auto;
+}
