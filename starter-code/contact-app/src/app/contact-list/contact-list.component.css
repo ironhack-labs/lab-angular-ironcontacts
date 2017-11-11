@@ -1,0 +1,8 @@
+img {
+  width: 200px;
+}
+
+img:hover {
+  width: 400px;
+  transition: width 1s ease;
+}
