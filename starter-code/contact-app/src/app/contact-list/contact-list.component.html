@@ -1,18 +1,49 @@
-<div>
-  <label for="contact-name"></label>
-  <input type="text" [(ngModel)]="newContact.name">
-</div>
-<div>
-  <label for="contact-email"></label>
-  <input type="text" [(ngModel)]="newContact.email">
-</div>
-<div>
-  <label for="contact-phone"></label>
-  <input type="text" [(ngModel)]="newContact.phoneNumber">
-</div>
-<div>
-  <label for="contact-image"></label>
-  <input type="text" [(ngModel)]="newContact.image">
+<div class="container">
+  <div class="row" style="margin-left:15%; margin-right:15%;">
+    <div *ngFor="let contact of contacts" class="col-sm-12 col-md-6 col-lg-4"style="padding-bottom:30px;">
+      <img class="img-thumbnail img-fluid" style="width:200px; height: 200px;" src="{{ contact.image }}" alt="">
+      <h3> {{ contact.name }} </h3>
+      <p>
+        <span class="fa fa-comments text-muted c-info">
+          <a href="mailto:{{ contact.email }} ">{{ contact.email }} </a>
+        </span>
+      </p>
+      <p> <span class="glyphicon glyphicon-earphone text-muted c-info"> {{ contact.phoneNumber }} </span></p>
+      <hr>
+    </div>
+
+  </div>
+
 </div>
 
-<button (click)="addContact">Submit New Contact</button>
+<div class="row form-horizontal" style="margin: auto; max-width: 800px;">
+  <div class="form-group">
+    <label for="contact-name" class ="control-label col-sm-3">Name: </label>
+    <div class="col-sm-6">
+      <input type="text" [(ngModel)]="newContact.name" class="form-control">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="contact-email" class ="control-label col-sm-3">Email: </label>
+    <div class="col-sm-6">
+      <input type="text" [(ngModel)]="newContact.email" class="form-control">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="contact-phone" class ="control-label col-sm-3">Phone number: </label>
+    <div class="col-sm-6">
+      <input type="text" [(ngModel)]="newContact.phoneNumber" class="form-control">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="contact-image" class ="control-label col-sm-3">Upload image (paste URL):</label>
+    <div class="col-sm-6">
+      <input type="text" [(ngModel)]="newContact.image" class="form-control">
+    </div>
+  </div>
+
+  <p style="text-align:right; padding-top:30px; margin-right: 210px;">
+    <button (click)="addContact(newContact.name, newContact.email, newContact.phoneNumber, newContact.image  )" class="btn btn-primary">Add New Contact</button>
+  </p>
+
+</div>
