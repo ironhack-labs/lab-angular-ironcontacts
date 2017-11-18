@@ -1,4 +1,4 @@
-const contacts: Object[] = [
+ const contacts: Object[] = [
   {
     name: "Shakira Robel",
     email: "Ashley_Ritchie@hotmail.com",
