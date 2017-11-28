@@ -4,9 +4,9 @@
 <app-contact-list></app-contact-list>
 <ul>
   <li *ngFor="let contact of contacts">
-<p>{{contact.name}}</p>
-<p>{{contact.email}}</p>
-<p>{{contact.phoneNumber}}</p>
-<p>{{contact.image}}</p>
+    <p>{{contact.name}}</p>
+    <p>{{contact.email}}</p>
+    <p>{{contact.phoneNumber}}</p>
+    <img src="{{contact.image}}">
   </li>
 </ul>

@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import  contacts  from './contacts';
+import contacts from './contacts';
 
 @Component({
   selector: 'app-root',
@@ -7,6 +7,6 @@ import  contacts  from './contacts';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app works!';
+  title = 'Contact List!';
   contacts = contacts;
 }

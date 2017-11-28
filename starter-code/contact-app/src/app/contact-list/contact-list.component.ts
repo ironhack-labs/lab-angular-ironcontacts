@@ -16,7 +16,7 @@ export class ContactListComponent implements OnInit {
     this.contacts = contactList;
   }
 
-  addContact(newContact){
+  addContact(newContact) {
     console.log("Add contact has been called");
     this.contacts.unshift({
       name: newContact.name,
