@@ -1,0 +1,44 @@
+.campitos{
+  background-color: #41C4C4;
+  width: 60%;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  padding: 20px;
+  margin: 30px auto 0 auto;
+}
+
+.campo {
+  padding-top: 10px;
+
+}
+
+input{
+  width: 60%;
+  padding: 5px;
+}
+
+button {
+  border: 1px solid #076262;
+  border-radius: 25px;
+  height: 40px;
+  color: white;
+  background-color: #076262;
+  font-weight: bold;
+}
+
+.lista {
+  width: 60%;
+  padding: 20px;
+  margin: 0 auto;
+  line-height: 30px;
+}
+
+.lista li {
+  list-style: none;
+}
+
+hr {
+  width: 80%;
+  margin-left: 0;
+}
