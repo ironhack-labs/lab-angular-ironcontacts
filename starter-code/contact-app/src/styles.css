@@ -1,1 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
+.container {
+  /*width: 100%;*/
+  display: flex;
+  /*border: 1px dashed tomato;*/
+  justify-content: center;
+  margin: 0 auto;
+}
+app-root {
+  width: 90%;
+  color: #666;
+  font-family: helvetica, sans-serif;
+  /*border: 1px dashed green;*/
+}
