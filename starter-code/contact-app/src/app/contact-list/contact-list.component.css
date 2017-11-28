@@ -1,0 +1,13 @@
+.char-form {
+  text-align: center;
+}
+
+.all-images {
+  padding: 5%;
+  text-align: center;
+}
+
+.images {
+  display:inline-block;
+  width: 30%;
+}
