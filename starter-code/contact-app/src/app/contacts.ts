@@ -166,6 +166,6 @@ const contacts: Object[] = [
     phoneNumber: "(905) 672-3625 x6378",
     image: "http://lorempixel.com/640/480/nature"
   }
-]
+];
 
 export default contacts;
