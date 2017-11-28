@@ -1,0 +1,19 @@
+#form > div {
+    margin-bottom: 10px;
+}
+
+#form > div > label {
+    margin-right: 10px;
+}
+
+#form > div > input {
+    border-radius: 5px;
+}
+
+li {
+    list-style-type: none;
+    font-family: 'Sans serif';
+    margin-bottom: 15px;
+}
+
+
