@@ -1,0 +1,29 @@
+.form {
+  width: 500px;
+  background-color: #e9ebee;
+  text-align: center;
+  padding: 20px;
+  margin: 0 auto;
+  border: 3px solid #ecd9f0;
+  border-radius: 5px;
+}
+input{
+  width:350px;
+  margin-bottom: 10px;
+}
+lable{
+  text-align: left;
+}
+.grid{
+  width: 800px;
+}
+
+li{
+  display: inline-block;
+  padding: 20px;
+  margin: 20px;
+  background-color: #e9ebee;
+  text-align: center;
+  border: 3px solid #ecd9f0;
+  border-radius: 5px;
+}
