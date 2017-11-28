@@ -1,0 +1,13 @@
+.container {
+  border: 2px solid grey;
+  padding: 2%;
+  width: 25%;
+  text-align: center;
+  background-color: #ADD8E6;
+  margin: 0 auto;
+}
+
+input {
+  padding-bottom: 2%;
+  margin: 2%;
+}
