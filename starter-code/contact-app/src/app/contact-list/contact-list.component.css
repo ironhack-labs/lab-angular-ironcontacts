@@ -1,0 +1,58 @@
+/* You can add global styles to this file, and also import other style files */
+input {
+    border-radius: 4px;
+    margin-bottom: 17px;
+    height: 26px;
+    width: 237px;
+    border: 1px solid black;
+}
+
+/* input::placeholder{
+margin-left: 30px;
+} */
+
+.contact-itself{
+    border: none;
+    list-style: none;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 20px;
+    width: 250px;
+    background-color: yellow;
+    font-family: "Comic Sans MS";
+    border-radius: 50px;
+}
+
+.submit-button{
+    background-color: green;
+    color: White;
+    border-radius: 8px;
+    height: 50px;
+    width: 250px;
+}
+
+.contacts-div{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+	justify-content: space-around;
+    margin: 20px 200px;
+
+
+
+}
+
+.big-div{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+    align-content: center;
+    margin-top: 20px;
+}
+
+.contact-img{
+    max-width: 100px;
+}
