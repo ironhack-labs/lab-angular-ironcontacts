@@ -1,0 +1,36 @@
+img {
+  width: 100px;
+}
+
+section div {
+  margin: 5px;
+  display: inline-block;
+}
+
+.form {
+  background-color: lightgrey;
+  border-radius: 50px;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.contactList {
+  text-align: center;
+}
+
+.contact {
+  background-color: lightblue;
+  border-radius: 50px;
+  padding: 15px;
+  width: 250px;
+  text-align: justify;
+}
+
+ul > li {
+  list-style-type: none;
+}
+
+button {
+  margin: 5px;
+}
