@@ -9,7 +9,6 @@ import contactList from '../contacts';
 export class ContactListComponent implements OnInit {
   contacts: Object[];
   newContact: Object = {};
-
   constructor() { }
 
   ngOnInit() {
