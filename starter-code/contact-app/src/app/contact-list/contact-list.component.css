@@ -1,0 +1,41 @@
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 20px;
+}
+
+button {
+  padding: 10px;
+  font-size: 14px;
+  background-color: skyblue;
+  color: white;
+  margin-top: 10px;
+}
+input {
+  padding: 6px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  min-width: 100%;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  width: 300px;
+}
+h2 {
+  color: skyblue;
+}
+
+.center {
+  margin: auto;
+  width: 300px;
+  margin-bottom: 20px;
+}
