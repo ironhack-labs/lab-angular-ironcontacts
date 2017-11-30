@@ -9,7 +9,7 @@ import { ContactListComponent } from './contact-list/contact-list.component';
 @NgModule({
   declarations: [
     AppComponent,
-    ContactListComponent
+    ContactListComponent,
   ],
   imports: [
     BrowserModule,
