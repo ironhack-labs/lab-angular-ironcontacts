@@ -1,0 +1,9 @@
+#list ul {
+  list-style-type: none;
+}
+
+#list img {
+  width: 50vw;
+  display: block;
+  clear: both;
+}
