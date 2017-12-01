@@ -7,13 +7,13 @@ import contactList from '../contacts';
   styleUrls: ['./contact-list.component.css']
 })
 export class ContactListComponent implements OnInit {
-  contacts: Object[];
+  myContacts: Object[];
   newContact: Object = {};
 
   constructor() { }
 
   ngOnInit() {
-    this.contacts = contactList;
+    this.myContacts = contactList;
   }
 
   addContact(){
