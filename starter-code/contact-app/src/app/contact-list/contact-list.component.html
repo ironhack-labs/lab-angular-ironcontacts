@@ -15,7 +15,9 @@
   <input type="text" [(ngModel)]="newContact.image">
 </div>
 
-<button (click)="addContact">Submit New Contact</button>
+<h2> hello {{ newContact.name }}</h2>
+
+<button (click)="addContact()">Submit New Contact</button>
 
 <ul>
   <li *ngFor="let myContact of contacts">
