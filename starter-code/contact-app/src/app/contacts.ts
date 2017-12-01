@@ -1,3 +1,5 @@
+// #1
+
 const contacts: Object[] = [
   {
     name: "Shakira Robel",
