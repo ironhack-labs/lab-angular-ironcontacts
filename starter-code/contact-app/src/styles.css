@@ -1,1 +1,59 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Encode+Sans+Condensed:200,400,700');
+
+* {
+  font-family: 'Encode Sans Condensed', sans-serif;
+}
+
+img {
+  width: 200px;
+  height: auto;
+}
+
+ul {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  border: 1px solid gray;
+  border-radius: 8px;
+  margin: 5px 0;
+  padding: 15px;
+  list-style: none;
+}
+
+ul h3 {
+  text-align: center;
+}
+
+p {
+  font-size: 14px;
+  text-align: center;
+}
+
+.new-contact-form {
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  width: 150px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+label {
+  margin: 0;
+  padding: 0;
+}
+
+input {
+  margin: 0 10px;
+  padding: 0;
+}
