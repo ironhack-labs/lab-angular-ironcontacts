@@ -1,18 +1,84 @@
+<div class="container">
+  <hr>
+  <div class="card-deck">    
+    <div class="row">
+      <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3" *ngFor="let contact of contacts">
+        <div class="card" >
+          <img class="card-img-top" src="{{ contact.image }}" alt="Card image cap" height="180px">
+          <div class="card-block">
+            <h5 class="card-title">{{ contact.name }}</h5>
+            <p class="card-text">{{ contact.phoneNumber }}</p>
+            <p class="card-text"><small class="text-muted">{{ contact.email }}</small></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr><!-- new contact form here .. -->
+  <div class="row">
+    <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2"></div>
+
+    <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+      <form ngNoForm>
+        <div class="form-group row">
+          <label for="contact-name" class="col-2 col-form-label">Name</label>
+          <div class="col-10">
+            <input class="form-control" type="text" [(ngModel)]="newContact.name" id="contact-name" placeholder="name ...">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="contact-email" class="col-sm-2 col-form-label">Email</label>
+          <div class="col-sm-10">
+            <input type="email" [(ngModel)]="newContact.email" class="form-control" id="contact-email" placeholder="email ...">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="contact-phone" class="col-2 col-form-label">Telephone</label>
+          <div class="col-10">
+            <input class="form-control" type="tel" [(ngModel)]="newContact.phoneNumber" id="contact-phone" placeholder="1-(555)-555-5555">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="contact-image" class="col-2 col-form-label">Image URL</label>
+          <div class="col-10">
+            <input class="form-control" type="text" [(ngModel)]="newContact.image" id="contact-image" placeholder="image url ...">
+          </div>
+        </div>
+
+        <div class="form-group row">
+          <div class="offset-sm-2 col-sm-10">
+            <button type="button" (click)="addContact( newContact.name, newContact.email, newContact.phoneNumber, newContact.image )" class="btn btn-primary">Submit New Contact</button>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2"></div>
+  </div>
+</div><!-- end container -->
+
+<!--
 <div>
   <label for="contact-name"></label>
   <input type="text" [(ngModel)]="newContact.name">
-</div>
-<div>
-  <label for="contact-email"></label>
-  <input type="text" [(ngModel)]="newContact.email">
-</div>
-<div>
-  <label for="contact-phone"></label>
-  <input type="text" [(ngModel)]="newContact.phoneNumber">
-</div>
-<div>
-  <label for="contact-image"></label>
-  <input type="text" [(ngModel)]="newContact.image">
-</div>
+  </div>
+  <div>
+    <label for="contact-email"></label>
+    <input type="text" [(ngModel)]="newContact.email">
+  </div>
+  <div>
+    <label for="contact-phone"></label>
+    <input type="text" [(ngModel)]="newContact.phoneNumber">
+  </div>
+  <div>
+    <label for="contact-image"></label>
+    <input type="text" [(ngModel)]="newContact.image">
+  </div>
 
-<button (click)="addContact">Submit New Contact</button>
+  <button (click)="addContact">Submit New Contact</button>
+-->
+
+
+
+
+
