@@ -1,18 +1,25 @@
-<div>
-  <label for="contact-name"></label>
-  <input type="text" [(ngModel)]="newContact.name">
-</div>
-<div>
-  <label for="contact-email"></label>
-  <input type="text" [(ngModel)]="newContact.email">
-</div>
-<div>
-  <label for="contact-phone"></label>
-  <input type="text" [(ngModel)]="newContact.phoneNumber">
-</div>
-<div>
-  <label for="contact-image"></label>
-  <input type="text" [(ngModel)]="newContact.image">
-</div>
+<h4 class="addNewContactTitle">Add new Contact</h4>
+<form class="newContactForm">
+  <div class="form-group">
+    <label for="contactName">Name</label>
+    <input type="text" name="name" [(ngModel)]="newContact.name" class="form-control" id="contactName" placeholder="Contact Name">
+  </div>
+  <div class="form-group">
+    <label for="contactEmail">Email</label>
+    <input type="text" name="email" [(ngModel)]="newContact.email" class="form-control" id="contactEmail" placeholder="Contact Email">
+  </div>
+  <div class="form-group">
+    <label for="contactPhone">Phone Number</label>
+    <input type="text" name="phoneNumber" [(ngModel)]="newContact.phoneNumber" class="form-control" id="contactPhone" placeholder="Contact Phone Number">
+  </div>
+  <div class="form-group">
+    <label for="contactImage">Image URL</label>
+    <input type="text" name="image" [(ngModel)]="newContact.image" class="form-control" id="contactImage" placeholder="Contact Image">
+  </div>
+  <button class="btn btn-primary" (click)="addContact()">Submit New Contact</button>
 
-<button (click)="addContact">Submit New Contact</button>
+</form>
+
+<div class="card-deck col-sm-6" *ngFor="let contactItem of contacts">
+  <app-contact-item [contactItem]="contactItem"></app-contact-item>
+</div>

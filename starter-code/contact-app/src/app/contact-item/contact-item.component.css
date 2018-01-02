@@ -1,0 +1,9 @@
+.card-box {
+  max-width: 100%;
+  margin: auto;
+}
+
+.img-crop {
+  overflow: hidden;
+  height: 370px;
+}
