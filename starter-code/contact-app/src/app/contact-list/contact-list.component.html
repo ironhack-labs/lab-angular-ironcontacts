@@ -5,11 +5,60 @@
   <!-- <img [src]='contact.image'> -->
 </ul>
 
+<form action=""></form>
 
-<div>
-  <label for="contact-name"></label>
-  <input type="text" [(ngModel)]="newContact.name">
+<form 
+  (ngSubmit)="submitForm(form)" 
+  #form="ngForm"
+  novalidate>
+
+  <div class="field"
+    [ngClass]="{'has-error': showErrorMessages && contactName.errors}">
+    <label for="contact-name">Name:</label>
+    <input type="text" 
+    name = "contact-name"
+    [(ngModel)]="newContact.name"
+    #contactName="ngModel"
+    required
+    [disabled]="processing">
+    <div class="error-messages"
+      *ngIf="showErrorMessages && contactName.errors">
+      <p *ngIf="contactName.errors.required"
+        class="validation">
+        Contact name required
+      </p>
+    </div>
+  </div>
+
+  <div class="field"
+  [ngClass]="{'has-error': showErrorMessages && contactEmail.errors}">
+  <label for="contact-email">Email:</label>
+  <input type="email" 
+  name = "contact-email"
+  [(ngModel)]="newContact.email"
+  #contactName="ngModel"
+  required
+  [disabled]="processing">
+  <div class="error-messages"
+    *ngIf="showErrorMessages && contactEmail.errors">
+    <p *ngIf="contactEmail.errors.required"
+      class="validation">
+      Email required
+    </p>
+  </div>
 </div>
+
+
+
+  <button type="submit" [disabled]="processing">Submit</button>
+</form>
+
+
+
+<!-- 
+<p>{{newContact.name}}</p>
+
+
 <div>
   <label for="contact-email"></label>
   <input type="text" [(ngModel)]="newContact.email">
@@ -23,4 +72,4 @@
   <input type="text" [(ngModel)]="newContact.image">
 </div>
 
-<button (click)="addContact()">Submit New Contact</button>
+<button (click)="addContact()">Submit New Contact</button> -->
