@@ -1,3 +1,4 @@
+
 import { Component, OnInit } from '@angular/core';
 import contactList from '../contacts';
 
@@ -9,16 +10,26 @@ import contactList from '../contacts';
 export class ContactListComponent implements OnInit {
   contacts: Object[];
   newContact: Object = {};
+  feedbackEnabled = false;
+  processing = false;
 
-  constructor() { }
+  constructor() {}
 
   ngOnInit() {
     this.contacts = contactList;
   }
 
-  addContact(){
+  addContact(form){
     console.log("Add contact has been called");
     // add contact to contacts list
+    if (form.valid) {
+      this.contacts.push(this.newContact);
+      this.newContact = '';
+      this.feedbackEnabled = false;
+    }
+    else{
+      this.feedbackEnabled = true;
+    }
     // clear inputs
   }
 }
