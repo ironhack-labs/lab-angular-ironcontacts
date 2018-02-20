@@ -1,0 +1,29 @@
+img {
+    width: 250px;
+    margin-top: 20px;
+}
+
+ul {
+    list-style: none;
+    width: 25%;
+    padding: 15px;
+    background: greenyellow;
+    display: inline;
+    float: left;
+    margin-left: 15px;
+}
+
+.border{
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+.name {
+    font-weight: 700;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.email {
+    font-style: italic;
+}
