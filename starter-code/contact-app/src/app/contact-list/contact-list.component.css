@@ -1,0 +1,165 @@
+/*
+FORMULARIO CSS BY VITORIX */
+html {
+    background-color: #E8627A;
+    font: normal 14px / 20px 'Roboto', sans-serif;
+    padding: 0 0 25px;
+  }
+  
+  h1 {
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px;
+    text-align: center;
+  }
+
+  @import url(https://fonts.googleapis.com/css?family=Raleway|Montserrat);
+body {
+    background:#E73F3F;
+    font-family:raleway;
+}
+div {
+    box-sizing:border-box;
+}
+.container {
+    width:450px;
+    background:#fff;
+    margin:20px auto;
+    border-radius:3px;
+    box-shadow:0 1px 10px 0 #444;
+}
+.row {
+    padding:10px 50px;
+}
+.row#header {
+    padding-top:30px;
+    padding-bottom:20px;
+    text-align:center;
+}
+.row#header .icon {
+    font-size:80px;
+    display:block;
+    color:#e73f3f;
+}
+.row#header h1, .row#header p {
+    margin:5px 0;
+    padding:0;
+}
+.row#header h1 {
+    color:#e73f3f;
+    font-size:25px;
+    font-weight:bolder;
+}
+.row#header p {
+    color:#aaa;
+}
+/*  */
+.row#form {
+    padding-bottom:50px;
+}
+.row#form input[type="text"], .row#form input[type="password"]{
+    display:block;
+    width:100%;
+    background:#eee;
+    border:none;
+    padding:15px;
+    margin:5px 0;
+    box-sizing:border-box;
+}
+.row#form input::-webkit-input-placeholder {
+    color:#bbb;
+    font-family:'raleway';
+}
+.row#form label {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: bold;
+    display:block;
+    margin:15px 0;
+}
+.row#form label span::before {
+    font-family:'ionicons';
+    content:'\f371';
+    font-size:25px;
+    color:#ddd;
+    padding-right:10px;
+    position:relative;
+    top:3px;
+}
+.row#form label input[type="checkbox"]:checked+span::before{
+    content:"\f374";
+}
+.row#form label span {
+    color:#999;
+    word-spacing:5px;
+}
+.row#form label span a {
+    color:#e73f3f;
+}
+.row#form button {
+    display:block;
+    width:100%;
+    padding:15px;
+    border:none;
+    color:#fff;
+    background:#e73f3f;
+    border-radius:20px;
+    margin:20px 0;
+    font-weight:800;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:16px;
+}
+.row#form label input[type="checkbox"]{
+    display:none;
+}
+
+
+Add Comment
+/* Esto es lo que hemos hecho Sebas y Charlie */
+
+
+
+.formulario{
+    margin-top: 1%;
+    text-align: center;
+}
+.container-contacts{
+    text-align: center;
+    margin-left: 12%;
+    margin-top: 1%;
+    height: 100%;
+    width: auto;
+}
+
+.contactinfo{
+    width: 20%;
+    height: auto;
+    float: left;
+    margin: 1%;
+    padding:2%;
+    border: 5px solid;
+    border-color: #E73F3F;
+    border-radius: 30px;
+    box-shadow:0 0.2px 10px 0 #999;
+}
+
+.name{
+    color: black;
+}
+
+.email{
+    color: #999;
+}
+
+.phone{
+    color: #999;
+}
+
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.titulo{
+    margin-top: 3%;
+    text-align: center;
+}
