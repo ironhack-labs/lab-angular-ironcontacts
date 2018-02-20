@@ -18,11 +18,11 @@
 <button (click)="addContact()">Submit New Contact</button>
 
 <ul>
-  <li *ngFor="let contact of contacts; let i = index">
-    <p>Name : {{contacts[i].name}}</p>
-    <p>Email : {{contacts[i].email}}</p>
-    <p>Phone Number : {{contacts[i].phoneNumber}}</p>
-    <img [src]="contacts[i].image"/>
+  <li *ngFor="let contact of contacts">
+    <p>Name : {{contact.name}}</p>
+    <p>Email : {{contact.email}}</p>
+    <p>Phone Number : {{contact.phoneNumber}}</p>
+    <img [src]="contact.image"/>
   </li>
 </ul>
 
