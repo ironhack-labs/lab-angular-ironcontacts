@@ -1,0 +1,8 @@
+.contact-list-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+p span, label {
+    font-weight: bold;
+}
