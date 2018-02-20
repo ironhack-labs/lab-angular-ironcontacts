@@ -1,4 +1,9 @@
 <div>
+  <div  class="listado" *ngFor="let item of contacts">
+    <p><img src="{{item.image}}" width="100px"><br>{{item.name}}<br>{{item.email}}<br>{{item.phoneNumber}}<br></p>
+
+  </div>
+  <div>
   <label for="contact-name"></label>
   <input type="text" [(ngModel)]="newContact.name">
 </div>
@@ -14,5 +19,5 @@
   <label for="contact-image"></label>
   <input type="text" [(ngModel)]="newContact.image">
 </div>
-
-<button (click)="addContact">Submit New Contact</button>
+</div>
+<button (click)="addContact($event)">Submit New Contact</button>
