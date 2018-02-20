@@ -1,18 +1,33 @@
-<div>
+
+<div *ngFor="let c of contacts" class="bloque">
+    <div class="bonito">
+ <ul>
+  <p>{{ c.name }}</p>
+  <p> {{c.email}}</p>
+  <p>{{c.phoneNumber}}</p>
+  <img src="{{c.image}}" width="150" alt="">
+</ul>
+</div>
+</div>
+
+<div class="formulario">
+  <div>
   <label for="contact-name"></label>
-  <input type="text" [(ngModel)]="newContact.name">
+  <input type="text" [(ngModel)]="newContact.name" placeholder="name">
 </div>
 <div>
   <label for="contact-email"></label>
-  <input type="text" [(ngModel)]="newContact.email">
+  <input type="text" [(ngModel)]="newContact.email" placeholder="email">
 </div>
 <div>
   <label for="contact-phone"></label>
-  <input type="text" [(ngModel)]="newContact.phoneNumber">
+  <input type="text" [(ngModel)]="newContact.phoneNumber" placeholder="numero de telefono">
 </div>
 <div>
   <label for="contact-image"></label>
-  <input type="text" [(ngModel)]="newContact.image">
+  <input type="text" [(ngModel)]="newContact.image" placeholder="foto">
+</div>
+<button (click)="addContact(newContact)">Submit New Contact</button>
 </div>
 
-<button (click)="addContact">Submit New Contact</button>
+

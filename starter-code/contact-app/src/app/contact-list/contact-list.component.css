@@ -1,0 +1,11 @@
+.bloque{
+display: inline-block;
+}
+.bonito{
+    border: 1px solid grey;
+    border-radius: 5%;
+    margin: 10px;
+}
+.formulario{
+    text-align: center;
+}
