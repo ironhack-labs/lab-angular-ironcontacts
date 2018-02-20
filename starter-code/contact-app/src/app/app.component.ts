@@ -6,6 +6,6 @@ import contacts from './contacts';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app works!';
+  title = 'Agenda Rusa Mafioso';
   contacts = contacts;
 }

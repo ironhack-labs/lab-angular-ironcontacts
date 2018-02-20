@@ -1,18 +1,30 @@
-<div>
-  <label for="contact-name"></label>
-  <input type="text" [(ngModel)]="newContact.name">
-</div>
-<div>
-  <label for="contact-email"></label>
-  <input type="text" [(ngModel)]="newContact.email">
-</div>
-<div>
-  <label for="contact-phone"></label>
-  <input type="text" [(ngModel)]="newContact.phoneNumber">
-</div>
-<div>
-  <label for="contact-image"></label>
-  <input type="text" [(ngModel)]="newContact.image">
-</div>
+<div class="container">
 
-<button (click)="addContact">Submit New Contact</button>
+  <div class="row" id="header">
+    <i class="icon ion-ios-people-outline"></i>
+    <h1>Add Chorba Now</h1>
+    <p>It's free and it takes less than 30 seconds</p>
+  </div>
+
+
+  <div class="row" id="form">
+      <div>
+        <label for="contact-name" >Nombre            </label>
+        <input type="text" [(ngModel)]="newContact.name">
+      </div>
+      <div>
+        <label for="contact-email">Email             </label>
+        <input type="text" [(ngModel)]="newContact.email">
+      </div>
+      <div>
+        <label for="contact-phone" >Número de telefono</label>
+        <input type="text" [(ngModel)]="newContact.phoneNumber">
+      </div>
+      <div>
+        <label for="contact-image" >Foto perfil</label>
+        <input type="text" [(ngModel)]="newContact.image">
+      </div>
+
+      <button (click)="addContact()">Submit New Contact</button>
+    
+  </div>
