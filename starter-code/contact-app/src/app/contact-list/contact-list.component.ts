@@ -10,8 +10,10 @@ import contactList from '../contacts';
 export class ContactListComponent implements OnInit {
   contacts: Object[];
   newContact: Object = {};
+  feedbackEnabled = false;
+  processing = false;
 
-  constructor() { }
+  constructor() {}
 
   ngOnInit() {
     this.contacts = contactList;
@@ -23,6 +25,10 @@ export class ContactListComponent implements OnInit {
     if (form.valid) {
       this.contacts.push(this.newContact);
       this.newContact = '';
+      this.feedbackEnabled = false;
+    }
+    else{
+      this.feedbackEnabled = true;
     }
     // clear inputs
   }
