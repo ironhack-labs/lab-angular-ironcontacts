@@ -17,6 +17,10 @@ export class ContactListComponent implements OnInit {
   }
 
   addContact(){
+    this.contacts.push(this.newContact);
+    Object.keys(this.newContact).forEach((key)=>{
+      this.newContact[key] = '';
+    });
     console.log("Add contact has been called");
     // add contact to contacts list
     // clear inputs
