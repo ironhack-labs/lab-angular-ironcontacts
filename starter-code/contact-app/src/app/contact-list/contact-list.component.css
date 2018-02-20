@@ -1,0 +1,38 @@
+
+div#form{
+    margin-top: 40px;
+    display: flex!important;
+    justify-content: space-between!important;
+}
+
+div#form input{
+    height: 50px;
+    padding-left: 20px;
+}
+
+div#form button{
+    background: #4d77ae;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 5px 35px;
+    font-size: 16px;
+}
+
+div.col-md-4 {
+    margin-top: 50px;
+}
+
+div.col-md-4 article{
+    border: 1px solid #ddd;
+    padding: 40px;
+    text-align: center;
+}
+
+div.col-md-4 article img{
+    width: 200px;
+}
+
+div.col-md-4 article h2{
+    font-size: 23px;
+    margin-top: 20px;
+}
