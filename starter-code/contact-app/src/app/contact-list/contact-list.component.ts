@@ -1,3 +1,4 @@
+
 import { Component, OnInit } from '@angular/core';
 import contactList from '../contacts';
 
@@ -16,9 +17,13 @@ export class ContactListComponent implements OnInit {
     this.contacts = contactList;
   }
 
-  addContact(){
+  addContact(form){
     console.log("Add contact has been called");
     // add contact to contacts list
+    if (form.valid) {
+      this.contacts.push(this.newContact);
+      this.newContact = '';
+    }
     // clear inputs
   }
 }
