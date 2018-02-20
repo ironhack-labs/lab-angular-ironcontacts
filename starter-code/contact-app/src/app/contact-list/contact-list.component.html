@@ -1,5 +1,4 @@
 <form (ngSubmit)="addContact(form)" #form="ngForm" novalidate>
- 
   <div class="field" [ngClass]="{'has-error': feedbackEnabled && nameField.errors}">
     <label>Name</label>
     <input type="text" name="name" [(ngModel)]="newContact.name" #nameField="ngModel" required minlength="6" [disabled]="processing"/>
@@ -8,7 +7,6 @@
       <p *ngIf="nameField.errors.minlength" class="validation">name is too short</p>
     </div>
   </div>
-
   <div class="field" [ngClass]="{'has-error': feedbackEnabled && emailField.errors}">
     <label>Email</label>
     <input type="text" name="email" [(ngModel)]="newContact.email" #emailField="ngModel" required [disabled]="processing"/>
@@ -16,7 +14,6 @@
       <p *ngIf="emailField.errors.required" class="validation">Email required</p>
     </div>
   </div>
-
   <div class="field" [ngClass]="{'has-error': feedbackEnabled && phoneField.errors}">
       <label>Phone Number</label>
       <input type="number" name="phone" [(ngModel)]="newContact.phone" #phoneField="ngModel" required [disabled]="processing"/>
@@ -24,7 +21,6 @@
         <p *ngIf="phoneField.errors.required" class="validation">Phone number required</p>
       </div>
     </div>
-
   <div class="field" [ngClass]="{'has-error': feedbackEnabled && imageField.errors}">
       <label>Image</label>
       <input type="text" name="phone" [(ngModel)]="newContact.image" #imageField="ngModel" required [disabled]="processing"/>
@@ -32,7 +28,6 @@
         <p *ngIf="imageField.errors.required" class="validation">Image required</p>
       </div>
     </div>
-
   <div class="field submit">
     <button type="submit" [disabled]="processing">Add contact</button>
     <div *ngIf="feedbackEnabled && form.invalid">
@@ -40,14 +35,13 @@
     </div>
   </div>
 </form>
-
 <ul>
   <li *ngFor="let contact of contacts">
-  <span>Name: {{contact.name}}</span>
-  <span>Email: {{contact.email}}</span>
-  <span>Phone: {{contact.phoneNumber}}</span>
-  <!-- <img src={{contact.image}}/> -->
-  <span>Image: {{contact.image}}</span>
-</li>
+    <span>Name: {{contact.name}}</span>
+    <span>Email: {{contact.email}}</span>
+    <span>Phone: {{contact.phoneNumber}}</span>
+    <img src={{contact.image}}/>
+    <!-- <span>Image: {{contact.image}}</span> -->
+  </li>
 </ul>
 
