@@ -1,11 +1,10 @@
-<ul>
-  <li *ngFor='let contact of contacts'>
-    <p>Name: {{ contact.name }}</p>
-    <p>Email: {{ contact.email }}</p>
-    <p>Phone Number: {{ contact.phoneNumber }}</p>
-    <img src='{{ contact.image }}'>
-  </li>
-</ul>
+
+<div class='container' *ngFor='let contact of contacts'>
+  <p>Name: {{ contact.name }}</p>
+  <p>Email: {{ contact.email }}</p>
+  <p>Phone Number: {{ contact.phoneNumber }}</p>
+  <img class='contact-picture' src='{{ contact.image }}'>
+</div>
 
 <form (ngSubmit)="addContact(form)" #form="ngForm" novalidate>
 
