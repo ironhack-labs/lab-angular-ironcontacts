@@ -21,6 +21,6 @@
 <h2>Contact-list:</h2>
 <div *ngFor="let item of contacts">
   <p>{{item.name}}-{{item.email}}-{{item.phoneNumber}}</p>
-
+<img [src]="item.image" width="75px">
   <hr>
 </div>
