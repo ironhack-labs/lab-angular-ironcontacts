@@ -8,9 +8,14 @@ import contactList from '../contacts';
 })
 export class ContactListComponent implements OnInit {
   contacts: Object[];
-  newContact: Object = {};
+  newContact: Object = {
+};
 
-  constructor() { }
+  constructor() { 
+ 
+
+  }
+
 
   ngOnInit() {
     this.contacts = contactList;
@@ -18,6 +23,8 @@ export class ContactListComponent implements OnInit {
 
   addContact(){
     console.log("Add contact has been called");
-     contactList.push(this.newContact)
+    
+    contactList.push(this.newContact);
+    this.newContact = {}
   }
 }
