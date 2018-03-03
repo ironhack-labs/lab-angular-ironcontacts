@@ -6,6 +6,7 @@ import contactList from '../contacts';
   templateUrl: './contact-list.component.html',
   styleUrls: ['./contact-list.component.css']
 })
+
 export class ContactListComponent implements OnInit {
   contacts: Object[];
   newContact: Object = {};
@@ -13,12 +14,12 @@ export class ContactListComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    this.contacts = contactList;
+    this.contacts = contactList.reverse();
   }
 
   addContact(){
     console.log("Add contact has been called");
-    // add contact to contacts list
-    // clear inputs
+    this.contacts.unshift(this.newContact);
+    this.newContact =  {};
   }
 }
