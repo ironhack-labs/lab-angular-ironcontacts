@@ -1,4 +1,7 @@
 <h1>
   {{title}}
 </h1>
+<ul>
+  <li *ngFor="let user of userContacts, let i = index">{{user.name}}, {{user.email}}, {{user.phoneNumber}},{{user.image}} ,<img src="{{user.image}}" alt=""></li>
+</ul>
 <app-contact-list></app-contact-list>
