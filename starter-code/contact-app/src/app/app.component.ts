@@ -7,7 +7,7 @@ import { contacts } from './contacts';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
-  title = 'app works!';
+  title = 'My lovely contacs';
   userContacts: Object[] = [];
   ngOnInit() {
     this.userContacts = contacts;
