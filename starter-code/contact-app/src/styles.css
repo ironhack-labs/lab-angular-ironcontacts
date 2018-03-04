@@ -1,1 +1,29 @@
 /* You can add global styles to this file, and also import other style files */
+
+.form-container {
+  height: 400px;
+  width: 300px;
+  border-radius: 10px;
+  background-color: #FFFFFF;
+  -webkit-box-shadow: 0 12px 20px 0 rgba(0, 0, 0, 0.1), 0 0 60px 0 rgba(0, 0, 0, 0.16);
+  box-shadow: 0 12px 20px 0 rgba(0, 0, 0, 0.1), 0 0 14px 0 rgba(0, 0, 0, 0.16);
+  margin: 0 auto;
+}
+
+.form-container div {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.form-container div input {
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid lightgray;
+  height: 20px;
+}
+
+.form-container button {
+  height: 25px;
+  background: red;
+  color: #fff;
+}
