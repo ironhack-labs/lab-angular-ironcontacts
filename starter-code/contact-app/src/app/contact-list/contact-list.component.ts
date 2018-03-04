@@ -13,12 +13,15 @@ export class ContactListComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    this.contacts = contactList;
+    this.contacts = contactList.reverse();
   }
 
-  addContact(){
-    console.log("Add contact has been called");
+  addContact() {
+    console.log(this.newContact);
+
     // add contact to contacts list
+    this.contacts.unshift(this.newContact);
     // clear inputs
+    
   }
 }
