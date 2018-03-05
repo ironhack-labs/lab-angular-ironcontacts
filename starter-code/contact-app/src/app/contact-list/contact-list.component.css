@@ -1,0 +1,19 @@
+.btn-form{
+  display: block;
+  margin: 0 auto;
+}
+
+.button-container{
+  width: 100%;
+  margin-bottom: 50px
+}
+
+.image-container{
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+img{
+  display: block;
+}
