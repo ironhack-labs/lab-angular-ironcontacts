@@ -1,0 +1,38 @@
+<hr>
+
+<div class="contacts">
+  <div *ngFor=" let contacts of contacts">
+    <h3> Name:  {{contacts.name}}</h3>
+    <h3> Email: {{contacts.email}}</h3>
+    <h3> Phone: {{contacts.phoneNumber}}</h3>
+    <img src="{{ contacts.image }}"/>
+  </div>
+</div>
+
+
+<hr>
+<br>
+
+<div>
+  <label class="text" for="contact-name">Name: </label>
+  <input class="input-style" type="text" [(ngModel)]="newContact.name">
+</div>
+    <br>
+<div>
+  <label class="text" for="contact-email">Email: </label>
+  <input class="input-style" type="text" [(ngModel)]="newContact.email">
+</div>
+    <br>
+<div>
+  <label class="text" for="contact-phone">Phone: </label>
+  <input class="input-style" type="text" [(ngModel)]="newContact.phoneNumber">
+</div>
+    <br>
+<div>
+  <label class="text" for="contact-image">Image: </label>
+  <input class="input-style" type="text" [(ngModel)]="newContact.image">
+</div>
+    <br><br>
+
+<button class="btn" (click)="addContact()"> Submit New Contact </button>
+<br><br>
