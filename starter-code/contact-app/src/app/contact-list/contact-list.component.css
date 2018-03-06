@@ -1,0 +1,11 @@
+img{
+  width: 200px;
+  height: 130px;
+}
+
+.single-contact{
+  width: 33%;
+  float: left;
+  text-align: center;
+  list-style-type: none;
+}
