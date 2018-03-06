@@ -17,8 +17,20 @@ export class ContactListComponent implements OnInit {
   }
 
   addContact(){
-    console.log("Add contact has been called");
-    // add contact to contacts list
-    // clear inputs
+    console.log(this.newContact);
+    this.contacts.push(this.newContact);
+    this.newContact = {};
   }
 }
+
+
+// <input type="text" [(ngModel)]="newContact.name">
+
+
+//   <input type="text" [(ngModel)]="newContact.email">
+
+
+//   <input type="text" [(ngModel)]="newContact.phoneNumber">
+
+
+//   <input type="text" [(ngModel)]="newContact.image">
