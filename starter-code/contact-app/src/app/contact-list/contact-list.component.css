@@ -9,3 +9,11 @@ img{
   text-align: center;
   list-style-type: none;
 }
+
+.clear-float{
+  clear: both;
+}
+
+input{
+  width: 300px;
+}
