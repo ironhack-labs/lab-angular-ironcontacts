@@ -1,0 +1,11 @@
+#single-contact {
+  border-style: solid;
+  border-width: 5px;
+  padding: 10px;
+  margin: 10px;
+}
+
+#submit-contact {
+  padding-bottom: 20px;
+  margin-left: 550px;
+}
