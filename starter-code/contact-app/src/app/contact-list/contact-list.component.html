@@ -1,18 +1,45 @@
-<div>
-  <label for="contact-name"></label>
-  <input type="text" [(ngModel)]="newContact.name">
-</div>
-<div>
-  <label for="contact-email"></label>
-  <input type="text" [(ngModel)]="newContact.email">
-</div>
-<div>
-  <label for="contact-phone"></label>
-  <input type="text" [(ngModel)]="newContact.phoneNumber">
-</div>
-<div>
-  <label for="contact-image"></label>
-  <input type="text" [(ngModel)]="newContact.image">
+<!-- Iteration #2 | Add New Contacts -->
+<div class="container">
+
+  <div class="contactcard">
+    <h3 class="contact"> Add a New Contact </h3>
+
+    <form>
+      <div class="form-group">
+        <label for="contact-name">Contact Name:</label>
+        <input class="form-control" type="text" [(ngModel)]="newContact.name" name="blah">
+      </div>
+
+      <div class="form-group">
+        <label for="contact-email">Contact Email:</label>
+        <input class="form-control" type="text" [(ngModel)]="newContact.email" name="blah2">
+      </div>
+
+      <div class="form-group">
+        <label for="contact-phone">Contact Phone:</label>
+        <input class="form-control" type="text" [(ngModel)]="newContact.phoneNumber" name="blah3">
+      </div>
+
+      <div class="form-group">
+        <label for="contact-image">Contact imageUrl:</label>
+        <input class="form-control" type="text" [(ngModel)]="newContact.image" name="blah4">
+      </div>
+
+      <button class="btn btn-success" (click)="addContact()">Submit New Contact</button>
+    </form>
+  </div>
+<!-- Iteration #1 -->
+
+<div class="row">
+  <h1>Contact List</h1>
+   <div class="col-md-4" *ngFor="let contact of contacts">
+    <img src="{{contact.image}}" class="img-thumbnail" alt="">
+    <div class="caption">
+      <h3> {{contact.name}}</h3>
+      <p> {{contact.email}}</p>
+      <p> {{contact.phoneNumber}}</p>
+    </div>
+  </div>
 </div>
 
-<button (click)="addContact">Submit New Contact</button>
+</div>
