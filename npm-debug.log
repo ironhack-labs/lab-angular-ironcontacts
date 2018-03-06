@@ -1,0 +1,151 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/Users/ludvigsvensson/.nvm/versions/node/v7.2.0/bin/node',
+1 verbose cli   '/Users/ludvigsvensson/.nvm/versions/node/v7.2.0/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'angular/cli' ]
+2 info using npm@3.10.9
+3 info using node@v7.2.0
+4 verbose config Skipping project config: /Users/ludvigsvensson/.npmrc. (matches userconfig)
+5 silly loadCurrentTree Starting
+6 silly install loadCurrentTree
+7 silly install readLocalPackageData
+8 silly fetchPackageMetaData angular/cli
+9 silly fetchOtherPackageData angular/cli
+10 silly cache add args [ 'angular/cli', null ]
+11 verbose cache add spec angular/cli
+12 silly cache add parsed spec Result {
+12 silly cache add   raw: 'angular/cli',
+12 silly cache add   scope: null,
+12 silly cache add   escapedName: null,
+12 silly cache add   name: null,
+12 silly cache add   rawSpec: 'angular/cli',
+12 silly cache add   spec: 'github:angular/cli',
+12 silly cache add   type: 'hosted',
+12 silly cache add   hosted:
+12 silly cache add    { type: 'github',
+12 silly cache add      ssh: 'git@github.com:angular/cli.git',
+12 silly cache add      sshUrl: 'git+ssh://git@github.com/angular/cli.git',
+12 silly cache add      httpsUrl: 'git+https://github.com/angular/cli.git',
+12 silly cache add      gitUrl: 'git://github.com/angular/cli.git',
+12 silly cache add      shortcut: 'github:angular/cli',
+12 silly cache add      directUrl: 'https://raw.githubusercontent.com/angular/cli/master/package.json' } }
+13 verbose addRemoteGit caching angular/cli
+14 verbose addRemoteGit angular/cli is a repository hosted by github
+15 silly tryGitProto attempting to clone git://github.com/angular/cli.git
+16 silly tryClone cloning angular/cli via git://github.com/angular/cli.git
+17 verbose tryClone git-github-com-angular-cli-git-abc2a622 not in flight; caching
+18 verbose correctMkdir /Users/ludvigsvensson/.npm/_git-remotes correctMkdir not in flight; initializing
+19 verbose makeDirectory /Users/ludvigsvensson/.npm/_git-remotes creation not in flight; initializing
+20 silly makeDirectory /Users/ludvigsvensson/.npm/_git-remotes uid: 501 gid: 20
+21 info git [ 'clone',
+21 info git   '--template=/Users/ludvigsvensson/.npm/_git-remotes/_templates',
+21 info git   '--mirror',
+21 info git   'git://github.com/angular/cli.git',
+21 info git   '/Users/ludvigsvensson/.npm/_git-remotes/git-github-com-angular-cli-git-abc2a622' ]
+22 verbose git clone --template=/Users/ludvigsvensson/.npm/_git-remotes/_templates --mirror git://github.com/angular/cli.git /Users/ludvigsvensson/.npm/_git-remotes/git-github-com-angular-cli-git-abc2a622: Cloning into bare repository '/Users/ludvigsvensson/.npm/_git-remotes/git-github-com-angular-cli-git-abc2a622'...
+22 verbose git clone --template=/Users/ludvigsvensson/.npm/_git-remotes/_templates --mirror git://github.com/angular/cli.git /Users/ludvigsvensson/.npm/_git-remotes/git-github-com-angular-cli-git-abc2a622: fatal: remote error:
+22 verbose git clone --template=/Users/ludvigsvensson/.npm/_git-remotes/_templates --mirror git://github.com/angular/cli.git /Users/ludvigsvensson/.npm/_git-remotes/git-github-com-angular-cli-git-abc2a622:   Repository not found.
+23 silly tryHTTPS attempting to clone git+https://github.com/angular/cli.git
+24 silly tryClone cloning angular/cli via git+https://github.com/angular/cli.git
+25 verbose tryClone git-https-github-com-angular-cli-git-7e325762 not in flight; caching
+26 verbose correctMkdir /Users/ludvigsvensson/.npm/_git-remotes correctMkdir not in flight; initializing
+27 info git [ 'clone',
+27 info git   '--template=/Users/ludvigsvensson/.npm/_git-remotes/_templates',
+27 info git   '--mirror',
+27 info git   'https://github.com/angular/cli.git',
+27 info git   '/Users/ludvigsvensson/.npm/_git-remotes/git-https-github-com-angular-cli-git-7e325762' ]
+28 verbose git clone --template=/Users/ludvigsvensson/.npm/_git-remotes/_templates --mirror https://github.com/angular/cli.git /Users/ludvigsvensson/.npm/_git-remotes/git-https-github-com-angular-cli-git-7e325762: Cloning into bare repository '/Users/ludvigsvensson/.npm/_git-remotes/git-https-github-com-angular-cli-git-7e325762'...
+28 verbose git clone --template=/Users/ludvigsvensson/.npm/_git-remotes/_templates --mirror https://github.com/angular/cli.git /Users/ludvigsvensson/.npm/_git-remotes/git-https-github-com-angular-cli-git-7e325762: remote: Repository not found.
+28 verbose git clone --template=/Users/ludvigsvensson/.npm/_git-remotes/_templates --mirror https://github.com/angular/cli.git /Users/ludvigsvensson/.npm/_git-remotes/git-https-github-com-angular-cli-git-7e325762: fatal: repository 'https://github.com/angular/cli.git/' not found
+29 silly trySSH attempting to clone git@github.com:angular/cli.git
+30 silly tryClone cloning angular/cli via git@github.com:angular/cli.git
+31 verbose tryClone git-github-com-angular-cli-git-05516032 not in flight; caching
+32 verbose correctMkdir /Users/ludvigsvensson/.npm/_git-remotes correctMkdir not in flight; initializing
+33 info git [ 'clone',
+33 info git   '--template=/Users/ludvigsvensson/.npm/_git-remotes/_templates',
+33 info git   '--mirror',
+33 info git   'git@github.com:angular/cli.git',
+33 info git   '/Users/ludvigsvensson/.npm/_git-remotes/git-github-com-angular-cli-git-05516032' ]
+34 error git clone --template=/Users/ludvigsvensson/.npm/_git-remotes/_templates --mirror git@github.com:angular/cli.git /Users/ludvigsvensson/.npm/_git-remotes/git-github-com-angular-cli-git-05516032: Cloning into bare repository '/Users/ludvigsvensson/.npm/_git-remotes/git-github-com-angular-cli-git-05516032'...
+34 error git clone --template=/Users/ludvigsvensson/.npm/_git-remotes/_templates --mirror git@github.com:angular/cli.git /Users/ludvigsvensson/.npm/_git-remotes/git-github-com-angular-cli-git-05516032: Warning: Permanently added 'github.com,192.30.253.112' (RSA) to the list of known hosts.
+34 error git clone --template=/Users/ludvigsvensson/.npm/_git-remotes/_templates --mirror git@github.com:angular/cli.git /Users/ludvigsvensson/.npm/_git-remotes/git-github-com-angular-cli-git-05516032: Permission denied (publickey).
+34 error git clone --template=/Users/ludvigsvensson/.npm/_git-remotes/_templates --mirror git@github.com:angular/cli.git /Users/ludvigsvensson/.npm/_git-remotes/git-github-com-angular-cli-git-05516032: fatal: Could not read from remote repository.
+34 error git clone --template=/Users/ludvigsvensson/.npm/_git-remotes/_templates --mirror git@github.com:angular/cli.git /Users/ludvigsvensson/.npm/_git-remotes/git-github-com-angular-cli-git-05516032:
+34 error git clone --template=/Users/ludvigsvensson/.npm/_git-remotes/_templates --mirror git@github.com:angular/cli.git /Users/ludvigsvensson/.npm/_git-remotes/git-github-com-angular-cli-git-05516032: Please make sure you have the correct access rights
+34 error git clone --template=/Users/ludvigsvensson/.npm/_git-remotes/_templates --mirror git@github.com:angular/cli.git /Users/ludvigsvensson/.npm/_git-remotes/git-github-com-angular-cli-git-05516032: and the repository exists.
+35 silly fetchPackageMetaData Error: Command failed: git clone --template=/Users/ludvigsvensson/.npm/_git-remotes/_templates --mirror git@github.com:angular/cli.git /Users/ludvigsvensson/.npm/_git-remotes/git-github-com-angular-cli-git-05516032
+35 silly fetchPackageMetaData Cloning into bare repository '/Users/ludvigsvensson/.npm/_git-remotes/git-github-com-angular-cli-git-05516032'...
+35 silly fetchPackageMetaData Warning: Permanently added 'github.com,192.30.253.112' (RSA) to the list of known hosts.
+35 silly fetchPackageMetaData Permission denied (publickey).
+35 silly fetchPackageMetaData fatal: Could not read from remote repository.
+35 silly fetchPackageMetaData
+35 silly fetchPackageMetaData Please make sure you have the correct access rights
+35 silly fetchPackageMetaData and the repository exists.
+35 silly fetchPackageMetaData
+35 silly fetchPackageMetaData     at ChildProcess.exithandler (child_process.js:211:12)
+35 silly fetchPackageMetaData     at emitTwo (events.js:106:13)
+35 silly fetchPackageMetaData     at ChildProcess.emit (events.js:191:7)
+35 silly fetchPackageMetaData     at maybeClose (internal/child_process.js:885:16)
+35 silly fetchPackageMetaData     at Socket.<anonymous> (internal/child_process.js:334:11)
+35 silly fetchPackageMetaData     at emitOne (events.js:96:13)
+35 silly fetchPackageMetaData     at Socket.emit (events.js:188:7)
+35 silly fetchPackageMetaData     at Pipe._handle.close [as _onclose] (net.js:501:12)
+35 silly fetchPackageMetaData  error for angular/cli { Error: Command failed: git clone --template=/Users/ludvigsvensson/.npm/_git-remotes/_templates --mirror git@github.com:angular/cli.git /Users/ludvigsvensson/.npm/_git-remotes/git-github-com-angular-cli-git-05516032
+35 silly fetchPackageMetaData Cloning into bare repository '/Users/ludvigsvensson/.npm/_git-remotes/git-github-com-angular-cli-git-05516032'...
+35 silly fetchPackageMetaData Warning: Permanently added 'github.com,192.30.253.112' (RSA) to the list of known hosts.
+35 silly fetchPackageMetaData Permission denied (publickey).
+35 silly fetchPackageMetaData fatal: Could not read from remote repository.
+35 silly fetchPackageMetaData
+35 silly fetchPackageMetaData Please make sure you have the correct access rights
+35 silly fetchPackageMetaData and the repository exists.
+35 silly fetchPackageMetaData
+35 silly fetchPackageMetaData     at ChildProcess.exithandler (child_process.js:211:12)
+35 silly fetchPackageMetaData     at emitTwo (events.js:106:13)
+35 silly fetchPackageMetaData     at ChildProcess.emit (events.js:191:7)
+35 silly fetchPackageMetaData     at maybeClose (internal/child_process.js:885:16)
+35 silly fetchPackageMetaData     at Socket.<anonymous> (internal/child_process.js:334:11)
+35 silly fetchPackageMetaData     at emitOne (events.js:96:13)
+35 silly fetchPackageMetaData     at Socket.emit (events.js:188:7)
+35 silly fetchPackageMetaData     at Pipe._handle.close [as _onclose] (net.js:501:12)
+35 silly fetchPackageMetaData   killed: false,
+35 silly fetchPackageMetaData   code: 128,
+35 silly fetchPackageMetaData   signal: null,
+35 silly fetchPackageMetaData   cmd: 'git clone --template=/Users/ludvigsvensson/.npm/_git-remotes/_templates --mirror git@github.com:angular/cli.git /Users/ludvigsvensson/.npm/_git-remotes/git-github-com-angular-cli-git-05516032' }
+36 silly rollbackFailedOptional Starting
+37 silly rollbackFailedOptional Finishing
+38 silly runTopLevelLifecycles Finishing
+39 silly install printInstalled
+40 verbose stack Error: Command failed: git clone --template=/Users/ludvigsvensson/.npm/_git-remotes/_templates --mirror git@github.com:angular/cli.git /Users/ludvigsvensson/.npm/_git-remotes/git-github-com-angular-cli-git-05516032
+40 verbose stack Cloning into bare repository '/Users/ludvigsvensson/.npm/_git-remotes/git-github-com-angular-cli-git-05516032'...
+40 verbose stack Warning: Permanently added 'github.com,192.30.253.112' (RSA) to the list of known hosts.
+40 verbose stack Permission denied (publickey).
+40 verbose stack fatal: Could not read from remote repository.
+40 verbose stack
+40 verbose stack Please make sure you have the correct access rights
+40 verbose stack and the repository exists.
+40 verbose stack
+40 verbose stack     at ChildProcess.exithandler (child_process.js:211:12)
+40 verbose stack     at emitTwo (events.js:106:13)
+40 verbose stack     at ChildProcess.emit (events.js:191:7)
+40 verbose stack     at maybeClose (internal/child_process.js:885:16)
+40 verbose stack     at Socket.<anonymous> (internal/child_process.js:334:11)
+40 verbose stack     at emitOne (events.js:96:13)
+40 verbose stack     at Socket.emit (events.js:188:7)
+40 verbose stack     at Pipe._handle.close [as _onclose] (net.js:501:12)
+41 verbose cwd /Users/ludvigsvensson/Desktop/Ironhack/PairProgrammingExercies/lab-angular-ironcontacts
+42 error Darwin 16.7.0
+43 error argv "/Users/ludvigsvensson/.nvm/versions/node/v7.2.0/bin/node" "/Users/ludvigsvensson/.nvm/versions/node/v7.2.0/bin/npm" "install" "angular/cli"
+44 error node v7.2.0
+45 error npm  v3.10.9
+46 error code 128
+47 error Command failed: git clone --template=/Users/ludvigsvensson/.npm/_git-remotes/_templates --mirror git@github.com:angular/cli.git /Users/ludvigsvensson/.npm/_git-remotes/git-github-com-angular-cli-git-05516032
+47 error Cloning into bare repository '/Users/ludvigsvensson/.npm/_git-remotes/git-github-com-angular-cli-git-05516032'...
+47 error Warning: Permanently added 'github.com,192.30.253.112' (RSA) to the list of known hosts.
+47 error Permission denied (publickey).
+47 error fatal: Could not read from remote repository.
+47 error
+47 error Please make sure you have the correct access rights
+47 error and the repository exists.
+48 error If you need help, you may report this error at:
+48 error     <https://github.com/npm/npm/issues>
+49 verbose exit [ 1, true ]
