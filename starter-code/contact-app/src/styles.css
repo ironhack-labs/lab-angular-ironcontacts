@@ -1,1 +1,30 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+  background-color: #777;
+  text-align: center;
+}
+
+img {
+  width: 200px;
+  height: 200px;
+}
+
+.container-form {
+  width: 50%;
+}
+
+.btn {
+  background-color: #777;
+  color: black;
+  border: 1px solid #2f2f2f;
+}
+
+.btn:hover {
+  background-color: #2f2f2f;
+  color: #777;
+  border: 1px solid #2f2f2f;
+}
