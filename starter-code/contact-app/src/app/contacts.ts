@@ -1,4 +1,4 @@
-const contacts: Object[] = [
+export const contactList: Object[] = [
   {
     name: "Shakira Robel",
     email: "Ashley_Ritchie@hotmail.com",
@@ -168,4 +168,4 @@ const contacts: Object[] = [
   }
 ]
 
-export default contacts;
+
