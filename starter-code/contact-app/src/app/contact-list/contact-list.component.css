@@ -1,0 +1,66 @@
+.main{
+  margin: 0 auto;
+}
+
+.contacts{
+  width: 100vw;
+}
+
+.contact{
+  width: 40vw;
+  float: left;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  border: 2px solid black;
+  box-shadow:10px 10px 8px #888888;
+  box-sizing: border-box;
+  margin: 3vw;
+}
+
+.name, .email, .phone{
+  padding: 1vw;
+  font-size: 1.2em;
+}
+
+.contact .image{
+  text-align: center;
+  width: 90%;
+}
+
+.clearfix{
+  clear: both;
+}
+
+.form{
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  border: 2px solid black;
+  box-shadow:10px 10px 8px #888888;
+}
+
+.form h1{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 3em;
+}
+
+.form input{
+  width: 75%;
+  height: 5vh;
+  margin: 1vh;
+  font-size: 1.3em;
+  border-radius: 5px;
+}
+
+.form button{
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 5px;
+  margin: 2vh;
+
+}
