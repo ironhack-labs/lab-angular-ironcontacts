@@ -1,0 +1,10 @@
+h1 {
+  text-align: center;
+  color: #5E616A;
+  font-family: sans-serif;
+  margin: 40px;
+}
+
+body {
+  background-image: url("/assets/thread.png");
+}
