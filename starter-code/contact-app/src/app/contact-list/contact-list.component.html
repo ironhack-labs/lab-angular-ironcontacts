@@ -5,7 +5,7 @@
       {{ contact.name }} <br>
       {{ contact.email }} <br>
       {{ contact.phoneNumber }} <br>
-      <img src="{{ contact.image }}" alt="{{ contact.name }}">
+      <img [src]="contact.image" alt="{{ contact.name }}">
     </li>
   </ul>
 </div>
