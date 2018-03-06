@@ -1,0 +1,25 @@
+img {
+  width: 100px;
+}
+
+
+.section {
+  margin: 0 auto;
+  background-color: #D3D3D3;
+  color: #666;
+  padding: 50px;
+  width: 40%;
+  border-radius: 20px;
+}
+
+input {
+  width: 100%;
+  border-radius: 20px;
+  padding: 10px;
+  font-family: helvetica;
+}
+
+.form {
+  padding-top: 40px;
+  font-family: helvetica;
+}

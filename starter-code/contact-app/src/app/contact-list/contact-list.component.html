@@ -1,18 +1,42 @@
-<div>
-  <label for="contact-name"></label>
+<body class="page">
+
+  <div class="section">
+<button class="btn btn-primary" (click)="displayAll()">Show All Contacts</button>
+<div [hidden]="!showStatus" *ngFor="let oneContact of contacts">
+  <h3>{{ oneContact.name }}</h3>
+  <p> {{ oneContact.email }}</p>
+  <p> {{ oneContact.phoneNumber }} </p>
+  <img [src]="oneContact.image">
+</div>
+
+
+
+<div class="form">
+  <label for="contact-name"> Name </label>
   <input type="text" [(ngModel)]="newContact.name">
 </div>
 <div>
-  <label for="contact-email"></label>
+  <label for="contact-email"> Email </label>
   <input type="text" [(ngModel)]="newContact.email">
 </div>
 <div>
-  <label for="contact-phone"></label>
+  <label for="contact-phone"> Phone Number </label>
   <input type="text" [(ngModel)]="newContact.phoneNumber">
 </div>
 <div>
-  <label for="contact-image"></label>
+  <label for="contact-image"> Image URL </label>
   <input type="text" [(ngModel)]="newContact.image">
 </div>
 
-<button (click)="addContact">Submit New Contact</button>
+<button (click)="addContact()">Submit New Contact</button>
+</div>
+</body>
+<!-- <div class="contact-preview">
+  <h4> {{ newContact.name }} </h4>
+
+  <p> {{ newContact.email }}</p>
+
+  <p> {{ newContact.phoneNumber }}</p>
+
+  <img [src]="newContact.image">
+</div> -->
