@@ -1,4 +1,24 @@
-<h1>
-  {{title}}
-</h1>
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">{{title}}</a>
+    </div>
+  </div>
+</nav>
 <app-contact-list></app-contact-list>
+
+<div class="cards-container">
+  <div class="col-xs-6 col-sm-4 col-lg-6" *ngFor="let user of userContacts, let i = index" style="width: 20rem;">
+    <div class="">
+      <img class="card-img-top" src="{{user.image}}" alt="Card image cap">
+    </div>
+    <div class="card-block">
+      <h4 class="card-title">{{user.name}}</h4>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">{{user.email}}</li>
+      <li class="list-group-item">{{user.phoneNumber}}</li>
+    </ul>
+  </div>
+  <hr>
+</div>
