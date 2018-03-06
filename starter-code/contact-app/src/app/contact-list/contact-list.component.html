@@ -1,18 +1,51 @@
-<div>
-  <label for="contact-name"></label>
-  <input type="text" [(ngModel)]="newContact.name">
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 form">
+      <div>
+        <label for="contact-name">Name:</label>
+        <br>
+        <input class="form-control" type="text" [(ngModel)]="newContact.name">
+      </div>
+      <div>
+        <label for="contact-email">Email:</label>
+        <br>
+        <input class="form-control" type="text" [(ngModel)]="newContact.email">
+      </div>
+      <div>
+        <label for="contact-phone">Phone Number:</label>
+        <br>
+        <input class="form-control" type="text" [(ngModel)]="newContact.phoneNumber">
+      </div>
+      <div>
+        <label for="contact-image">Image URL:</label>
+        <br>
+        <input class="form-control" type="text" [(ngModel)]="newContact.image">
+      </div>
+      <br>
+      <button class="btn btn-success" (click)="addContact()">Submit New Contact</button>
+    </div>
+    <div class="col-md-6">
+      <ul class="contact-list">
+        <li *ngFor="let contact of contacts">
+          <div class="row">
+            <div class="col-md-8">
+              <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+              <span>{{contact.name}}</span>
+              <br>
+              <span class="glyphicon glyphicon-send" aria-hidden="true"></span>
+              <span>{{contact.email}}</span>
+              <br>
+              <span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>
+              <span>{{contact.phoneNumber}}</span>
+              <br>
+            </div>
+            <div class="col-md-4">
+            		 <img class="contact-image img-circle" src="{{contact.image}}" alt="contact image">           
+            </div>
+          </div>
+          <hr>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>
-<div>
-  <label for="contact-email"></label>
-  <input type="text" [(ngModel)]="newContact.email">
-</div>
-<div>
-  <label for="contact-phone"></label>
-  <input type="text" [(ngModel)]="newContact.phoneNumber">
-</div>
-<div>
-  <label for="contact-image"></label>
-  <input type="text" [(ngModel)]="newContact.image">
-</div>
-
-<button (click)="addContact">Submit New Contact</button>
