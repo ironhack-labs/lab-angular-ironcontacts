@@ -1,4 +1,18 @@
-<h1>
-  {{title}}
-</h1>
+<body>
+<h1> {{ title }}</h1>
+
+<section class="container">
+<section class="inner">
+<div *ngFor="let contact of fakeContacts">
+  <p>{{contact.name}}</p>
+  <p>{{contact.email}}</p>
+  <p>{{contact.phoneNumber}}</p>
+  <img src="{{contact.image}}">
+</div>
+
+<hr>
+
 <app-contact-list></app-contact-list>
+</section>
+</section>
+</body>

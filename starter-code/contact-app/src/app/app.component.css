@@ -1,0 +1,28 @@
+body {
+  background: rgba(120,120,40,.5);
+}
+
+h1 {
+  text-align: center;
+}
+div {
+  display: inline-block;
+  width: 25%;
+  background-color: rgba(255,180,225,.9);
+  margin: 5px;
+  border-radius: 10px;
+
+}
+
+img {
+  width: 50%;
+  padding: 10px;
+}
+
+.container {
+  text-align: center;
+}
+
+.inner {
+  display: inline;
+}
