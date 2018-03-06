@@ -1,18 +1,30 @@
-<div>
-  <label for="contact-name"></label>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.css" />
+<div class="form-input">
+  <label for="contact-name">Name</label>
   <input type="text" [(ngModel)]="newContact.name">
 </div>
-<div>
-  <label for="contact-email"></label>
+<div class="form-input">
+  <label for="contact-email">Email</label>
   <input type="text" [(ngModel)]="newContact.email">
 </div>
-<div>
-  <label for="contact-phone"></label>
+<div class="form-input">
+  <label for="contact-phone">Phone Number</label>
   <input type="text" [(ngModel)]="newContact.phoneNumber">
 </div>
-<div>
-  <label for="contact-image"></label>
+<div class="form-input">
+  <label for="contact-image">Image</label>
   <input type="text" [(ngModel)]="newContact.image">
 </div>
 
-<button (click)="addContact">Submit New Contact</button>
+<button class="button" (click)="addContact()">Submit New Contact</button>
+<hr>
+<div class="contact-container">
+  <ul>
+    <li class="card-panel contact-profile" *ngFor="let contact of contacts">
+      <h4>{{contact.name}}</h4>
+      <span>{{contact.email}}</span><br/>
+      <span>{{contact.phoneNumber}}</span> <br/>
+      <img [src]='contact.image'/>
+    </li>
+  </ul>
+</div>
