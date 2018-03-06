@@ -1,4 +1,18 @@
 <h1>
   {{title}}
 </h1>
+<div>
+  <table>
+    <th>Name</th>
+    <th>Email</th>
+    <th>Phone</th>
+    <th>Image</th>
+    <tr *ngFor="let contact of contacts">
+      <td>{{ contact.name }}</td>
+      <td>{{ contact.email }}</td>
+      <td>{{ contact.phoneNumber }}</td>
+      <td><img [src]="contact.image"></td>
+    </tr>
+  </table>
+</div>
 <app-contact-list></app-contact-list>
