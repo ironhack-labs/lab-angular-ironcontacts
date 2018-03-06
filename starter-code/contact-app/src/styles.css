@@ -1,1 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+  text-align: center;
+}
+
+img {
+  width: 100px;
+}
+
+.form {
+  width: 20%;
+  margin: 0 auto;
+  background-color: tan;
+  padding: 10px 0;
+  border-radius: 5px;
+}
