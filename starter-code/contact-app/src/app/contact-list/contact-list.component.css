@@ -1,0 +1,30 @@
+.form-input{
+    width: 70%;
+    margin: 10px auto;
+}
+
+.button{
+    width: 15%;
+    margin: 0 42% 30px 42%;
+}
+
+.contact-container ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.contact-profile{
+    width: 30%;
+    text-align: center;
+}
+
+.contact-profile img{
+    width: 100%;
+}
+
+hr{
+    width: 80%;
+    margin: 0 auto;
+    border-color: rgb(32, 39, 133);
+}
