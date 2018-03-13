@@ -1,0 +1,12 @@
+.contacts {
+  margin: 0 -25px 0 auto;
+  width: 80%;
+}
+
+.contact-item {
+  list-style-type: none;
+  float: left;
+  width: 200px;
+  margin-right: 25px;
+  margin-top: 25px;
+}
