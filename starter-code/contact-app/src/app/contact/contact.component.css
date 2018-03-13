@@ -1,0 +1,47 @@
+.contact {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #dad8d8;
+  border-radius: 10px;
+}
+.contact-image {
+  height: 116px;
+  width: 110px;
+}
+.contact-image > img {
+  padding: 5px;
+  max-width: 100px;
+  max-height: 100%;
+  border-radius:50%;
+}
+.contact-image > img:hover {
+  background: -webkit-linear-gradient(left top, crimson 0%, #f90 100%);
+}
+.contact-info {
+  padding: 10px;
+  width: 150px;
+  height: 80px;
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: 400;
+  word-wrap: break-word;
+}
+.contact-name {
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: bold;
+  background: -webkit-linear-gradient(bottom left, crimson 0%, #f90 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.delete-contact .hidden {
+  visibility: hidden;
+}
+.delete-contact:hover .hidden {
+  visibility: visible;
+  color: gray;
+}
