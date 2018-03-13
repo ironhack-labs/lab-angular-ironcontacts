@@ -1,0 +1,14 @@
+img{
+  width: 100px;
+  height: 100px;
+}
+
+li{
+  list-style: none;
+}
+
+.contact{
+  float: left;
+  width: 350px;
+  height: 300px;
+}
