@@ -5,11 +5,13 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { ContactListComponent } from './contact-list/contact-list.component';
+import { ContactItemComponent } from './components/contact-item/contact-item.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ContactListComponent
+    ContactListComponent,
+    ContactItemComponent
   ],
   imports: [
     BrowserModule,
