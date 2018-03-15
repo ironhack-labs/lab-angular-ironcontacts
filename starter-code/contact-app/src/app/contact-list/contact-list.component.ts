@@ -1,13 +1,14 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import contactList from '../contacts';
+import { empty } from 'rxjs/Observer';
 
 @Component({
   selector: 'app-contact-list',
   templateUrl: './contact-list.component.html',
-  styleUrls: ['./contact-list.component.css']
+  styleUrls: ['../app.component.css']
 })
 export class ContactListComponent implements OnInit {
-  contacts: Object[];
+  contacts: any[];
   newContact: Object = {};
 
   constructor() { }
@@ -16,9 +17,17 @@ export class ContactListComponent implements OnInit {
     this.contacts = contactList;
   }
 
-  addContact(){
-    console.log("Add contact has been called");
-    // add contact to contacts list
-    // clear inputs
+  removeContact(name) {
+    this.contacts = this.contacts.filter(
+      (contact) => contact.name !== name
+    );
+    console.log("father", this.contacts);
   }
-}
+
+
+  addContact() {
+    console.log("Add contact has been called");
+    this.contacts.push(this.newContact);
+    this.newContact = {};
+  }
+};
