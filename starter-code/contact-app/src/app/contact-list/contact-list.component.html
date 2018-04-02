@@ -1,38 +1,37 @@
 <body>
-  
+  <section>
+    <div>
+      <label for="contact-name">Your name</label>
+      <input type="text" [(ngModel)]="newContact.name">
+    </div>
+    <div>
+      <label for="contact-email">Your email</label>
+      <input type="text" [(ngModel)]="newContact.email">
+    </div>
+    <div>
+      <label for="contact-phone">Phone number</label>
+      <input type="text" [(ngModel)]="newContact.phoneNumber">
+    </div>
+    <div>
+      <label for="contact-image">Link Image</label>
+      <input type="text" [(ngModel)]="newContact.image">
+    </div>
 
-<section> 
-<div>
-  <label for="contact-name">Your name</label>
-  <input type="text" [(ngModel)]="newContact.name">
-</div>
-<div>
-  <label for="contact-email">Your email</label>
-  <input type="text" [(ngModel)]="newContact.email">
-</div>
-<div>
-  <label for="contact-phone">Phone number</label>
-  <input type="text" [(ngModel)]="newContact.phoneNumber">
-</div>
-<div>
-  <label for="contact-image">Link Image</label>
-  <input type="text" [(ngModel)]="newContact.image">
-</div>
+    <button (click)="addContact()">Submit New Contact</button>
+  </section>
 
-<button (click)="addContact()">Submit New Contact</button>
-</section>
-<ul *ngFor="let contact of contacts">
+  <ul *ngFor="let contact of contacts">
     <li>
-        {{contact.name}}  
+      {{contact.name}}
     </li>
     <li>
-        {{contact.phoneNumber}} 
+      {{contact.phoneNumber}}
     </li>
     <li>
-        {{contact.email}}
+      {{contact.email}}
     </li>
-     <img src="{{contact.image}}" alt="" height="100px; width:100px">
-    <li>       
-      </li>
+    <img src="{{contact.image}}" alt="" height="100px; width:100px">
+    <li>
+    </li>
   </ul>
 </body>
