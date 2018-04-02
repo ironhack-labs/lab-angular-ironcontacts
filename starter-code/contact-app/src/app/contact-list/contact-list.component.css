@@ -3,6 +3,20 @@ body{
 }
 
 section{
-  border: 1px solid red;
+  border: 1px solid white;
   padding: 30px;
+  background-color: skyblue;
+}
+
+div > label, input{
+  margin: 5px;
+}
+
+button{
+  background-color: blue;
+  color: white;
+}
+
+ul > li{
+  list-style: none;
 }
