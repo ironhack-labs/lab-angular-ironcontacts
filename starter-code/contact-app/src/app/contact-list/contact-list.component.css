@@ -1,5 +1,6 @@
 body{
   padding: 0 25em;
+  margin: 0;
 }
 
 section{
@@ -15,9 +16,10 @@ div > label, input{
 button{
   background-color: blue;
   color: white;
+  padding: 5px;
+  margin-top: 20px;
 }
 
 ul > li{
   list-style: none;
 }
-
