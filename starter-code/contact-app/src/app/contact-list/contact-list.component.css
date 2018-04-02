@@ -1,0 +1,25 @@
+body{
+  padding: 0 25em;
+  margin: 0;
+}
+
+section{
+  border: 1px solid white;
+  padding: 30px;
+  background-color: skyblue;
+}
+
+div > label, input{
+  margin: 5px;
+}
+
+button{
+  background-color: blue;
+  color: white;
+  padding: 5px;
+  margin-top: 20px;
+}
+
+ul > li{
+  list-style: none;
+}
