@@ -1,18 +1,29 @@
 <div>
-  <label for="contact-name"></label>
+  <label for="contact-name">Name</label>
   <input type="text" [(ngModel)]="newContact.name">
 </div>
 <div>
-  <label for="contact-email"></label>
+  <label for="contact-email">Emaik</label>
   <input type="text" [(ngModel)]="newContact.email">
 </div>
 <div>
-  <label for="contact-phone"></label>
+  <label for="contact-phone">Phone</label>
   <input type="text" [(ngModel)]="newContact.phoneNumber">
 </div>
 <div>
-  <label for="contact-image"></label>
+  <label for="contact-image">Image URL</label>
   <input type="text" [(ngModel)]="newContact.image">
 </div>
 
-<button (click)="addContact">Submit New Contact</button>
+<button (click)="addContact(newContact)">Submit New Contact</button>
+
+<div class="container">
+  <div *ngFor="let contact of contacts" class="contact-card">
+    <p><strong>Name:</strong> {{contact.name}}</p>
+    <img [src]="contact.image" width="200px">
+    <p><strong>Email:</strong> {{contact.email}}</p>
+    <p><strong>Phone:</strong> {{contact.phoneNumber}}</p>
+  </div>
+</div>
+
+
