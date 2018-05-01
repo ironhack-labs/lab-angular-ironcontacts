@@ -1,18 +1,29 @@
-<div>
-  <label for="contact-name"></label>
-  <input type="text" [(ngModel)]="newContact.name">
+<div class="list__container">
+  <div class="small__list flex">
+    <h1>W7-D2 Pair</h1>
+    <div>
+      <label for="contact-name">Name:</label>
+      <input type="text" [(ngModel)]="newContact.name">
+    </div>
+    <div>
+      <label for="contact-email">Email:</label>
+      <input type="text" [(ngModel)]="newContact.email">
+    </div>
+    <div>
+      <label for="contact-phone">Phone:</label>
+      <input type="text" [(ngModel)]="newContact.phoneNumber">
+    </div>
+    <div>
+      <label for="contact-image">Image:</label>
+      <input type="text" [(ngModel)]="newContact.image">
+    </div>
+    <button (click)="addContact()">Submit New Contact</button>
+  </div>
+  
+  <div class="big__list flex"*ngFor="let pepe of contacts">
+    <p>{{pepe.name}}</p>
+    <p>{{pepe.phoneNumber}}</p>
+    <p>{{pepe.email}}</p>
+    <img src="{{pepe.image}}" alt="">
+  </div>
 </div>
-<div>
-  <label for="contact-email"></label>
-  <input type="text" [(ngModel)]="newContact.email">
-</div>
-<div>
-  <label for="contact-phone"></label>
-  <input type="text" [(ngModel)]="newContact.phoneNumber">
-</div>
-<div>
-  <label for="contact-image"></label>
-  <input type="text" [(ngModel)]="newContact.image">
-</div>
-
-<button (click)="addContact">Submit New Contact</button>
