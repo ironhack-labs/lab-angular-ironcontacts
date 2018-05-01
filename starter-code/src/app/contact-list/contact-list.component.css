@@ -1,0 +1,29 @@
+#input-wrapper{
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+input {
+  width: 100%;
+  text-align: center;
+}
+
+#contact-wrapper img {
+  width: 100%;
+}
+
+#contact-wrapper{
+  width: 80vw;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  text-align: center;
+}
+
+.contact-card {
+  width: 20%;
+  margin: 5%;
+}
