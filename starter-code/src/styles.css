@@ -1,1 +1,93 @@
 /* You can add global styles to this file, and also import other style files */
+/* ---- reset ---- */
+html {
+  box-sizing: border-box;
+  height: 100%;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body {
+  margin: 0;
+  padding: 0;
+  padding-top: 10px;
+  height: 100%;
+}
+/* ---- typography ---- */
+body {
+  color: #111;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 147%;
+}
+h1 {
+  margin: 24px 0 12px;
+  font-size: 28px;
+  text-align: center;
+}
+h2 {
+  margin: 18px 0 12px;
+  font-size: 24px;
+}
+h3 {
+  margin: 12px 0 12px;
+  font-size: 20px;
+}
+h4 {
+  font-weight: lighter;
+  line-height: 80%;
+}
+p {
+  margin: 0 0 12px;
+}
+/* ---- layout ---- */
+body {
+  background: lightgray;
+  color: rgb(30, 30, 30);
+}
+.site-main {
+  flex-grow: 1;
+}
+#site-header {
+  padding: 30px 0;
+  color: #ffc300;
+  background: #fff;
+  background-size: cover;
+}
+.logo h1{
+  font-size: 45px;
+  color: #27afdc;
+  text-shadow: 1px 1px 0  #111;
+}
+#site-header form{
+  display: inline-block;
+}
+button {
+  background-color: #27afdc;
+  border-radius: 10px;
+  margin-bottom: 2%;
+  padding: 10px 16px;
+  color: #fff;
+}
+/* ------------------Homepage style----------------- */
+.home-info {
+  text-align: center;
+}
+.home-image img{
+  height: 50vh;
+  border-radius: 10px;
+}
+#site-footer {
+  color: #ffc300;
+  background: #fff;
+  background-size: cover;
+  padding: 30px 0;
+}
+.container {
+  margin: 0 20px;
+}
+.section {
+  margin-bottom: 20px;
+  padding-top: 20px;
+}
+/*------------------ /dogs and mydogs style ----------------*/

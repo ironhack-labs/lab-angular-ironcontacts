@@ -1,0 +1,32 @@
+.parent {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  /* align-content: flex-start; */
+  align-items: center;
+}
+.child {
+  order: 0;
+  flex: 0 1 auto;
+  align-self: auto;
+  padding: 15px;
+  margin-bottom: 20px;
+  line-height: 100%;
+  background-color: #27afdc;
+  border-radius: 10px;
+  width:33%;
+  min-width: 200px;
+  position: relative;
+}
+
+.child img {
+  border-radius: 10px;
+}
+input {
+  margin-bottom: 10px;
+}
+
+.input {
+  text-align: center;
+}
