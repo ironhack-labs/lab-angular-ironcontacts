@@ -1,3 +1,11 @@
+<div *ngFor="let contact of contacts, let i = index">
+<p>{{contact.name}}</p>
+<p>{{contact.email}}</p>
+<p>{{contact.phoneNumber}}</p>
+<p>{{contact.image}}</p>
+</div>
+
+
 <div>
   <label for="contact-name"></label>
   <input type="text" [(ngModel)]="newContact.name">
