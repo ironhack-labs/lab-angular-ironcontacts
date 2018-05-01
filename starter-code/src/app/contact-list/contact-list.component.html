@@ -1,3 +1,13 @@
+<div *ngFor="let contact of contacts" [ngClass]="{greyBack: true}">
+<p>****************************</p>
+<p [ngClass]="{bold: true}">{{contact.name}}</p>
+<p>{{contact.email}}</p>
+<p>{{contact.phoneNumber}}</p>
+<p>{{contact.image}}</p>
+<p>****************************</p>
+</div>
+
+
 <div>
   <label for="contact-name"></label>
   <input type="text" [(ngModel)]="newContact.name">
@@ -15,4 +25,4 @@
   <input type="text" [(ngModel)]="newContact.image">
 </div>
 
-<button (click)="addContact">Submit New Contact</button>
+<button (click)="addContact(newContact)">Submit New Contact</button>
