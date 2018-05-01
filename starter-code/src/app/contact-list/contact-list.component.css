@@ -1,0 +1,27 @@
+.contact {
+  flex: 1 0 auto;
+  padding: 10px;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.img {
+  width: 200px
+}
+
+.form {
+  border: solid;
+  border-color: red;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.form-center {
+  width: 50%;
+  margin: 0 auto;
+}
