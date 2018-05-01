@@ -1,0 +1,14 @@
+.padre{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.hijo{
+  width: 30%;
+  background: gray;
+  margin: 2% 2px;
+  text-align: center;
+}
+.input-padre{
+  margin: 2%;
+}
