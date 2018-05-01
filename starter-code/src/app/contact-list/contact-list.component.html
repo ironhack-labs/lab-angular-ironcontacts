@@ -1,16 +1,17 @@
-<div *ngFor="let contact of contacts">
+<div *ngFor="let contact of contacts" [ngClass]="{borderer: true}">
 
+  
   <h2>{{contact.name}}</h2>
   <p>{{contact.email}}</p>
   <p>{{contact.phoneNumber}}</p>
   <!-- <img src="{{contact.image}}"/> -->
 
-  </div>
+</div>
 
 <form>
   <div>
     <label for="contact-name"></label>
-    <input type="text" [(ngModel)]="newContact.name" name ="name">
+    <input type="text" [(ngModel)]="newContact.name" name="name">
   </div>
   <div>
     <label for="contact-email"></label>

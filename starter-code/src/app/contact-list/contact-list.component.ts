@@ -17,6 +17,7 @@ export class ContactListComponent implements OnInit {
   }
 
   addContact() {
+    this.newContact = { border: true };
     this.contacts.push(this.newContact);
   }
 }
