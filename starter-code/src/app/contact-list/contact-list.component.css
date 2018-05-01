@@ -1,0 +1,16 @@
+.contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.contact div{
+    width: 30%
+}
+.im-user{
+    max-width: 100%;
+}
+ img{
+    width: 30%;
+    height: 150px;
+    margin: 2% 7%;
+} 
