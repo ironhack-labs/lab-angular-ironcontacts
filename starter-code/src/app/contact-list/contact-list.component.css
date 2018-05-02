@@ -1,0 +1,20 @@
+.list{
+    width: 20vw;
+    border: 1px solid black;
+    margin: 5vh
+}
+
+
+.container img{
+    width: 20vw;
+    height: 20vh;
+}
+
+.list .email .phone{
+    margin: 0 1vw; 
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
