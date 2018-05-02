@@ -1,0 +1,18 @@
+.contacts ul {
+  border: 1px solid black;
+  float: left;
+  list-style: none;
+  background-color: burlywood;
+}
+
+.list-component {
+  text-align: center;
+}
+
+li {
+  border: 1px solid black;
+  background-color: peru;
+  text-align: center;
+  float: left;
+  width: 250px;
+}
