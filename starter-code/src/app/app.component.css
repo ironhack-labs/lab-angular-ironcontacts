@@ -1,0 +1,15 @@
+h1 {
+    text-align: center;
+    width:100%;
+    background: brown;
+    color:#fff;
+    position: fixed;
+    padding-top:15px;
+    padding-bottom:15px;
+}
+
+.container {
+    width:80%;
+    margin:0 auto;
+    padding-top:100px;
+}
