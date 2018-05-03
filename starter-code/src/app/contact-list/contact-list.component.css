@@ -1,0 +1,28 @@
+.form, .list {
+float: left;
+}
+
+label {
+  width: 25vw;
+  display: inline-block;  
+}
+
+button {
+    text-align: center;
+}
+
+.center-button {
+    text-align: center;
+}
+
+.list li {
+    border: 1px solid white;
+    list-style-type: none;
+    padding: 5em 2.5em; 
+    margin: 3em 2em
+}
+
+.form {
+    border: 1px solid white;
+    padding: 2em;
+}
