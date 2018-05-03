@@ -1,0 +1,26 @@
+.contact-frame{
+    width: 33%;
+    float: left;
+    list-style-type: none;
+}
+.contact-frame img{
+    height: 250px;
+    margin: 0 auto;
+    display:block;
+}
+
+.contact-frame * {
+    text-align: center;
+}
+
+.contact-form{
+    text-align: center
+}
+
+h2{
+    text-decoration: underline;
+}
+
+h3{
+    color: gray;
+}
