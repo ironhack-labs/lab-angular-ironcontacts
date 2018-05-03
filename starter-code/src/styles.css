@@ -1,1 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
+.card{
+  float: left;
+  margin: 20px
+}
+
+form{
+  width: 500px;
+  margin-left: 300px;
+}

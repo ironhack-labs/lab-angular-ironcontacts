@@ -1,18 +1,41 @@
-<div>
-  <label for="contact-name"></label>
-  <input type="text" [(ngModel)]="newContact.name">
-</div>
-<div>
-  <label for="contact-email"></label>
-  <input type="text" [(ngModel)]="newContact.email">
-</div>
-<div>
-  <label for="contact-phone"></label>
-  <input type="text" [(ngModel)]="newContact.phoneNumber">
-</div>
-<div>
-  <label for="contact-image"></label>
-  <input type="text" [(ngModel)]="newContact.image">
+<div class="container">
+  <div class="row">
+    <div class="card" style="width: 200px;" *ngFor="let oneContact of contacts">
+      <img class="card-img-top" src={{oneContact.image}} alt="Card image cap" width="200px">
+      <div class="card-body">
+        <h2 class="card-title">{{oneContact.name}}</h2>
+        <p class="card-text">{{oneContact.email}}</p>
+        <p class="card-text">{{oneContact.phoneNumber}}</p>
+      </div>
+    </div>
+  </div>
+
+
+
+<form>
+    <div class="form-group">
+        <label>Name:
+        <input type="text" class="form-control" name="name" [(ngModel)]="newContact.name" placeholder="Name">
+      </label>
+      </div>
+
+  <div class="form-group">
+    <label >Email address:
+    <input type="text" class="form-control" name="email" [(ngModel)]="newContact.email" placeholder="Enter email">
+  </label>
+  </div>
+  <div class="form-group">
+    <label >Phone:
+    <input type="number" class="form-control" name="phone"  [(ngModel)]="newContact.phone" placeholder="phone number">
+  </label>
+  </div>
+  <div class="form-group">
+      <label >Image:
+      <input [(ngModel)]="newContact.image" name="Image" type="file" class="form-control-file">
+    </label>
+    </div>
+ 
+  <button (click)="addContact()" type="submit" class="btn btn-primary">Submit New Contact</button>
+</form>
 </div>
 
-<button (click)="addContact">Submit New Contact</button>
