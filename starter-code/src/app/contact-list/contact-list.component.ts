@@ -7,18 +7,27 @@ import contactList from '../contacts';
   styleUrls: ['./contact-list.component.css']
 })
 export class ContactListComponent implements OnInit {
-  contacts: Object[];
-  newContact: Object = {};
-
-  constructor() { }
-
-  ngOnInit() {
-    this.contacts = contactList;
+  contacts = [];
+  newContact = {name: '', email: '', phoneNumber: '', image: ''};
+  
+  addContact(): void{
+    console.log("Add contact has been called");
+    const newOne = 
+    {name: this.newContact.name,
+     email: this.newContact.email,
+     phoneNumber: this.newContact.phoneNumber,
+     image: this.newContact.image,
+    }
+    this.contacts.push(newOne);
+    this.newContact.name = "";
+    this.newContact.email = ""
+    this.newContact.phoneNumber = ""
+    this.newContact.image = ""
   }
 
-  addContact(){
-    console.log("Add contact has been called");
-    // add contact to contacts list
-    // clear inputs
+  constructor() { }
+  
+  ngOnInit() {
+    this.contacts = contactList;
   }
 }
