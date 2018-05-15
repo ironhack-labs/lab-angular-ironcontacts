@@ -1,0 +1,14 @@
+.contact-block{
+    border: 1px solid black;
+    margin: 150px;
+    text-align: center;
+}
+
+.form{
+    margin: 25px;
+    text-align: center;
+}
+
+.spacing{
+    margin-top: 10px;
+}
