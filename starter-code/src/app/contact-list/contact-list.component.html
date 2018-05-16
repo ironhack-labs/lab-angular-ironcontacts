@@ -1,10 +1,9 @@
-<div class="contact-block" *ngFor="let contact of contacts">
+<!-- <div class="contact-block" *ngFor="let contact of contacts">
   <h3>{{contact.name}}</h3>
   <h4>{{contact.email}}</h4>
   <h4>{{contact.phoneNumber}}</h4>
-  <img src = {{contact.image}}/>
-</div>
-
+  <img src={{contact.image}}/>
+</div> -->
 
 <div class="form">
   <div class="spacing">
@@ -18,7 +17,10 @@
   </div>
   <div class="spacing">
     <input placeholder="Image" type="text" [(ngModel)]="newContact.image">
-  <div class="spacing">
-  <button (click)="addContact()">Submit New Contact</button>
-</div>
+    <div class="spacing">
+      <button (click)="addContact()">Submit New Contact</button>
+    </div>
 
+    <div *ngFor="let singleContact of contacts">
+      <app-single-contact [singleContact]="singleContact" (contactBeingDeleted)="deleteTheContact($event)"> </app-single-contact>
+    </div>
