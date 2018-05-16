@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <div class="container">
   <div>
     <label for="contact-name"></label>
@@ -24,3 +25,45 @@
     </li>
   </ul>
 </div>
+=======
+<!-- <div *ngFor="let theContact of contacts ">
+
+  <p>{{theContact.name}}</p>
+  <p>{{theContact.email}}</p>
+  <p>{{theContact.phoneNumber}}</p>
+  <img  src= "{{theContact.image}}" alt="xxx">
+</div> -->
+
+
+<div class="card-deck">
+  <div *ngFor= "let theContact of contacts ">
+    <div class="card center">
+      <img class="card-img-top" src= "{{theContact.image}}" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">{{theContact.name}}</h5>
+        <p class="card-text">{{theContact.email}}</p>
+        <p class="card-text"><small class="text-muted">{{theContact.phoneNumber}}</small></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div>
+  <label for="contact-name"></label>
+  <input type="text" [(ngModel)]="newContact.name">
+</div>
+<div>
+  <label for="contact-email"></label>
+  <input type="text" [(ngModel)]="newContact.email">
+</div>
+<div>
+  <label for="contact-phone"></label>
+  <input type="text" [(ngModel)]="newContact.phoneNumber">
+</div>
+<div>
+  <label for="contact-image"></label>
+  <input type="text" [(ngModel)]="newContact.image" >
+</div>
+
+<button (click)="addContact()">Submit New Contact</button>
+>>>>>>> 2c57b243356ff2ea6f369703457dec436b5bad6a

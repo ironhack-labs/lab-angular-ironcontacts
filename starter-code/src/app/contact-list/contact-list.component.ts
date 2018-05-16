@@ -8,8 +8,17 @@ import { SingleContactComponent } from '../single-contact/single-contact.compone
   styleUrls: ['./contact-list.component.css']
 })
 export class ContactListComponent implements OnInit {
+<<<<<<< HEAD
   contacts: Object[] = [];
   newContact: Object = {};
+=======
+  contacts: Object[];
+  newContact: any = {name: '',
+        email: '',
+        phoneNumber: '',
+        image: ''
+    };
+>>>>>>> 2c57b243356ff2ea6f369703457dec436b5bad6a
 
   constructor() {}
 
@@ -17,6 +26,7 @@ export class ContactListComponent implements OnInit {
     this.contacts = contactList;
   }
 
+<<<<<<< HEAD
   aNewContact = { name: '', email: '', phoneNumber: '', image: '' };
 
   addContact() {
@@ -28,6 +38,23 @@ export class ContactListComponent implements OnInit {
       phoneNumber: this.aNewContact.phoneNumber,
       image: this.aNewContact.image
     };
+=======
+  addContact():void{
+    console.log("Add contact has been called");
+    const newOne = {name: this.newContact.name, 
+      email: this.newContact.email, 
+      phoneNumber: this.newContact.phoneNumber,
+      image: this.newContact.image
+      
+    };
+    this.newContact.name = '';
+    this.newContact.email = '';
+    this.newContact.phoneNumber = '';
+    this.newContact.image = '';
+
+    this.contacts.push(newOne);
+
+>>>>>>> 2c57b243356ff2ea6f369703457dec436b5bad6a
     // clear inputs
     this.contacts.unshift(newContact);
   }
