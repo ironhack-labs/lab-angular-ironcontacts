@@ -19,9 +19,6 @@
 
 
 <div *ngFor="let cont of contacts">
-  <h2>{{cont.name}}</h2>
-  <a href="#">{{cont.email}}</a>
-  <h5>{{cont.phoneNumber}}</h5>
-  <img [src]="cont.image">
+  <app-single-contact [oneSingleContact]="cont" (contactBeingDeleted)="deleteContact($event)" ></app-single-contact>
 </div>
 

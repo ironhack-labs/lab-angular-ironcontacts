@@ -22,4 +22,10 @@ export class ContactListComponent implements OnInit {
     phoneNumber: this.newContact.phoneNumber, image: this.newContact.image}
     this.contacts.push(newOne);
   }
+
+  deleteContact(singleContact){
+    const index = this.contacts.indexOf(singleContact);
+    this.contacts.splice(index, 1);
+  }
+
 }
