@@ -1,0 +1,12 @@
+<span class="name">{{ theContact.name}}</span>
+      <br>
+      <br>
+      <span>{{ theContact.email }}</span>
+      <br>
+      <br>
+      <span class="number">{{ theContact.phoneNumber}}</span>
+      <br>
+      <br>
+      <img [src]="theContact.image" alt="contact image">
+      <br>
+      <button (click)="onContactDelete()">Delete</button>

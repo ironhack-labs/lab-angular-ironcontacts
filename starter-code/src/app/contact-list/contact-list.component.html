@@ -23,16 +23,8 @@
   <ul class="divContent">
     <li *ngFor="let contact of contacts">
 
-      <span class="name">{{ contact.name}}</span>
-      <br>
-      <br>
-      <span>{{ contact.email }}</span>
-      <br>
-      <br>
-      <span class="number">{{ contact.phoneNumber}}</span>
-      <br>
-      <br>
-      <img [src]="contact.image" alt="contact image">
+      <app-single-contact [theContact]="contact" (onDelete)="removeContact($event)"></app-single-contact>
+
       <br>
       <hr>
     </li>

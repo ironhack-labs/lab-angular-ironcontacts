@@ -30,4 +30,12 @@ export class ContactListComponent implements OnInit {
     // clear inputs
     this.contacts.unshift(newContact);
   }
+
+  removeContact (email) {
+    this.contacts = this.contacts.filter(
+      (contact: any) => contact.email !== email
+    );
+  }
+
+
 }
