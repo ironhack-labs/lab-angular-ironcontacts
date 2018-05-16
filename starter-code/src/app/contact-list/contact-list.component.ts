@@ -7,7 +7,7 @@ import contactList from '../contacts';
   styleUrls: ['./contact-list.component.css']
 })
 export class ContactListComponent implements OnInit {
-  contacts = [];
+  contacts:Array<any> = [];
   newContact = {name: '', email: '', phoneNumber: '', image: ''};
   
   addContact(): void{
@@ -18,11 +18,16 @@ export class ContactListComponent implements OnInit {
      phoneNumber: this.newContact.phoneNumber,
      image: this.newContact.image,
     }
-    this.contacts.push(newOne);
+    this.contacts.unshift(newOne);
     this.newContact.name = "";
     this.newContact.email = ""
     this.newContact.phoneNumber = ""
     this.newContact.image = ""
+  }
+
+  deleteTheContact(entireContact) {
+    const index = this.contacts.indexOf(entireContact);
+    this.contacts.splice(index, 1);
   }
 
   constructor() { }
