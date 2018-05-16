@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import contactList from '../contacts';
+import { SingleContactComponent } from '../single-contact/single-contact.component';
 
 @Component({
   selector: 'app-contact-list',
@@ -7,7 +8,7 @@ import contactList from '../contacts';
   styleUrls: ['./contact-list.component.css']
 })
 export class ContactListComponent implements OnInit {
-  contacts: Object[];
+  contacts: Object[] = [];
   newContact: Object = {};
 
   constructor() {}
@@ -29,5 +30,10 @@ export class ContactListComponent implements OnInit {
     };
     // clear inputs
     this.contacts.unshift(newContact);
+  }
+
+  deleteTheContact(entireContact) {
+    const i = this.contacts.indexOf(entireContact);
+    this.contacts.splice(i, 1);
   }
 }

@@ -1,6 +1,4 @@
 <div class="container">
-
-
   <div>
     <label for="contact-name"></label>
     <input type="text" [(ngModel)]="aNewContact.name" name="name">
@@ -17,25 +15,12 @@
     <label for="contact-image"></label>
     <input type="text" [(ngModel)]="aNewContact.image" name="image">
   </div>
-<hr>  
+  <hr>
   <button (click)="addContact()">Submit New Contact</button>
-<br>
+  <br>
   <ul class="divContent">
     <li *ngFor="let contact of contacts">
-
-      <span class="name">{{ contact.name}}</span>
-      <br>
-      <br>
-      <span>{{ contact.email }}</span>
-      <br>
-      <br>
-      <span class="number">{{ contact.phoneNumber}}</span>
-      <br>
-      <br>
-      <img [src]="contact.image" alt="contact image">
-      <br>
-      <hr>
+      <app-single-contact [oneSingleContact]="contact" (contactBeingDeleted)="deleteTheContact($event)"></app-single-contact>
     </li>
   </ul>
-
 </div>
