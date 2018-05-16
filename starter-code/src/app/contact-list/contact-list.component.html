@@ -18,11 +18,6 @@
   <button (click)="addContact()">Submit New Contact</button>
 </form>
 
-
-<div *ngFor="let contact of contacts">
-  <p>Name: {{contact.name}}</p>
-  <p>Email: {{contact.email}}</p>
-  <p>Phone: {{contact.phoneNumber}}</p>
-  <hr>
-  <!-- <img src="{{contact.image}}" /> -->
+<div *ngFor="let oneSingleContact of contacts">
+  <app-single-contact [oneSingleContact]="oneSingleContact" (contactBeingDeleted)="deleteContact($event)"></app-single-contact>
 </div>

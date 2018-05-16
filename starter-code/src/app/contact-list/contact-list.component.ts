@@ -9,24 +9,28 @@ import contactList from '../contacts';
 export class ContactListComponent implements OnInit {
   contacts = [];
   newContact = {name: '', email: '', phoneNumber: '', image: ''};
-  
-  addContact(): void{
+
+  addContact(): void {
     console.log("Add contact has been called");
-    const newOne = 
-    {name: this.newContact.name,
+    const newOne = {name: this.newContact.name,
      email: this.newContact.email,
      phoneNumber: this.newContact.phoneNumber,
      image: this.newContact.image,
     }
     this.contacts.push(newOne);
-    this.newContact.name = "";
-    this.newContact.email = ""
-    this.newContact.phoneNumber = ""
-    this.newContact.image = ""
+    this.newContact.name = '';
+    this.newContact.email = '';
+    this.newContact.phoneNumber = '';
+    this.newContact.image = '';
+  }
+
+  deleteContact(contact) {
+    const index = this.contacts.indexOf(contact);
+    this.contacts.splice(index, 1);
   }
 
   constructor() { }
-  
+
   ngOnInit() {
     this.contacts = contactList;
   }
