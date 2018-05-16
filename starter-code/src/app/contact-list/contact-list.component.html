@@ -4,18 +4,18 @@
   <div>
   <h1>Contacts</h1>
 
-<div *ngFor="let oneContact of contacts" >
+<!-- <div *ngFor="let oneContact of contacts" >
   <li>
     <span>Name: {{oneContact.name}} </span>
       <br>
     <span>email: {{oneContact.email}} </span>
       <br>
     <span>phoneNumber: {{oneContact.phoneNumber}} </span>
-    <!-- <img src="{{oneContact.image}}" width="200"> -->
+    <!-- <img src="{{oneContact.image}}" width="200"> 
 
   </li>
     <br><br>
-</div>
+</div> -->
 </div>
 
 <div>
@@ -42,3 +42,7 @@
 </div>
 
 </div>
+
+<div *ngFor="let oneContact of contacts">
+  <app-single-contact [oneSingleContact]="oneContact" (contactBeingDeleted)="deleteTheContact($event)" ></app-single-contact>
+  </div>

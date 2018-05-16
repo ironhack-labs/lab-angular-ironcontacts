@@ -10,6 +10,13 @@ export class ContactListComponent implements OnInit {
   contacts: Object[];
   newContact =  {name: '', email: '', phoneNumber: ''};
 
+
+  deleteTheContact(theWholeContact){
+    const index = this.contacts.indexOf(theWholeContact);
+    this.contacts.splice(index, 1);
+  }
+
+
   constructor() { }
 
   ngOnInit() {
