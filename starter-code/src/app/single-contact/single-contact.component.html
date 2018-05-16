@@ -1,0 +1,24 @@
+<!-- <h3>
+  {{oneSingleContact.name}}
+</h3>
+
+<div>
+  {{oneSingleContact.name}}
+</div>
+<button type="button" (click)="deleteContact(oneSingleContact)">Delete</button>
+ -->
+
+<div *ngFor = "let contactlist of contacts">
+  <div class="card" style="width: 18rem;">
+    <img class="card-img-top" src="/assets/images/profile.png" alt="Card image cap">
+      <h5 class="card-title">Name: {{contactlist.name}}</h5>
+      <div class="card-body">
+        <p class="card-text">Email: {{contactlist.email}}</p>
+        <p class="card-text">Phone: {{contactlist.phoneNumber}}</p>
+
+        <button type="button" (click)="deleteContact(oneSingleContact)">Delete</button>
+      </div>
+    </div>
+  </div> 
+
+  
