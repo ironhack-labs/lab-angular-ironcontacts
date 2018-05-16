@@ -29,10 +29,15 @@
 <div class="container">
   <div class="row">
 
+    <!-- the new way -->
+    <div *ngFor="let oneContact of contacts">
+      <app-single-contact [oneSingleContact]="oneContact" (contactBeingDeleted)="deleteTheContact($event)" ></app-single-contact>
+    </div>
 
-    <div *ngFor="let contact of contacts">
+    <!-- old way before we added the single contact component -->
+    <!-- <div *ngFor="let contact of contacts"> -->
 
-      <div class="my-4 col-md-4">
+      <!-- <div class="my-4 col-md-4">
         <div class="card" style="width: 18rem;">
           <img class="card-img-top" src="{{contact.image}}" alt="Contact Image">
           <div class="card-body">
@@ -43,9 +48,9 @@
             <li class="list-group-item">{{contact.phoneNumber}}</li>
           </ul>
         </div>
-      </div>
+      </div> -->
 
-    </div>
+    <!-- </div> -->
 
 
   </div>

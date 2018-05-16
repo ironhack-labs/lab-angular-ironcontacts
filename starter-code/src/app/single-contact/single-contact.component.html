@@ -1,0 +1,14 @@
+
+<div class="my-4 col-md-4">
+  <div class="card" style="width: 18rem;">
+    <img class="card-img-top" src="{{oneSingleContact.image}}" alt="Contact Image">
+    <div class="card-body">
+      <h5 class="card-title">{{oneSingleContact.name}}</h5>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">{{oneSingleContact.email}}</li>
+      <li class="list-group-item">{{oneSingleContact.phoneNumber}}</li>
+    </ul>
+    <button type="button" class="btn btn-dark" (click)="deleteContact(oneSingleContact)">Delete Contact</button>
+  </div>
+</div>
