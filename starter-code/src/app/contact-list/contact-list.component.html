@@ -18,13 +18,8 @@
   </div>
 </div>
 
-
-
 <div class="contacts" *ngFor="let lol of contacts">
   <ul>
-    <h1>{{lol.name}}</h1>
-    <li>{{lol.phoneNumber}}</li>
-    <li>{{lol.email}}</li>
-    <img [src]="lol.image">
+    <app-single-contact [theContact]="lol" (onDelete)="removeContact($event)"></app-single-contact>
   </ul>
 </div>
