@@ -19,10 +19,7 @@
 
 <div class="contact-container">
   <div class="contact-card" *ngFor = "let contact of contacts">
-    <img [src]=contact.image>
-    <h3>{{contact.name}}</h3>
-    <h4>{{contact.email}}</h4>
-    <h4>{{contact.phoneNumber}}</h4>
+    <app-single-contact [theContact]="contact"  (onDelete)="removeContact($event)"></app-single-contact>
   </div>
 </div>
 

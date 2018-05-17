@@ -28,4 +28,10 @@ export class ContactListComponent implements OnInit {
     this.newContact.phoneNumber = "";
     this.newContact.image = "";
   }
+
+  removeContact (email) {
+    this.contacts = this.contacts.filter(
+      (contact:any) => contact.email !== email
+    );
+  }
 }
