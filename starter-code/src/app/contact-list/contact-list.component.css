@@ -1,0 +1,16 @@
+.all-contacts{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.each-contact{
+    /* border: 1px solid orange; */
+    /* border-radius: 1px; */
+}
+
+.input-submit{
+    display: flex;
+    flex-flow: column;
+    justify-items: center;
+    justify-content: center;
+}

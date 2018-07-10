@@ -8,7 +8,7 @@ import contactList from '../contacts';
 })
 export class ContactListComponent implements OnInit {
   contacts: Object[];
-  newContact: Object = {};
+  newContact: Contact = new Contact();
 
   constructor() { }
 
@@ -16,9 +16,17 @@ export class ContactListComponent implements OnInit {
     this.contacts = contactList;
   }
 
-  addContact(){
-    console.log("Add contact has been called");
-    // add contact to contacts list
-    // clear inputs
+  addContact() {
+    this.contacts.push(this.newContact);
+    this.newContact = new Contact();
+    // this.newContact = contactList.push(this.newContact);
+    // this.newContact = {};
   }
+}
+
+class Contact{
+  name: string;
+  email: string;
+  phoneNumber: string;
+  image: string;
 }
