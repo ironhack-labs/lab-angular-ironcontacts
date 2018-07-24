@@ -3,7 +3,7 @@ const contacts: Object[] = [
     name: "Shakira Robel",
     email: "Ashley_Ritchie@hotmail.com",
     phoneNumber: "965-144-6018",
-    image: "http://lorempixel.com/640/480/sports"
+    image: "https://www.chick-fil-a.com/-/media/Images/CFACOM/Default-Images/chick-fil-a-logo-vector.ashx"
   },
 
   {
