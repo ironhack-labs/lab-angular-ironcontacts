@@ -1,18 +1,32 @@
-<div>
-  <label for="contact-name"></label>
+<div class="newForm">
+  <h2>New Contact:</h2>
+    <div>
+  <label for="contact-name">Name:</label>
   <input type="text" [(ngModel)]="newContact.name">
 </div>
 <div>
-  <label for="contact-email"></label>
+  <label for="contact-email">Email:</label>
   <input type="text" [(ngModel)]="newContact.email">
 </div>
 <div>
-  <label for="contact-phone"></label>
+  <label for="contact-phone">Phone:</label>
   <input type="text" [(ngModel)]="newContact.phoneNumber">
 </div>
 <div>
-  <label for="contact-image"></label>
+  <label for="contact-image">Image URL:</label>
   <input type="text" [(ngModel)]="newContact.image">
 </div>
-
-<button (click)="addContact">Submit New Contact</button>
+</div>
+<!-- <button (click)="addContact(name, email, phonenumber, image)">Submit New Contact</button> -->
+<button (click)="addContact()">Submit New Contact</button>
+<div class="contactsAll">
+<div *ngFor="let oneContact of contacts" class="contactCard">
+    <img [src]="oneContact.image" alt="">
+    <!-- <img src="http://bloody-disgusting.com/wp-content/uploads/2017/04/wolfman-2010.jpg" alt=""> -->
+<ul>
+  <li>{{oneContact.name}}</li>
+  <li class="email">{{oneContact.email}}</li>
+  <li>{{oneContact.phoneNumber}}</li>
+</ul>
+  </div>
+</div>
