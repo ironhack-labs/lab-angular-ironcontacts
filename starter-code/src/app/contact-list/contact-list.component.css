@@ -1,0 +1,30 @@
+.contacts-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.contact {
+    width: 30%;
+}
+
+.contact > img {
+    width: 80%;
+    height: auto;
+}
+
+.contacts-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 100%;
+    margin: 10px 0;
+}
+
+.contacts-form div{
+    text-align: center;
+    width: 50%;
+}
