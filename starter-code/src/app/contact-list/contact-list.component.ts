@@ -22,6 +22,6 @@ export class ContactListComponent implements OnInit {
     this.contacts.push(this.newContact);
    
     // clear inputs
-    fields.forEach(e=>e.value="");
+    this.newContact={};
   }
 }
