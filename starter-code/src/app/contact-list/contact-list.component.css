@@ -1,0 +1,13 @@
+.contact-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+
+
+.contact-item {
+min-width: 33%;
+margin: 0 auto;
+text-align: center;
+}
