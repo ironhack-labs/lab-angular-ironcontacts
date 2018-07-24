@@ -15,4 +15,16 @@
   <input type="text" [(ngModel)]="newContact.image">
 </div>
 
-<button (click)="addContact">Submit New Contact</button>
+<button (click)="addContact()">Submit New Contact</button>
+
+
+<div class="global">
+  <div *ngFor="let contact of contacts" class="card">
+
+    <p>{{contact.name}}</p>
+    <p>{{contact.email}}</p>
+    <p>{{contact.phoneNumber}}</p>
+    <div class="imagenes"> <img src="{{contact.image}}" alt=""></div>
+
+  </div>
+</div>
