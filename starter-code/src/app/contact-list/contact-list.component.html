@@ -14,13 +14,12 @@
   <label for="contact-image"></label>
   <input type="text" [(ngModel)]="newContact.image">
 </div>
+<button (click)="addContact">Submit New Contact</button>
 <ul>
   <li *ngFor="let contact of contacts">
     <h3>Name: {{contact.name}}</h3>
     <p>email: {{contact.email}}</p>
     <p>phoneNumber: {{contact.phoneNumber}}</p>
-    <p>{{contact.image}}</p>
+    <img src="{{contact.image}}" alt="">
   </li>
 </ul>
-
-<button (click)="addContact">Submit New Contact</button>
