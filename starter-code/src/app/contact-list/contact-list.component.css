@@ -1,0 +1,61 @@
+.new-contact {
+    display: flex;
+    background-color: gray;
+    padding: 20px 20px;
+    flex-direction: column;
+    width: 250px;
+    border-radius: 20px;
+    color: white;
+    margin-left: 40%;
+}
+
+input, label {
+    margin-bottom: 1rem;
+}
+
+input {
+    width: 180px;
+}
+
+html {
+    background-color: rgba(255, 255, 255, 0.452);
+}
+
+.each-contact {
+    display: flex;
+    flex-direction: column;
+    background-color:gray;
+    color: white;
+    width: 280px;
+    padding: 10px 10px;
+    margin-bottom: 3%;
+    border-radius: 10px;
+    margin-right: 2rem;
+    text-align: center;
+}
+
+
+#submit-btn {
+    width: 150px;
+    margin-left: 18%;
+    background-color: rgb(71, 70, 70);
+    color: white;
+    padding: 5px 5px;
+}
+
+h3 {
+    color: gray;
+    font-size: 35px;
+    text-align: center;
+    font-weight: bold;
+}
+.all-contacts {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 4%;
+    margin-bottom: 2%;
+}
+
+img {
+    max-width: 200px;
+}

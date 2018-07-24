@@ -1,18 +1,36 @@
-<div>
-  <label for="contact-name"></label>
-  <input type="text" [(ngModel)]="newContact.name">
+<h3>Contact List</h3>
+<div class= "all-contacts">
+<div *ngFor = "let oneName of contacts" class= "one-contact">
+  <div class= "each-contact">
+    <p>{{oneName.name}}</p>
+    <p>{{oneName.email}}</p>
+    <p>{{oneName.phoneNumber}}</p>
+    <p><img [src]="oneName.image" alt=""></p>
+    <hr>
+    <!-- <p><img [src]="oneName.image" alt=""></p> -->
+  </div>
 </div>
-<div>
-  <label for="contact-email"></label>
-  <input type="text" [(ngModel)]="newContact.email">
-</div>
-<div>
-  <label for="contact-phone"></label>
-  <input type="text" [(ngModel)]="newContact.phoneNumber">
-</div>
-<div>
-  <label for="contact-image"></label>
-  <input type="text" [(ngModel)]="newContact.image">
 </div>
 
-<button (click)="addContact">Submit New Contact</button>
+
+<div class= "new-contact">
+<div>
+  <label for="contact-name">Name: </label>
+  <input #nameInput type="text" [(ngModel)]="newContact.name">
+</div>
+<div>
+  <label for="contact-email">Email: </label>
+  <input #emailInput type="text" [(ngModel)]="newContact.email">
+</div>
+<div>
+  <label for="contact-phone">Phone: </label>
+  <input #phoneNumber type="text" [(ngModel)]="newContact.phoneNumber">
+</div>
+
+<div>
+  <label for="contact-image">Image: </label>
+  <input #imageInput type="text" [(ngModel)]="newContact.image">
+</div>
+
+<button (click)="addContact(nameInput, emailInput, phoneNumber, imageInput)" id= "submit-btn">Submit New Contact</button>
+</div>
