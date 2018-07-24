@@ -1,0 +1,28 @@
+.container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 1000px;
+
+}
+
+
+.contact {
+  width: 45%;
+  min-width: 200px;
+  border: 2px solid grey;
+  box-shadow: rgba(0,0,0,0.8) 0 0 10px;
+  margin: 10px;
+  padding: 10px;
+}
+
+img {
+  height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.image {
+  height: 150px;
+  width: 150px;
+}
