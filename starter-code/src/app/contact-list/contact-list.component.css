@@ -1,0 +1,28 @@
+.col{
+
+background-color: gray;
+width: 300px;
+padding: 20px;
+text-align: center;
+margin: 20px;
+}
+
+ul{
+
+list-style: none;
+
+
+}
+
+.imgContainer{
+
+    width: 260px;
+    height: auto;
+
+}
+
+.divContainer{
+    width: 300px;
+text-align: center;
+    margin: auto;
+}

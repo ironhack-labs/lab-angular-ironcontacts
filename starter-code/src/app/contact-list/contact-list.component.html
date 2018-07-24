@@ -1,18 +1,35 @@
+<div class="divContainer">
 <div>
-  <label for="contact-name"></label>
-  <input type="text" [(ngModel)]="newContact.name">
-</div>
-<div>
-  <label for="contact-email"></label>
-  <input type="text" [(ngModel)]="newContact.email">
-</div>
-<div>
-  <label for="contact-phone"></label>
-  <input type="text" [(ngModel)]="newContact.phoneNumber">
-</div>
-<div>
-  <label for="contact-image"></label>
-  <input type="text" [(ngModel)]="newContact.image">
+    <label for="contact-name"></label>
+    <input type="text" [(ngModel)]="newContact.name">
+  </div>
+  <div>
+    <label for="contact-email"></label>
+    <input type="text" [(ngModel)]="newContact.email">
+  </div>
+  <div>
+    <label for="contact-phone"></label>
+    <input type="text" [(ngModel)]="newContact.phoneNumber">
+  </div>
+  <div>
+    <label for="contact-image"></label>
+    <input type="text" [(ngModel)]="newContact.image">
+  </div>
+  
+  <button (click)="addContact()">Submit New Contact</button>
+
+
+
+<ul>
+ 
+    <li *ngFor="let contact of contacts">
+        <div class="col">
+      <h2>{{contact.name}}</h2>  <h5>{{contact.email}}</h5><h5>{{contact.phoneNumber}}</h5>
+      <img class="imgContainer" src="https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/styles/main_element/public/media/image/2017/01/coche-homer-simpson_1.jpg?itok=0_BXbeff" alt="">
+    </div>
+    </li>
+ 
+
+</ul>
 </div>
 
-<button (click)="addContact">Submit New Contact</button>
