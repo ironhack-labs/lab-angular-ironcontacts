@@ -1,0 +1,53 @@
+.container{
+  display: flex;
+  flex-direction: column;
+  padding-left: 9vw;
+}
+
+.contacts li{
+  list-style: none;
+  margin: 3vh 3vw;
+  width: 18vw;
+  background: slateblue;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contacts img{
+  width: 12vw;
+  height: 12vh;
+}
+
+.contacts{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  color: white;
+}
+
+.form{
+  background: lightslategrey;
+  display: flex;
+  flex-direction: column;
+  width:60%;
+  padding: 3vh 3vw;
+  box-sizing: border-box;
+  margin-bottom: 30px;
+  margin-left: 12vw;
+}
+.form input{
+  margin: 2vh 0;
+  width: 100%;
+}
+
+.form button{
+  width: 10vw;
+  padding: 2vh 1vw;
+  background: slateblue;
+  color: white;
+  border: none;
+  cursor: pointer;
+  align-self: center;
+}
