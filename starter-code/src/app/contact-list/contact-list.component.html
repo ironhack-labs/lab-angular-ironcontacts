@@ -1,3 +1,4 @@
+
 <div>
   <label for="contact-name"></label>
   <input type="text" [(ngModel)]="newContact.name">
@@ -15,4 +16,13 @@
   <input type="text" [(ngModel)]="newContact.image">
 </div>
 
-<button (click)="addContact">Submit New Contact</button>
+<button (click)="addContact()">Submit New Contact</button>
+
+<div class="contenedor">
+  <ul *ngFor="let contact of contacts">
+    <li>{{contact.name}}</li>
+    <li>{{contact.email}}</li>
+    <li>{{contact.phoneNumber}}</li>
+    <img src="{{contact.image}}" alt="image">
+  </ul>
+</div>
