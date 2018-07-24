@@ -1,0 +1,23 @@
+.container{
+    width: 80%;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.form{
+    margin: 0 auto;
+}
+.contacts{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.newcontact{
+    background: rgb(243, 243, 243);
+    border-radius: 5px;
+    padding: 10px;
+    width: 30%;
+    margin: 20px 0;
+}
+
