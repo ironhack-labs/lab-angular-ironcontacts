@@ -1,0 +1,15 @@
+.centered {
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.centered h1 {
+    font-size: 5em;
+    font-family: 'Merienda', cursive;
+}
+
+.body {
+    font-family: 'Merienda', cursive;
+}

@@ -1,18 +1,20 @@
-<div>
-  <label for="contact-name"></label>
-  <input type="text" [(ngModel)]="newContact.name">
+<div class="form-container">
+  <div class="imput-field">
+    <label class="label-custom" for="contact-name">Name: </label>
+    <input class="form-control" type="text" #newName [(ngModel)]="newContact.name">
+  </div>
+  <div class="imput-field">
+    <label class="label-custom" for="contact-email">Email: </label>
+    <input class="form-control" type="text" #newEmail [(ngModel)]="newContact.email">
+  </div>
+  <div class="imput-field">
+    <label class="label-custom" for="contact-phone">Phone Number: </label>
+    <input class="form-control" type="text" #newPhoneNumber [(ngModel)]="newContact.phoneNumber">
+  </div>
+  <div class="imput-field">
+    <label class="label-custom" for="contact-image">Image URL:</label>
+    <input class="form-control" type="text" #newImage [(ngModel)]="newContact.image">
+  </div>
+  
+  <button class="btn btn-dark btn-custom" (click)="addContact(newName, newEmail, newPhoneNumber, newImage)">Submit New Contact</button>
 </div>
-<div>
-  <label for="contact-email"></label>
-  <input type="text" [(ngModel)]="newContact.email">
-</div>
-<div>
-  <label for="contact-phone"></label>
-  <input type="text" [(ngModel)]="newContact.phoneNumber">
-</div>
-<div>
-  <label for="contact-image"></label>
-  <input type="text" [(ngModel)]="newContact.image">
-</div>
-
-<button (click)="addContact">Submit New Contact</button>
