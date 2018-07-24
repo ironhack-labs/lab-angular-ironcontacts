@@ -1,7 +1,7 @@
 .estilo {
 display: flex;
 flex-direction: row;
-justify-content: space-evenly;
+justify-content: space-between;
 padding: 40px;
 margin-top: 40px;
 flex-wrap: wrap;
