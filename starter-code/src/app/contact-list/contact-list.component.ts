@@ -15,10 +15,12 @@ export class ContactListComponent implements OnInit {
   ngOnInit() {
     this.contacts = contactList;
   }
-
-  addContact(){
+  
+  // Using *ngFor, display the name, email, phoneNumber, and image of each contact.
+  addContact(c){
     console.log("Add contact has been called");
     // add contact to contacts list
+    this.contacts.push(c)
     // clear inputs
   }
 }
