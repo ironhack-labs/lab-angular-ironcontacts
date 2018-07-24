@@ -1,0 +1,25 @@
+.container{
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.row{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+img{
+  max-width: 200px;
+  max-height: 200px;
+  object-fit: contain;
+}
+
+.card{
+  background-color: lightgray;
+  height: 275px;
+  width: 250px;
+  margin: 20px;
+  word-wrap: break-word;
+}
