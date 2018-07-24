@@ -1,0 +1,25 @@
+.centerMe {
+  padding: 0 10vw 10vw;
+  text-align: center;
+  background: linear-gradient(to bottom right, orange, skyblue);
+  font-size: 1.3em;
+
+}
+
+.centerMe img {
+  border-radius: 50px;
+}
+
+
+input {
+  background: rgba(0, 0, 0, 0.4);
+  text-align: center;
+  color: lightgray;
+}
+
+input:focus {
+  background: rgba(0,0,0,0.4);
+  text-align: center;
+  color: white;
+}
+
