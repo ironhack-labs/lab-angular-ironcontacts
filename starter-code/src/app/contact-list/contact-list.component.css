@@ -1,0 +1,41 @@
+img{
+    width: 200px;
+}
+
+#contact-form{
+    width: 250px;
+    margin: 0 auto;
+    font-family: Avenir;
+}
+
+#address-book img{
+    display: block;
+    margin: 0 auto;
+}
+
+#contact-form input {
+    margin: 10px;
+}
+
+#contact-form button {
+    padding: 5px 15px;
+    font-size: .9em;
+    background: lightsteelblue;
+    border: none;
+    margin: 20px auto;
+    display: block;
+}
+
+#address-book {
+    margin: 40px;
+    display:flex;
+    flex-flow: row wrap;
+}
+
+.person {
+    width: 250px;
+    margin: 10px 20px;
+    padding: 10px;
+    background: peachpuff;
+    font-family: Avenir, sans-serif;
+}
