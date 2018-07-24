@@ -1,0 +1,35 @@
+  <section class="container">
+
+
+    <div class="border" *ngFor="let newContact of contacts">
+      <h4>{{newContact.name}}</h4>
+      <p>{{newContact.email}}</p>
+      <p>{{newContact.phoneNumber}}</p>
+      <img src="{{newContact.image}}">
+    </div>
+
+
+
+
+
+
+    <div>
+        <label for="contact-name"></label>
+        <input type="text" [(ngModel)]="newContact.name">
+      </div>
+      <div>
+        <label for="contact-email"></label>
+        <input type="text" [(ngModel)]="newContact.email">
+      </div>
+      <div>
+        <label for="contact-phone"></label>
+        <input type="text" [(ngModel)]="newContact.phoneNumber">
+      </div>
+      <div>
+        <label for="contact-image"></label>
+        <input type="text" [(ngModel)]="newContact.image">
+      </div>
+      
+      <button (click)="addContact()">Submit New Contact</button>    
+  </section>
+  
