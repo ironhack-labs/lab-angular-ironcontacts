@@ -1,4 +1,14 @@
 <h1>
   {{title}}
 </h1>
+<div>
+  <ul *ngFor="let contact of contacto">
+    <li>
+      {{contact.name}}
+      {{contact.email}}
+      {{contact.phoneNumber}}
+      <img src={{contact.image}} alt="">
+    </li>
+  </ul>
+</div>
 <app-contact-list></app-contact-list>
