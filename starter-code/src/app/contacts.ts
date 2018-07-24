@@ -3,42 +3,42 @@ const contacts: Object[] = [
     name: "Shakira Robel",
     email: "Ashley_Ritchie@hotmail.com",
     phoneNumber: "965-144-6018",
-    image: "http://lorempixel.com/640/480/sports"
+    image: "http://blog.ironhack.com/wp-content/uploads/2016/07/hectorges-52-1024x683.jpg"
   },
 
   {
     name: "Green Crist",
     email: "Rosendo53@hotmail.com",
     phoneNumber: "1-522-714-2638 x44811",
-    image: "http://lorempixel.com/640/480/food"
+    image: "http://blog.ironhack.com/wp-content/uploads/2016/07/hectorges-52-1024x683.jpg"
   },
 
   {
     name: "Yvette Dickinson",
     email: "Yolanda.Abernathy@hotmail.com",
     phoneNumber: "(038) 030-9641 x7086",
-    image: "http://lorempixel.com/640/480/nightlife"
+    image: "http://blog.ironhack.com/wp-content/uploads/2016/07/hectorges-52-1024x683.jpg"
   },
 
   {
     name: "Karley Hackett",
     email: "Icie_Gutmann69@yahoo.com",
     phoneNumber: "(251) 436-6001",
-    image: "http://lorempixel.com/640/480/nightlife"
+    image: "http://blog.ironhack.com/wp-content/uploads/2016/07/hectorges-52-1024x683.jpg"
   },
 
   {
     name: "Mrs. Otha Beahan",
     email: "Brice46@yahoo.com",
     phoneNumber: "005-851-7095 x72027",
-    image: "http://lorempixel.com/640/480/food"
+    image: "http://blog.ironhack.com/wp-content/uploads/2016/07/hectorges-52-1024x683.jpg"
   },
 
   {
     name: "Ignacio Larson",
     email: "Remington.Boyer63@yahoo.com",
     phoneNumber: "1-471-836-5871 x5841",
-    image: "http://lorempixel.com/640/480/technics"
+    image: "http://blog.ironhack.com/wp-content/uploads/2016/07/hectorges-52-1024x683.jpg"
   },
 
   {

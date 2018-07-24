@@ -1,0 +1,17 @@
+form {
+  background-color: lightblue;
+  width: 50%;
+  height: 180px;
+  text-align: center;
+}
+
+form input {
+  margin: 10px;
+  text-decoration: none;
+  border: none;
+}
+
+form button {
+  background-color: yellow;
+}
+
