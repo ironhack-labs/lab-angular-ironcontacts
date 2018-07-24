@@ -1,18 +1,33 @@
-<div>
-  <label for="contact-name"></label>
-  <input type="text" [(ngModel)]="newContact.name">
-</div>
-<div>
-  <label for="contact-email"></label>
-  <input type="text" [(ngModel)]="newContact.email">
-</div>
-<div>
-  <label for="contact-phone"></label>
-  <input type="text" [(ngModel)]="newContact.phoneNumber">
-</div>
-<div>
-  <label for="contact-image"></label>
-  <input type="text" [(ngModel)]="newContact.image">
+<div class="container list">
+  <div class="row">
+
+    <div class="col-3 individual" *ngFor="let contact of contacts">
+      <p><b>Name</b>: {{contact.name}}</p>
+      <p><b>Email</b>: {{contact.email}}</p>
+      <p><b>Number</b>: {{contact.phoneNumber}}</p>
+      <img src="{{contact.image}}" width=200>
+    </div>
+  </div>
 </div>
 
-<button (click)="addContact">Submit New Contact</button>
+<div class="container">
+<div class="form-group">
+  <h3>Add a new User</h3>
+  <label for="contact-name">Name</label>
+  <input #textInputName class="form-control" type="text" [(ngModel)]="newContact.name">
+</div>
+<div class="form-group">
+  <label for="contact-email">Email</label>
+  <input #textInputEmail class="form-control" type="text" [(ngModel)]="newContact.email">
+</div>
+
+<div class="form-group">
+  <label for="contact-phone">Number</label>
+  <input #textInputPhoneNumber class="form-control" type="text" [(ngModel)]="newContact.phoneNumber">
+</div>
+<div class="form-group">
+  <label for="contact-image">Image</label>
+  <input #textInputImage class="form-control" type="text" [(ngModel)]="newContact.image">
+</div>
+
+<button class="btn btn-primary" (click)="addContact(textInputName, textInputEmail, textInputPhoneNumber, textInputImage)">Submit New Contact</button></div>
