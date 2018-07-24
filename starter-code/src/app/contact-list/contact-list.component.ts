@@ -20,5 +20,11 @@ export class ContactListComponent implements OnInit {
     console.log("Add contact has been called");
     // add contact to contacts list
     // clear inputs
+    this.contacts.push(this.newContact);
+    this.newContact ={}
+    /* this.newContact["name"] = '';
+    this.newContact["email"]=''; 
+    this.newContact.phoneNumber='' ; */
+    //this.newContact.image=''
   }
 }
