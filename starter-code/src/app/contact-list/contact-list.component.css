@@ -1,0 +1,11 @@
+.contactLayout {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.contactPhoto {
+  width: 50%;
+}
