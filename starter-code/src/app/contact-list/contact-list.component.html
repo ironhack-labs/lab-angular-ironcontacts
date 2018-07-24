@@ -1,18 +1,31 @@
 <div>
-  <label for="contact-name"></label>
+  <label for="contact-name">Name: </label>
   <input type="text" [(ngModel)]="newContact.name">
 </div>
 <div>
-  <label for="contact-email"></label>
+  <label for="contact-email">Email: </label>
   <input type="text" [(ngModel)]="newContact.email">
 </div>
 <div>
-  <label for="contact-phone"></label>
+  <label for="contact-phone">Phone Number: </label>
   <input type="text" [(ngModel)]="newContact.phoneNumber">
 </div>
 <div>
-  <label for="contact-image"></label>
+  <label for="contact-image">Image URL: </label>
   <input type="text" [(ngModel)]="newContact.image">
 </div>
 
-<button (click)="addContact">Submit New Contact</button>
+<button (click)="addContact(newContact)">Submit New Contact</button>
+<hr>
+
+
+<div *ngFor="let aContact of contacts" class="a-contact mx-5">
+  <h4>{{aContact.name}}</h4>
+  <h5>{{aContact.email}}</h5>
+  <h5>{{aContact.phoneNumber}}</h5>
+  <img src="{{aContact.imamge}}">
+  
+</div>
+
+
+<!-- Using *ngFor, display the name, email, phoneNumber, and image of each contact. -->
