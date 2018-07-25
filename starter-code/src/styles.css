@@ -1,1 +1,42 @@
 /* You can add global styles to this file, and also import other style files */
+
+body{
+    background-color: rgb(56, 56, 145);
+    color:  white;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h1{
+    text-align: center;
+    color: darkorange;
+}
+
+input {
+color: darkorange;
+}
+
+input, button {
+    margin: 5px;
+}
+
+.general {
+    text-align: center;
+} 
+
+.lista{
+    list-style: none;
+}
+
+ul {
+    margin: 100px;
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    justify-content:space-between
+}
+
+img {
+    width: 100px; 
+    height: 100px;
+}
+
