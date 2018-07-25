@@ -1,18 +1,45 @@
-<div>
-  <label for="contact-name"></label>
-  <input type="text" [(ngModel)]="newContact.name">
-</div>
-<div>
-  <label for="contact-email"></label>
-  <input type="text" [(ngModel)]="newContact.email">
-</div>
-<div>
-  <label for="contact-phone"></label>
-  <input type="text" [(ngModel)]="newContact.phoneNumber">
-</div>
-<div>
-  <label for="contact-image"></label>
-  <input type="text" [(ngModel)]="newContact.image">
-</div>
+<div id="contact-form">
+  <div>
+    <label for="contact-name">Name:</label>
+    <input type="text" [(ngModel)]="newContact.name">
+  </div>
+  <div>
+    <label for="contact-email">Email:</label>
+  <h1>Ironhack Contacts</h1>
 
-<button (click)="addContact">Submit New Contact</button>
+  <section class="contactInput">
+    <div>
+      <label for="contact-name"></label>
+      <input type="text" [(ngModel)]="newContact.name" placeholder="Name" [value]="name">
+    </div>
+    <div>
+      <label for="contact-email"></label>
+      <input type="text" [(ngModel)]="newContact.email" placeholder="Email" [value]="email">
+    </div>
+    <div>
+      <label for="contact-phone"></label>
+      <input type="text" [(ngModel)]="newContact.phoneNumber" placeholder="Phone Number" [value]="phoneNumber">
+    </div>
+    <div>
+      <label for="contact-image"></label>
+      <input type="text" [(ngModel)]="newContact.image" placeholder="Profile Picture" [value]="image">
+    </div>
+
+    <button (click)="addContact(newContact)">Submit New Contact</button>
+
+  </section>
+
+  <br>
+
+  <section class="displayContacts">
+    <h2>Contacts</h2>
+    <ul>
+      <li *ngFor="let contact of contacts, let i=index">
+        {{contact.name}}
+        <br> {{contact.email}}
+        <br> {{contact.phoneNumber}}
+        <br>
+        <img src="{{contact.image}}">
+      </li>
+    </ul>
+  </section>

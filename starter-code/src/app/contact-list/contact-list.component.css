@@ -1,0 +1,17 @@
+h1{
+    text-align: center
+}
+.contactInput{
+    position: absolute;
+    margin-left: 560px;
+    margin-top: 10px;
+}
+.displayContacts{
+    position: absolute;
+    margin-top: 100px;
+    padding-left: 30px;
+}
+img{
+    width: 200px;
+    height: 100px;
+}

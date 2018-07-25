@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import contactList from '../contacts';
+import { resetFakeAsyncZone } from '@angular/core/testing';
 
 @Component({
   selector: 'app-contact-list',
@@ -16,9 +17,9 @@ export class ContactListComponent implements OnInit {
     this.contacts = contactList;
   }
 
-  addContact(){
-    console.log("Add contact has been called");
-    // add contact to contacts list
-    // clear inputs
+  addContact(newContact) {
+    console.log("Add contact has been called", { newContact });
+    this.contacts.push(newContact)
+    this.newContact = {}
   }
 }
