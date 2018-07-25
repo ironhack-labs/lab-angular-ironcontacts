@@ -1,4 +1,13 @@
-<h1>
-  {{title}}
-</h1>
-<app-contact-list></app-contact-list>
+<app-contact-list>
+    <ul>
+        <li *ngFor = "let contact of contacts">
+        <img src="{{contact.image}}" alt="">
+         <h2><b>{{contact}} </b></h2>
+         <h3>Email: <p>{{contact.Email}}</p></h3>
+         <h3>PhoneNumber: <p>{{contact.phoneNumber}}</p></h3>
+       </li>
+       </ul>
+</app-contact-list>
+
+
+
