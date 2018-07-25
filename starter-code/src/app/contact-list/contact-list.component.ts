@@ -1,24 +1,33 @@
 import { Component, OnInit } from '@angular/core';
-import contactList from '../contacts';
+ import contactList from '../contacts';
 
-@Component({
-  selector: 'app-contact-list',
-  templateUrl: './contact-list.component.html',
-  styleUrls: ['./contact-list.component.css']
-})
-export class ContactListComponent implements OnInit {
-  contacts: Object[];
-  newContact: Object = {};
+ @Component({
+   selector: 'app-contact-list',
+   templateUrl: './contact-list.component.html',
+   styleUrls: ['./contact-list.component.css']
+ })
+ export class ContactListComponent implements OnInit {
+   contacts: Object[];
+   newContact: Object = {};
 
-  constructor() { }
+   constructor() { }
 
-  ngOnInit() {
-    this.contacts = contactList;
-  }
+   ngOnInit() {
+     this.contacts = contactList;
+   }
 
-  addContact(){
-    console.log("Add contact has been called");
-    // add contact to contacts list
-    // clear inputs
-  }
-}
+    addContact() {'funciona');
+    
+    const newObj: {} = {
+      name: this.newContact.name,
+      email: this.newContact.email,
+      phoneNumber: this.newContact.phoneNumber,
+      image: this.newContact.image,
+    };
+    this.contacts.push(newObj);
+    this.newContact.name = '';
+    this.newContact.email = '';
+    this.newContact.phoneNumber = '';
+    this.newContact.image = '';
+   }
+ }
