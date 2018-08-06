@@ -1,0 +1,23 @@
+.card {
+    width: 300px;
+    text-align: center;
+}
+
+img {
+    max-width:200px; /* you can use % */
+    height: auto;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
