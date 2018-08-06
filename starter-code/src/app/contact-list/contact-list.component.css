@@ -1,0 +1,52 @@
+ul.contacts {
+  list-style: none;
+  margin: 30px 0;
+  padding: 0;
+}
+
+ul.contacts li {
+  padding: 15px 0;
+  border-bottom: 1px solid #fff;
+  display: inline-block;
+  width: 380px;
+  border-right: 1px solid #fff;
+  background: #ddd;
+}
+
+ul.contacts img {
+  float: left;
+  margin: 10px 20px 20px;
+  border-radius: 50%;
+}
+
+.addForm {
+  width: 400px;
+}
+
+.addForm input {
+  height: 50px;
+  font-size: 20px;
+  width: 100%;
+  border: 0;
+  border-bottom: 1px solid;
+  outline: 0;
+}
+
+.addForm label {
+  display: block;
+  margin: 10px 0 0;
+  width: 100%;
+}
+
+.addForm button {
+  display: block;
+  margin: 10px 0 0;
+  width: 100%;
+  font-size: 17px;
+  padding: 10px;
+  border: 0;
+  background: #ddd;
+  border-radius: 5px;
+cursor: pointer;
+outline:0;
+}
