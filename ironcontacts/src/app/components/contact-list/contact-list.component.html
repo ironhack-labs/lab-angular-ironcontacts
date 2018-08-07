@@ -24,7 +24,7 @@
     <ul>
         <li *ngFor="let contact of contacts">
             <figure>
-                <img src="https://www.bridgeig.com/wp-content/uploads/female-placeholder.jpg" alt="{{contact.name}}">
+                <img [src]="contact.image" alt="{{contact.name}}">
             </figure>
             <div class="contact-info">
                 <p>{{contact.name}}</p>
