@@ -1,0 +1,25 @@
+/* You can add global styles to this file, and also import other style files */
+ul {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 770px;
+}
+
+img {
+    width: 100px;
+}
+
+li {
+    margin: 30px;
+    text-decoration: none;
+    list-style: none;
+    background-color: #f1ecec;
+    padding: 30px;
+    text-align: center;
+}
+
+.name {
+    font-weight: bold;
+}
