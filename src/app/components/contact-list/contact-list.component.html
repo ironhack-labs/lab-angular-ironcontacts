@@ -1,0 +1,37 @@
+<!-- {{contacts|json}} -->
+<div class="container">
+    <h1>My list of contacts</h1>
+
+    <h2>Add a new contact</h2>
+    <div class="form-container">
+      <label for="contact-name"></label>
+      <input  placeholder="Name:" type="text" [(ngModel)]="newContact.name">
+    
+      <label for="contact-email"></label>
+      <input placeholder="Email" type="text" [(ngModel)]="newContact.email">
+
+      <label for="contact-phone"></label>
+      <input placeholder="Phone Number" type="text" [(ngModel)]="newContact.phoneNumber">
+
+      <label for="contact-image"></label>
+      <input placeholder="Image" type="text" [(ngModel)]="newContact.image">
+
+      <button (click)="addContact()">Submit New Contact</button>
+    </div>
+    
+    
+    
+   <div class="card-container">
+      <div class="list-card" *ngFor="let contact of contacts">
+          <img [src]="contact.image">
+          <label>
+            <p>Name: {{contact.name}}</p>
+        
+          </label>    
+          <p>Email: {{contact.email}}</p>
+          <p>Number: {{contact.phoneNumber}}</p>
+        </div>
+   </div>
+    
+    
+</div>
