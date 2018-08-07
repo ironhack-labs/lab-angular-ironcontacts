@@ -83,7 +83,7 @@ h1{
   margin-right: 0;
 }
 
-@media (min-width:600px){
+@media (min-width:800px){
   .contacts ul li{
     width: 45%;
   }
