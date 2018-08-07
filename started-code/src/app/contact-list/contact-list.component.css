@@ -1,0 +1,43 @@
+.name {
+  font-weight: bold;
+}
+
+img {
+  width: 100%;
+}
+
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0;
+}
+
+li {
+  width: 28%;
+  margin: 10px;
+  padding: 10px;
+  list-style-type: none;
+  background-color: #e0e0e0
+}
+
+.new-contact {
+  width: 300px;
+  margin: 0 auto;
+}
+
+.new-contact h2 {
+  text-align: center;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.new-contact button {
+  display: block;
+  margin: 30px auto;
+  padding: 10px;
+}
