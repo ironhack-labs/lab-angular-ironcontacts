@@ -1,0 +1,51 @@
+/* You can add global styles to this file, and also import other style files */
+.container{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0 5%;
+    box-sizing: border-box;
+}
+
+.form-container{
+    background-color: #f1f1f1;
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+    align-items: center;
+}
+
+.card-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+
+
+    
+}
+
+.list-card{
+    width: 33%;
+    margin: 0;
+    padding: 3%;
+    box-sizing: border-box;
+    border: 0.5px solid #f1f1f1;
+}
+
+button{
+    height: 50px;
+    width: 100px;
+}
+input{
+    height: 20px;
+    margin: 1%;
+    width: 100%;
+}
+
+img{
+    height: auto;
+    width: 100%;
+    object-fit: cover;
+}
+
