@@ -1,0 +1,28 @@
+.container {
+  display: flex; 
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container2 {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.input {
+  margin-bottom:1em;
+}
+
+.input > input {
+  width: 15em;
+}
+
+.contact_form {
+  border: .2em black solid;
+  box-shadow: .2em .5em lightgray;
+  padding: 1em 2em;
+  border-radius: 1em;
+}
