@@ -19,7 +19,6 @@ export class ContactListComponent implements OnInit {
 
   ngOnInit() {
     this.contacts = contactList;
-    // this.newContact.name='';
   }
 
   addContact(){
@@ -30,6 +29,6 @@ export class ContactListComponent implements OnInit {
     this.contacts.push(this.newContact);
 
     // clear inputs
-    // newContact.name.value= '';
+    this.newContact = {name:'', email:'', phoneNumber:'', image:''};
   }
 }
