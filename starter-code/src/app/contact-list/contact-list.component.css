@@ -1,0 +1,29 @@
+#ironC{
+  text-align: justify;
+  width: 90%;
+  height: auto;
+  /* border: 1px solid #000000;   */
+}
+
+div, button{
+  margin: 5px auto;
+  /* border: 1px solid #000000; */
+}
+li{
+  display: inline-block;
+  float: left;
+  border: 1px solid #000000;
+  /* margin: 2% 5%; */
+  padding: 2% 2%;
+  width: 20%;
+}
+#ironC input{
+  margin: 2% 5%;
+  /* text-align: right; */
+}
+.formCont{
+  width: 500px;
+  height: auto;
+  margin: 15px 15px;
+  /* border: 1px solid #000000; */
+}
