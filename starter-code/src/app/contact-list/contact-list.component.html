@@ -1,18 +1,39 @@
-<div>
-  <label for="contact-name"></label>
-  <input type="text" [(ngModel)]="newContact.name">
-</div>
-<div>
-  <label for="contact-email"></label>
-  <input type="text" [(ngModel)]="newContact.email">
-</div>
-<div>
-  <label for="contact-phone"></label>
-  <input type="text" [(ngModel)]="newContact.phoneNumber">
-</div>
-<div>
-  <label for="contact-image"></label>
-  <input type="text" [(ngModel)]="newContact.image">
-</div>
+<!DOCTYPE html>
+<div id="ironC">
 
-<button (click)="addContact">Submit New Contact</button>
+    <div class="formCont">
+        <div>
+            <label for="contact-name">Name:
+            </label>
+            <input type="text" [(ngModel)]="newContact.name">
+        </div>
+        <div>
+            <label for="contact-email">E-mail:
+            </label>
+            <input type="text" [(ngModel)]="newContact.email">
+        </div>
+        <div>
+            <label for="contact-phone">Phone:
+            </label>
+            <input type="text" [(ngModel)]="newContact.phoneNumber">
+        </div>
+        <div>
+            <label for="contact-image">Image:
+            </label>
+            <input type="text" [(ngModel)]="newContact.image">
+        </div>
+
+        <button (click)="addContact()">Submit New Contact</button>
+
+    </div>
+    <ul>
+        <li *ngFor="let i of contacts">
+            <h4>{{i.name}}</h4>
+            <span>{{i.email}}</span>
+            <br>
+            <span>{{i.phoneNumber}}</span>
+            <br>
+            <img [src]="i.image" alt="Sorry, no image.">
+        </li>
+    </ul>
+</div>
