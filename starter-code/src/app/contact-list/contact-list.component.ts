@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+import {Contact} from '../shared/models/contact.model' 
 import contactList from '../contacts';
 
 @Component({
@@ -6,15 +7,9 @@ import contactList from '../contacts';
   templateUrl: './contact-list.component.html',
   styleUrls: ['./contact-list.component.css']
 })
-export class ContactListComponent implements OnInit {
-  contacts: Object[];
-  newContact: Object = {};
-
-  constructor() { }
-
-  ngOnInit() {
-    this.contacts = contactList;
-  }
+export class ContactListComponent {
+  contacts: Array<Contact> = contactList;
+  newContact: Contact = new Contact;
 
   addContact(){
     console.log("Add contact has been called");

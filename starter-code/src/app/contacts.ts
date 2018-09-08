@@ -1,4 +1,6 @@
-const contacts: Object[] = [
+import { Contact } from './shared/models/contact.model';
+
+const contacts: Array<Contact> = [
   {
     name: "Shakira Robel",
     email: "Ashley_Ritchie@hotmail.com",
