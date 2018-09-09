@@ -10,10 +10,17 @@ import contactList from '../contacts';
 export class ContactListComponent {
   contacts: Array<Contact> = contactList;
   newContact: Contact = new Contact;
+  imagePreview: string = '';
 
-  addContact(){
+  addContact(): void{
     console.log("Add contact has been called");
     // add contact to contacts list
+    this.contacts.push(this.newContact);
     // clear inputs
+  }
+
+  onChangeImageInput(image: string): void {
+    console.log("hello");
+    this.imagePreview = image;
   }
 }
