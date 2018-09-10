@@ -1,0 +1,38 @@
+<div class="container">
+  <div class="row">
+    <div class="card-deck">
+      <div class="card" *ngFor="let contact of contacts">
+        <img class="card-img-top" [src]="contact.image" alt="Card image cap">
+        <h5>{{contact.name}}</h5>
+        <h6>{{contact.email}}</h6>
+        <small>{{contact.phoneNumber}}</small>
+      </div>
+    </div>
+    
+    <div class="row">
+     <div class="col-10">
+      <div>
+        <label for="contact-name">Contact</label>
+        <input type="text" [(ngModel)]="contactToCreate.name">
+      </div>
+      <div>
+        <label for="contact-email">Email</label>
+        <input type="text" [(ngModel)]="contactToCreate.email" >
+      </div>
+      <div>
+        <label for="contact-phone" >Phone</label>
+        <input type="text" [(ngModel)]="contactToCreate.phoneNumber">
+      </div>
+      <div>
+        <label for="contact-image">Image</label>
+        <input type="text" [(ngModel)]="contactToCreate.image" [(ngModel)]="posterPreview">
+      </div> 
+      <button class="btn-sm btn-primary btn-block" (click)="onClickAddContact()">Create contact</button>
+     </div>
+     <div class="col-2">
+       <img [src]="posterPreview" alt="" style="width:200px;">
+     </div>
+    </div>
+  </div>
+</div>
+
