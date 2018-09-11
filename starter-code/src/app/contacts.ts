@@ -1,100 +1,102 @@
-const contacts: Object[] = [
+import {Contact} from './shared/contact.model'
+
+const contacts: Contact[] = [
   {
     name: "Shakira Robel",
     email: "Ashley_Ritchie@hotmail.com",
     phoneNumber: "965-144-6018",
-    image: "http://lorempixel.com/640/480/sports"
+    image: "https://images.pexels.com/photos/34950/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=350"
   },
 
   {
     name: "Green Crist",
     email: "Rosendo53@hotmail.com",
     phoneNumber: "1-522-714-2638 x44811",
-    image: "http://lorempixel.com/640/480/food"
+    image: "https://images.pexels.com/photos/34950/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=350"
   },
 
   {
     name: "Yvette Dickinson",
     email: "Yolanda.Abernathy@hotmail.com",
     phoneNumber: "(038) 030-9641 x7086",
-    image: "http://lorempixel.com/640/480/nightlife"
+    image: "https://images.pexels.com/photos/34950/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=350"
   },
 
   {
     name: "Karley Hackett",
     email: "Icie_Gutmann69@yahoo.com",
     phoneNumber: "(251) 436-6001",
-    image: "http://lorempixel.com/640/480/nightlife"
+    image: "https://images.pexels.com/photos/34950/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=350"
   },
 
   {
     name: "Mrs. Otha Beahan",
     email: "Brice46@yahoo.com",
     phoneNumber: "005-851-7095 x72027",
-    image: "http://lorempixel.com/640/480/food"
+    image: "https://images.pexels.com/photos/34950/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=350"
   },
 
   {
     name: "Ignacio Larson",
     email: "Remington.Boyer63@yahoo.com",
     phoneNumber: "1-471-836-5871 x5841",
-    image: "http://lorempixel.com/640/480/technics"
+    image: "https://images.pexels.com/photos/34950/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=350"
   },
 
   {
     name: "Estel Armstrong",
     email: "Chasity.Metz83@gmail.com",
     phoneNumber: "(247) 305-7427",
-    image: "http://lorempixel.com/640/480/cats"
+    image: "https://images.pexels.com/photos/34950/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=350"
   },
 
   {
     name: "Citlalli Brown",
     email: "Izabella.Hand21@gmail.com",
     phoneNumber: "475.071.4608 x101",
-    image: "http://lorempixel.com/640/480/transport"
+    image: "https://images.pexels.com/photos/34950/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=350"
   },
 
   {
     name: "Reginald Kessler",
     email: "Retta.Wolf@gmail.com",
     phoneNumber: "070-610-2661",
-    image: "http://lorempixel.com/640/480/people"
+    image: "https://images.pexels.com/photos/34950/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=350"
   },
 
   {
     name: "Rosina Schiller",
     email: "Rachelle13@hotmail.com",
     phoneNumber: "869.014.6216 x103",
-    image: "http://lorempixel.com/640/480/transport"
+    image: "https://images.pexels.com/photos/34950/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=350"
   },
 
   {
     name: "Annabell Kreiger DVM",
     email: "Kamron_Kilback24@gmail.com",
     phoneNumber: "537.485.6536",
-    image: "http://lorempixel.com/640/480/sports"
+    image: "https://images.pexels.com/photos/34950/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=350"
   },
 
   {
     name: "Sister Langworth",
     email: "Mauricio.Predovic@yahoo.com",
     phoneNumber: "1-728-795-5036 x191",
-    image: "http://lorempixel.com/640/480/abstract"
+    image: "https://images.pexels.com/photos/34950/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=350"
   },
 
   {
     name: "Walton Cormier",
     email: "Markus25@gmail.com",
     phoneNumber: "1-218-030-7101",
-    image: "http://lorempixel.com/640/480/transport"
+    image: "https://images.pexels.com/photos/34950/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=350"
   },
 
   {
     name: "Mrs. Jed Anderson",
     email: "Shawn.Howell62@hotmail.com",
     phoneNumber: "1-195-147-1917",
-    image: "http://lorempixel.com/640/480/cats"
+    image: "https://images.pexels.com/photos/34950/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=350"
   },
 
   {

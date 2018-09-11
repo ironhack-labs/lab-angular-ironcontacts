@@ -6,15 +6,15 @@ import contactList from '../contacts';
   templateUrl: './contact-list.component.html',
   styleUrls: ['./contact-list.component.css']
 })
-export class ContactListComponent implements OnInit {
-  contacts: Object[];
+export class ContactListComponent /*implements OnInit*/ {
+  contacts: Object[] = contactList;
   newContact: Object = {};
 
-  constructor() { }
+  // constructor() { }
 
-  ngOnInit() {
-    this.contacts = contactList;
-  }
+  // ngOnInit() {
+  //   this.contacts = contactList;
+  // }
 
   addContact(){
     console.log("Add contact has been called");
