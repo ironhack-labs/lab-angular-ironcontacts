@@ -1,0 +1,18 @@
+* {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.container {
+    margin-left: 3%;
+}
+.contacts {
+    display: flex;
+}
+div {
+    padding-right: 5%;
+}
+
+button {
+    font-weight: bold;
+    color: red;
+}
