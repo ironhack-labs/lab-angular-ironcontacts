@@ -103,70 +103,70 @@ const contacts: Contact[] = [
     name: "Sam Ledner",
     email: "Chase48@hotmail.com",
     phoneNumber: "701.023.2667 x499",
-    image: "http://lorempixel.com/640/480/business"
+    image: ""
   },
 
   {
     name: "Jayson Conroy",
     email: "Ayana_Deckow38@gmail.com",
     phoneNumber: "1-130-094-5404",
-    image: "http://lorempixel.com/640/480/fashion"
+    image: ""
   },
 
   {
     name: "Libbie Kub",
-    email: "Reymundo_Brekke96@hotmail.com",
+    email: "",
     phoneNumber: "1-632-280-6526",
-    image: "http://lorempixel.com/640/480/animals"
+    image: ""
   },
 
   {
     name: "Tomasa Tillman",
     email: "Jordane.Wunsch@yahoo.com",
     phoneNumber: "1-946-558-9080 x542",
-    image: "http://lorempixel.com/640/480/business"
+    image: ""
   },
 
   {
     name: "Rusty Tremblay MD",
     email: "Shana3@yahoo.com",
     phoneNumber: "773.001.9806",
-    image: "http://lorempixel.com/640/480/city"
+    image: ""
   },
 
   {
     name: "Nina Beer",
     email: "Devon.Aufderhar74@yahoo.com",
     phoneNumber: "042.181.5876",
-    image: "http://lorempixel.com/640/480/technics"
+    image: ""
   },
 
   {
     name: "Wayne Schaden",
     email: "Augustine46@yahoo.com",
     phoneNumber: "820-288-0927 x964",
-    image: "http://lorempixel.com/640/480/animals"
+    image: ""
   },
 
   {
     name: "Arvel Gorczany",
     email: "Nadia.Paucek@yahoo.com",
     phoneNumber: "037.974.9471",
-    image: "http://lorempixel.com/640/480/fashion"
+    image: ""
   },
 
   {
     name: "Carrie Connelly",
     email: "Abigail40@yahoo.com",
     phoneNumber: "1-150-622-5789 x634",
-    image: "http://lorempixel.com/640/480/cats"
+    image: ""
   },
 
   {
     name: "Coty Grady",
     email: "Lenny_Ziemann@hotmail.com",
     phoneNumber: "(905) 672-3625 x6378",
-    image: "http://lorempixel.com/640/480/nature"
+    image: ""
   }
 ]
 
