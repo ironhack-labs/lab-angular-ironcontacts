@@ -1,0 +1,50 @@
+<ul class="list-tasks" *ngIf="tasks.length">
+  <li class="card" *ngFor="let task of tasks">
+    <img [src]="imgs[task.category]" alt="">
+    <div>
+      <p class="date">{{task.date}}</p>
+      <h2>{{task.title}}</h2>
+      <p class="description">{{task.description}}</p>
+      <img [src]="moods[task.mood]" alt="">
+    </div>
+  </li>
+</ul>
+
+<div *ngIf="!tasks.length">
+  No memes in this list, yet! Care to add one?
+</div>
+
+<form>
+  <div class="editing">
+    <h2>Add another task</h2>
+    <div class="field">
+      <select name="category" [(ngModel)]="newTask.category">
+        <option value="">- Pick the category -</option>
+        <option value="hobby">Hobby</option>
+        <option value="work">Work</option>
+        <option value="friends">Friends</option>
+      </select>
+    </div>
+    <div class="field">
+      <input type="text" name="title" [(ngModel)]="newTask.title">
+    </div>
+    <div class="field">
+      <input type="text" name="description" [(ngModel)]="newTask.description">
+    </div>
+    <div class="field">
+      <input type="date" name="date" [(ngModel)]="newTask.date">
+    </div>
+    <div class="field">
+      <select name="mood" [(ngModel)]="newTask.mood">
+        <option value="">- Pick the mood -</option>
+        <option value="happy">Happy</option>
+        <option value="excited">Excited</option>
+        <option value="sad">Sad</option>
+        <option value="angry">Angry</option>
+      </select>
+    </div>
+    <button (click)="handleAddClick()">Add!</button>
+  </div>
+</form>
+
+
