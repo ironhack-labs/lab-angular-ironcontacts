@@ -1,0 +1,28 @@
+<div class="form">
+  <div class="input">
+    <label for="contact-name"></label>
+    <input type="text" [(ngModel)]="newContact.name">
+  </div>
+  <div class="input">
+    <label for="contact-email"></label>
+    <input type="text" [(ngModel)]="newContact.email">
+  </div>
+  <div class="input">
+    <label for="contact-phone"></label>
+    <input type="text" [(ngModel)]="newContact.phoneNumber">
+  </div>
+  <div class="input">
+    <label for="contact-image"></label>
+    <input type="text" [(ngModel)]="newContact.image">
+  </div>
+  <button class="botton" (click)="addContact()">Submit New Contact</button>
+</div>
+
+<ul class="list-cards">
+  <li class="card" *ngFor="let contact of contacts">
+    <p>{{contact.name}}</p>
+    <p>{{contact.email}}</p>
+    <p>{{contact.phoneNumber}}</p>
+    <img src="{{contact.image}}" alt="">
+  </li>
+</ul>
