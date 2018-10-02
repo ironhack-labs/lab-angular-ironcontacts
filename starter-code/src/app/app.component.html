@@ -1,4 +1,15 @@
-<h1>
-  {{title}}
-</h1>
-<app-contact-list></app-contact-list>
+<header id="site-header">
+  <p>Francina</p>
+  <h1>To do List</h1>
+</header>
+
+<div id="site-main" class="container">
+  <app-loading *ngIf="loading"></app-loading>
+  <app-list *ngIf="!loading"></app-list>
+</div>
+
+<footer id="site-footer">
+  <div class="container">
+    Made with ❤︎ by Francina
+  </div>
+</footer>
