@@ -1,4 +1,53 @@
-<h1>
-  {{title}}
-</h1>
-<app-contact-list></app-contact-list>
+
+<header id="site-header">
+  <div class="container">
+
+    <h1 class="site-title"></h1>
+
+    <nav class="site-nav">
+      iScream
+    </nav>
+
+  </div>
+</header>
+
+<div id="site-main" class="container">
+  <h1>Best movies for Halloween</h1>
+  <app-loading *ngIf="loading"></app-loading>
+
+  <form>
+    <div class="editing">
+      <h2>Add your favorite Halloween Movie</h2>
+      <input type="text" [(ngModel)]="newTitle" name="title">
+      <select [(ngModel)]="newCategory" name="category">
+        <option value="">- Pick one -</option>
+        <option value="for-babies">For babies</option>
+        <option value="sleep-alone">I can still sleep alone</option>
+        <option value="cant-look">Mamaaaa!</option>
+      </select>
+      <button (click)="handleAddClick()">Add a title!</button>
+    </div>
+    <div class="card preview">
+      <h2>{{newTitle}}</h2>
+      <img *ngIf="newCategory" [src]="imgs[newCategory]" alt="">
+    </div>
+  </form>
+
+  <ul *ngIf="!loading">
+    <li class="card" *ngFor="let movie of movies">
+      <h2>{{movie.title}}</h2>
+      <img [src]="imgs[movie.category]" alt="">
+    </li>
+  </ul>
+
+  <div *ngIf="!loading && !movies.length">
+    No movies yet! Dare to add one?
+  </div>
+
+</div>
+
+<footer id="site-footer">
+  <div class="container">
+    You made it to the end of the movie!
+  </div>
+</footer>
