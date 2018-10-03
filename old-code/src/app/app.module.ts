@@ -1,22 +1,20 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { HttpModule } from '@angular/http';
 
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { LatteArtComponent } from './components/latte-art/latte-art.component';
-import { LoadingComponent } from './components/loading/loading.component';
+import { ContactListComponent } from './contact-list/contact-list.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LatteArtComponent,
-    LoadingComponent
+    ContactListComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
-    FormsModule
+    FormsModule,
+    HttpModule
   ],
   providers: [],
   bootstrap: [AppComponent]
