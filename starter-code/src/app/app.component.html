@@ -1,4 +1,59 @@
-<h1>
-  {{title}}
-</h1>
-<app-contact-list></app-contact-list>
+<!--The content below is only a placeholder and can be replaced.-->
+
+<!doctype html>
+
+<header id="site-header">
+  <div class="container">
+    <h1 class="site-title">Be Latte-Art</h1>
+    <!-- <nav class="site-nav">
+      ...
+    </nav> -->
+  </div>
+</header>
+
+<div id="site-main" class="container">
+  <app-loading *ngIf="loading"></app-loading>
+  <app-latte-art *ngIf="!loading"></app-latte-art>
+
+  
+  <form>
+    <div class="editing">
+      <h2>What latte art are you today?</h2>
+      <label for="name">Name: </label>
+      <input type="text" [(ngModel)]="newName" name='name'>
+      <select [(ngModel)]="latteArtImg" name="image">
+        <option value="">- select Latte Art -</option>
+        <option value="hearty">Heart</option>
+        <option value="leafy">Leaf</option>
+        <option value="swany">Swan</option>
+        <option value="flowery">Flower</option>
+      </select>
+      <button (click)="handleAddClick()">Generate</button>
+    </div>
+<!-- 
+    <div class="card preview">
+      <h2>{{newLineOne}}</h2>
+      <h3>{{newLineTwo}}</h3>
+      <img *ngIf="newImage" [src]="imgs[newImage]">
+    </div> -->
+  </form>
+
+  <ul *ngIf="!loading">
+      <li class="card" *ngFor="let art of latteArt">
+        <h2>{{art.name}},</h2>
+        <h3>{{art.opener}} {{art.categoryExpr}} {{art.ending}}</h3>
+        <img [src]="imgs[art.category]" alt="">    
+      </li>
+    </ul>
+    
+    <div *ngIf="!loading && !latteArt.length">
+        you'll only find out by clicking the button!
+    </div>
+
+</div>
+
+<footer id="site-footer">
+  <div class="container">
+    Made with ♥ and fresh coffee at Ironhack
+  </div>
+</footer>
