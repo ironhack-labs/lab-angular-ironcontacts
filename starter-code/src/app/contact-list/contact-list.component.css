@@ -1,0 +1,45 @@
+.add-contact-form {
+    width: 15vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+}
+
+.add-contact-form-field {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn {
+    width: 100%;
+    margin: .4rem 0;
+    color: #fff;
+    border: none; 
+    background-color:#00e500;
+    padding: 0.3rem .6rem;
+    border-radius: .2rem;
+}
+
+.contact-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-list-item {
+    width: 40vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+    border: 1px solid #e6e6e6;
+    margin: 0 1rem 1rem 0;
+}
+
+.contact-list-item img {
+    width: 10rem;
+}
